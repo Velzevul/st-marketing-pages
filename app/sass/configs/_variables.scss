@@ -1,0 +1,24 @@
+// baseline
+  $global-baseline: 12px;
+
+// typography
+  $global-font-family: sans-serif;
+  $global-font-size: 16px;
+  $global-line-height: $global-baseline * 2;
+
+// colors
+  $color-tx: black;
+  $color-tx-muted: #CCCCCC;
+
+  $color-bg: white;
+  $color-border: #AAAAAA;
+
+  $color-dc-primary: blue;
+  $color-dc-secondary: green;
+
+// layout
+  //max-width: (  size reserved for columns  ) + (size reserved for grid gutter) + (size reserved for grid padding)
+  $max-width:  ( ($global-baseline * 7) * 12 ) + ( ($global-baseline * 4) * 11 ) + (  ($global-baseline * 4) * 2  );
+
+// calculated breakpoint conditions
+  // ...

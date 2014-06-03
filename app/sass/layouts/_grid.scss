@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*------------------------------------*\
     $CSSWIZARDRY-GRIDS
 \*------------------------------------*/
@@ -41,10 +42,10 @@
  *
  * csswizardry grids also has push and pull classes which allow you to nudge
  * grid items left and right by a defined amount. These follow the same naming
- * convention as above, but are prepended by either `push--` or `pull--`, for
+ * convention as above, but are prepended by either 'push--' or 'pull--', for
  * example:
  *
-   `class="grid__item  one-half  push--one-half"`
+   'class="grid__item  one-half  push--one-half"'
  *
  * This would give you a grid item which is 50% width and pushed over to the
  * right by 50%.
@@ -53,11 +54,11 @@
  * quickly be able to piece together any combinations you can imagine, for
  * example:
  *
-   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
+   'class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"'
  *
-   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
+   'class="grid__item  one-quarter  palm--one-half  push--palm--one-half"'
  *
-   `class="grid__item  palm--one-third  desk--five-twelfths"`
+   'class="grid__item  palm--one-third  desk--five-twelfths"'
  */
 
 
@@ -69,26 +70,26 @@
 \*------------------------------------*/
 /**
  * If you are building a non-responsive site but would still like to use
- * csswizardry-grids, set this to ‘false’:
+ * csswizardry-grids, set this to 'false':
  */
-$responsive:            true!default;
+$responsive:            false!default;
 
 
 /**
- * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * Is this build mobile first? Setting to 'true' means that all grids will be
  * 100% width if you do not apply a more specific class to them.
  */
-$mobile-first:          true!default;
+$mobile-first:          false!default;
 
 
 /**
  * Set the spacing between your grid items.
  */
-$gutter:                24px!default;
+$gutter:                4*$global-baseline!default;
 
 
 /**
- * Would you like Sass’ silent classes, or regular CSS classes?
+ * Would you like Sass' silent classes, or regular CSS classes?
  */
 $use-silent-classes:    false!default;
 
@@ -96,12 +97,12 @@ $use-silent-classes:    false!default;
 /**
  * Would you like push and pull classes enabled?
  */
-$push:                  false!default;
-$pull:                  false!default;
+$push:                  true!default;
+$pull:                  true!default;
 
 
 /**
- * Using `inline-block` means that the grid items need their whitespace removing
+ * Using 'inline-block' means that the grid items need their whitespace removing
  * in order for them to work correctly. Set the following to true if you are
  * going to achieve this by manually removing/commenting out any whitespace in
  * your HTML yourself.
@@ -117,7 +118,7 @@ $use-markup-fix:        true!default;
 
 /**
  * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * your classes (e.g. '.palm--one-half'), the second value is the media query
  * that the breakpoint fires at.
  */
 $breakpoints: (
@@ -135,8 +136,8 @@ $breakpoints: (
  * compile as much CSS as you need. All are turned on by default, but you can
  * add and remove breakpoints at will.
  *
- * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
- * have been set to ‘true’.
+ * Push and pull shall only be used if '$push' and/or '$pull' and '$responsive'
+ * have been set to 'true'.
  */
 $breakpoint-has-widths: ('palm', 'lap', 'portable', 'desk')!default;
 $breakpoint-has-push:   ('palm', 'lap', 'portable', 'desk')!default;
@@ -145,7 +146,7 @@ $breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk')!default;
 
 /**
  * You do not need to edit anything from this line onward; csswizardry-grids is
- * good to go. Happy griddin’!
+ * good to go. Happy griddin'!
  */
 $class-type:            unquote(".");
 
@@ -164,7 +165,7 @@ $class-type:            unquote(".");
  * These mixins are for the library to use only, you should not need to modify
  * them at all.
  *
- * Enclose a block of code with a media query as named in `$breakpoints`.
+ * Enclose a block of code with a media query as named in '$breakpoints'.
  */
 @mixin grid-media-query($media-query){
     $breakpoint-found: false;
@@ -183,14 +184,14 @@ $class-type:            unquote(".");
     }
 
     @if $breakpoint-found == false{
-        @warn "Breakpoint ‘#{$media-query}’ does not exist"
+        @warn "Breakpoint '#{$media-query}' does not exist"
     }
 }
 
 
 /**
- * Drop relative positioning into silent classes which can’t take advantage of
- * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ * Drop relative positioning into silent classes which can't take advantage of
+ * the '[class*="push--"]' and '[class*="pull--"]' selectors.
  */
 @mixin silent-relative(){
     @if $use-silent-classes == true{
@@ -208,7 +209,7 @@ $class-type:            unquote(".");
 /**
  * 1. Allow the grid system to be used on lists.
  * 2. Remove any margins and paddings that might affect the grid system.
- * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ * 3. Apply a negative 'margin-left' to negate the columns' gutters.
  */
 #{$class-type}grid{
     list-style:none;                /* [1] */
@@ -255,7 +256,7 @@ $class-type:            unquote(".");
 
 /**
  * Reversed grids allow you to structure your source in the opposite order to
- * how your rendered layout will appear. Extends `.grid`.
+ * how your rendered layout will appear. Extends '.grid'.
  */
 #{$class-type}grid--rev{
     direction:rtl;
@@ -270,7 +271,7 @@ $class-type:            unquote(".");
 
 /**
  * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
+ * Extends '.grid'.
  */
 #{$class-type}grid--full{
     margin-left:0;
@@ -282,7 +283,7 @@ $class-type:            unquote(".");
 
 
 /**
- * Align the entire grid to the right. Extends `.grid`.
+ * Align the entire grid to the right. Extends '.grid'.
  */
 #{$class-type}grid--right{
     text-align:right;
@@ -295,7 +296,7 @@ $class-type:            unquote(".");
 
 /**
  * Centered grids align grid items centrally without needing to use push or pull
- * classes. Extends `.grid`.
+ * classes. Extends '.grid'.
  */
 #{$class-type}grid--center{
     text-align:center;
@@ -307,8 +308,8 @@ $class-type:            unquote(".");
 
 
 /**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
+ * Align grid cells vertically ('.grid--middle' or '.grid--bottom'). Extends
+ * '.grid'.
  */
 #{$class-type}grid--middle{
 
@@ -326,7 +327,7 @@ $class-type:            unquote(".");
 
 
 /**
- * Create grids with narrower gutters. Extends `.grid`.
+ * Create grids with narrower gutters. Extends '.grid'.
  */
 #{$class-type}grid--narrow{
     margin-left:-($gutter / 2);
@@ -338,7 +339,7 @@ $class-type:            unquote(".");
 
 
 /**
- * Create grids with wider gutters. Extends `.grid`.
+ * Create grids with wider gutters. Extends '.grid'.
  */
 #{$class-type}grid--wide{
     margin-left:-($gutter * 2);
@@ -715,4 +716,3 @@ $class-type:            unquote(".");
 
 
 }
-
