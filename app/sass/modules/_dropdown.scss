@@ -7,10 +7,21 @@
   position: absolute;
   top: 100%;
   background: white;
+
+  &__block {
+    padding: $global-baseline * 2;
+
+    & ~ & {
+      border-top: 1px solid $color-border;
+    }
+  }
 }
   .dropdown--pivot-left {
     left: 0;
   }
   .dropdown--pivot-right {
     right: 0;
+  }
+  .dropdown--wide {
+    width: $global-baseline * 50;
   }

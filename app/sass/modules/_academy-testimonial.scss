@@ -1,0 +1,11 @@
+.academy-testimonial {
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+
+  background: black;
+
+  @include breakpoint( map-get($breakpoint-expressions, large) ) {
+    height: 250px;
+  }
+}

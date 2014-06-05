@@ -1,0 +1,24 @@
+.page-header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  border-bottom: 1px solid $color-border;
+  border-top:    1px solid $color-border;
+  background: white;
+
+  &__title {
+    line-height: $page-header-height - 2px;
+  }
+}
+
+.ph-menu {
+  // ...
+
+  &__item {
+    display: block;
+    padding: 0 $global-baseline;
+
+    line-height: $page-header-height - 2px;
+  }
+}

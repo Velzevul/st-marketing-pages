@@ -3,10 +3,15 @@
  *
  *  maintains vertical spacing between different modules
  *
+ *  .l-block-small
  *  .l-block
  *
  */
+.l-block-small {
+  display: block;
+  margin-bottom: $global-baseline * 2;
+}
 .l-block {
   display: block;
-  margin-bottom: $global-baseline * 5;
+  margin-bottom: $global-baseline * 4;
 }

@@ -20,10 +20,42 @@
               <ul class="l-list l-list--inline l-list--collapsed ph-menu">
                 <li class="l-list__item">
                   <div class="acts-as-dropdown">
-                    <button class="ph-menu__item" data-dropdown-trigger>Browse courses</button>
+                    <button class="ph-menu__item" data-dropdown-trigger>(icon) Browse courses</button>
 
                     <div class="mock-box dropdown dropdown--wide dropdown--pivot-left" data-dropdown>
-                      vasa
+                      <div class="dropdown__block">
+                        <div class="grid">
+                          <div class="grid__item one-half">
+                            <ul class="l-list">
+                              <li class="l-list__item"><a href="" class="mock-link">All courses</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Data & CRM</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Gezondheid</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">HR</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Internet & organisatie</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Managementvaardigheden</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Mondelinge communicatie</a></li>
+                            </ul>
+                          </div><!--
+                          --><div class="grid__item one-half">
+                            <ul class="l-list">
+                              <li class="l-list__item"><a href="" class="mock-link">Office productiviteit</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Online marketing</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Persoonlijke effectiviteit</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Projectmanagement</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Sales</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Schriftelijke communicatie</a></li>
+                              <li class="l-list__item"><a href="" class="mock-link">Social media</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown__block">
+                        <ul class="l-list l-list--inline">
+                          <li class="l-list__item"><a href="" class="mock-link">Become an instructor</a></li>
+                          <li class="l-list__item"><a href="" class="mock-link">Studytube for organizations</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -40,21 +72,23 @@
                     <button class="ph-menu__item" data-dropdown-trigger>(current user)</button>
 
                     <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
-                      <div class="mock-content">
-                        <h2>current user menu</h2>
-                        <ul>
-                          <li>avatar</li>
-                          <li>name</li>
-                          <li>email</li>
-                          <li>action: profile settings</li>
-                          <li>action: logout</li>
-                          <li>if has own academy
-                            <ul>
-                              <li>link: switch to studytube</li>
-                              <li>link: switch to own academy</li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <div class="dropdown__block">
+                        <div class="mock-content">
+                          <h2>current user menu</h2>
+                          <ul>
+                            <li>avatar</li>
+                            <li>name</li>
+                            <li>email</li>
+                            <li>action: profile settings</li>
+                            <li>action: logout</li>
+                            <li>if has own academy
+                              <ul>
+                                <li>link: switch to studytube</li>
+                                <li>link: switch to own academy</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -65,27 +99,29 @@
                     <button class="ph-menu__item" data-dropdown-trigger>(notifications)</button>
 
                     <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
-                      <div class="mock-content">
-                        <h2>notifications list</h2>
-                        <ul>
-                          <li>if have new notifications
-                            <ul>
-                              <li>for each notification
-                                <ul>
-                                  <li>notification text</li>
-                                  <li>notification timestamp</li>
-                                  <li>action: dismiss notification</li>
-                                </ul>
-                              </li>
-                              <li>action: dismiss all</li>
-                            </ul>
-                          </li>
-                          <li>else
-                            <ul>
-                              <li>no new notifications screen</li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <div class="dropdown__block">
+                        <div class="mock-content">
+                          <h2>notifications list</h2>
+                          <ul>
+                            <li>if have new notifications
+                              <ul>
+                                <li>for each notification
+                                  <ul>
+                                    <li>notification text</li>
+                                    <li>notification timestamp</li>
+                                    <li>action: dismiss notification</li>
+                                  </ul>
+                                </li>
+                                <li>action: dismiss all</li>
+                              </ul>
+                            </li>
+                            <li>else
+                              <ul>
+                                <li>no new notifications screen</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -191,45 +227,55 @@
                   <h1 class="pc-section__title">Featured courses</h1>
                 </div>
 
-                <div class="course-tiles">
+                <div class="l-tiles-list">
                   <div class="grid">
                     <div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="course-tiles__item">
-                        <div class="mock-content mock-content--inverse">
-                          <h2>Course tile</h2>
-                          <ul>
-                            <li>course image</li>
-                            <li>logo of training organization</li>
-                            <li>course name</li>
-                            <li>course instructor
-                                <ul>
-                                  <li>avatar</li>
-                                  <li>name</li>
-                                  <li>role</li>
-                                </ul>
-                            </li>
-                            <li>course stats
-                                <ul>
-                                  <li>course price</li>
-                                  <li># of students</li>
-                                  <li>reviews/stars</li>
-                                </ul>
-                            </li>
-                          </ul>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile">
+                          <div class="mock-content mock-content--inverse">
+                            <h2>Course tile</h2>
+                            <ul>
+                              <li>course image</li>
+                              <li>logo of training organization</li>
+                              <li>course name</li>
+                              <li>course instructor
+                                  <ul>
+                                    <li>avatar</li>
+                                    <li>name</li>
+                                    <li>role</li>
+                                  </ul>
+                              </li>
+                              <li>course stats
+                                  <ul>
+                                    <li>course price</li>
+                                    <li># of students</li>
+                                    <li>reviews/stars</li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -246,16 +292,22 @@
                   <h1 class="pc-section__title">Featured courses</h1>
                 </div>
 
-                <div class="course-tiles">
+                <div class="l-tiles-list">
                   <div class="grid">
                     <div class="grid__item medium--one-half large--one-third">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half large--one-third">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -272,13 +324,17 @@
                   <h1 class="pc-section__title">Featured courses</h1>
                 </div>
 
-                <div class="course-tiles">
+                <div class="l-tiles-list">
                   <div class="grid">
                     <div class="grid__item medium--one-half">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div><!--
                     --><div class="grid__item medium--one-half">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -295,10 +351,12 @@
                   <h1 class="pc-section__title">Featured courses</h1>
                 </div>
 
-                <div class="course-tiles">
+                <div class="l-tiles-list">
                   <div class="grid">
                     <div class="grid__item">
-                      <div class="course-tiles__item"></div>
+                      <div class="l-tiles-list__item">
+                        <div class="course-tile"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -316,48 +374,64 @@
                 </div>
 
                 <div class="l-block">
-                  <div class="testimonials">
+                  <div class="l-tiles-list">
                     <div class="grid">
                       <div class="grid__item large--one-half">
-                        <div class="testimonials__item">
-                          <div class="mock-content mock-content--inverse">
-                            <h2>Client testimonial</h2>
+                        <div class="l-tiles-list__item">
+                          <div class="academy-testimonial">
+                            <div class="mock-content mock-content--inverse">
+                              <h2>Client testimonial</h2>
 
-                            <ul>
-                              <li>avatar</li>
-                              <li>name</li>
-                              <li>position</li>
-                              <li>quotation (testimonial itself)</li>
-                            </ul>
+                              <ul>
+                                <li>avatar</li>
+                                <li>name</li>
+                                <li>position</li>
+                                <li>quotation (testimonial itself)</li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div><!--
                       --><div class="grid__item large--one-half">
-                        <div class="testimonials__item"></div>
+                        <div class="l-tiles-list__item">
+                          <div class="academy-testimonial"></div>
+                        </div>
                       </div><!--
                       --><div class="grid__item large--one-half">
-                        <div class="testimonials__item"></div>
+                        <div class="l-tiles-list__item">
+                          <div class="academy-testimonial"></div>
+                        </div>
                       </div><!--
                       --><div class="grid__item large--one-half">
-                        <div class="testimonials__item"></div>
+                        <div class="l-tiles-list__item">
+                          <div class="academy-testimonial"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="press">
+                <div class="l-tiles-list">
                   <div class="grid">
                     <div class="grid__item one-half medium--one-quarter">
-                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                      <div class="l-tiles-list__item">
+                        <img src="//placehold.it/200x200" alt="" class="academy-socialproof-press">
+                      </div>
                     </div><!--
                     --><div class="grid__item one-half medium--one-quarter">
-                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                      <div class="l-tiles-list__item">
+                        <img src="//placehold.it/200x200" alt="" class="academy-socialproof-press">
+                      </div>
                     </div><!--
                     --><div class="grid__item one-half medium--one-quarter">
-                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                      <div class="l-tiles-list__item">
+                        <img src="//placehold.it/200x200" alt="" class="academy-socialproof-press">
+                      </div>
                     </div><!--
                     --><div class="grid__item one-half medium--one-quarter">
-                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                      <div class="l-tiles-list__item">
+                        <img src="//placehold.it/200x200" alt="" class="academy-socialproof-press">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -372,58 +446,84 @@
           <div class="grid">
             <div class="grid__item ten-twelfths push--one-twelfth">
               <div class="page-footer__block">
-                <div class="grid">
-                  <div class="grid__item large--two-thirds">
-                    <div class="grid">
-                      <div class="grid__item medium--one-third">
-                        <div class="pf-menu">
-                          <h2 class="mock-subheading">Pages</h2>
-                          <ul class="l-list">
-                            <li class="l-list__item"><a class="mock-link" href="">Home</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Pricing</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Browse courses</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Support</a></li>
-                          </ul>
-                        </div>
-                      </div><!--
-                      --><div class="grid__item medium--one-third">
-                        <div class="pf-menu">
-                          <h2 class="mock-subheading">Studytube</h2>
-                          <ul class="l-list">
-                            <li class="l-list__item"><a class="mock-link" href="">About us</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Terms & conditions</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Terms & conditions #2</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Privacy regulations</a></li>
-                          </ul>
-                        </div>
-                      </div><!--
-                      --><div class="grid__item medium--one-third">
-                        <div class="pf-menu">
-                          <h2 class="mock-subheading">Connect</h2>
-                          <ul class="l-list">
-                            <li class="l-list__item"><a class="mock-link" href="">Contact page</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Facebook</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Twitter</a></li>
-                            <li class="l-list__item"><a class="mock-link" href="">Pressdoc</a></li>
-                          </ul>
+                <div class="l-tiles-list">
+                  <div class="grid">
+                    <div class="grid__item large--two-thirds">
+                      <div class="l-tiles-list__item">
+                        <div class="l-tiles-list">
+                          <div class="grid">
+                            <div class="grid__item medium--one-third">
+                              <div class="l-tiles-list__item">
+                                <div class="l-block-small">
+                                  <div class="pf-menu">
+                                    <h2 class="mock-subheading">Pages</h2>
+                                    <ul class="l-list">
+                                      <li class="l-list__item"><a class="mock-link" href="">Home</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Pricing</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Browse courses</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Support</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><!--
+                            --><div class="grid__item medium--one-third">
+                              <div class="l-tiles-list__item">
+                                <div class="l-block-small">
+                                  <div class="pf-menu">
+                                    <h2 class="mock-subheading">Studytube</h2>
+                                    <ul class="l-list">
+                                      <li class="l-list__item"><a class="mock-link" href="">About us</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Terms & conditions</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Terms & conditions #2</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Privacy regulations</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><!--
+                            --><div class="grid__item medium--one-third">
+                              <div class="l-tiles-list__item">
+                                <div class="l-block-small">
+                                  <div class="pf-menu">
+                                    <h2 class="mock-subheading">Connect</h2>
+                                    <ul class="l-list">
+                                      <li class="l-list__item"><a class="mock-link" href="">Contact page</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Facebook</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Twitter</a></li>
+                                      <li class="l-list__item"><a class="mock-link" href="">Pressdoc</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div><!--
-                  --><div class="grid__item large--one-third">
-                    <div class="grid">
-                      <div class="grid__item one-whole medium--one-half large--one-whole">
-                        <div class="pf-banner pf-banner--first">Become an instructor</div>
-                      </div><!--
-                      --><div class="grid__item one-whole medium--one-half large--one-whole">
-                        <div class="pf-banner pf-banner--first">Studytube for organizations</div>
+                    </div><!--
+                    --><div class="grid__item large--one-third">
+                      <div class="l-tiles-list__item">
+                        <div class="l-tiles-list l-tiles-list--small">
+                          <div class="grid">
+                            <div class="grid__item one-whole medium--one-half large--one-whole">
+                              <div class="l-tiles-list__item">
+                                <div class="banner banner--instructor banner--footer">Become an instructor</div>
+                              </div>
+                            </div><!--
+                            --><div class="grid__item one-whole medium--one-half large--one-whole">
+                              <div class="l-tiles-list__item">
+                                <div class="banner banner--corporate banner--footer">Studytube for organizations</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="page-footer__block is-center-aligned">
+              <div class="page-footer__block page-footer__block--small is-center-aligned">
                 <ul class="l-list l-list--inline">
                   <li class="l-list__item">© Studytube B.V.</li>
                   <li class="l-list__item">KVK: 5190901</li>

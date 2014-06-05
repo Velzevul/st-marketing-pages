@@ -1,0 +1,20 @@
+.page-footer {
+  background: #ddd;
+
+  &__block {
+    padding: $global-baseline * 4 0;
+    border-bottom: 1px solid $color-border;
+
+    &--small {
+      padding: $global-baseline * 2 0;
+    }
+  }
+}
+
+.pf-menu {
+  text-align: center;
+
+  @include breakpoint( map-get($breakpoint-expressions, medium) ) {
+    text-align: left;
+  }
+}

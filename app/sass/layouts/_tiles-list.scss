@@ -1,0 +1,24 @@
+/**
+ *  TILES LIST LAYOUT
+ *
+ *  manages vertical spacing between items in tiles list
+ *
+ *  .l-tiles-list
+ *    &__item
+ *    &--small
+ *
+ */
+.l-tiles-list {
+  margin-bottom: - $global-baseline * 4;
+
+  &__item {
+    margin-bottom: $global-baseline * 4;
+  }
+}
+  .l-tiles-list--small {
+    margin-bottom: - $global-baseline * 2;
+
+    .l-tiles-list__item {
+      margin-bottom: $global-baseline * 2;
+    }
+  }

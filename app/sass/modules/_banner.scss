@@ -1,0 +1,19 @@
+.banner {
+  display: block;
+  text-align: center;
+  border: 1px solid $color-border;
+}
+  .banner--instructor {
+    // ...
+  }
+  .banner--corporate {
+    // ...
+  }
+  .banner--header-dropdown {
+    padding: $global-baseline 0;
+    background: #DDDDDD;
+  }
+  .banner--footer {
+    padding: $global-baseline * 2 0;
+    background: white;
+  }
