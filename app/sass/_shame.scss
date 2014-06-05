@@ -4,3 +4,41 @@
  *  sandbox for various experiments and other stuff that should be refactored in the future
  *
  */
+.course-tiles {
+  margin-bottom: - $global-baseline * 4;
+
+  &__item {
+    display: block;
+    max-width: 370px;
+    height: 320px;
+    margin: 0 auto $global-baseline * 4 auto;
+
+    background: black;
+  }
+}
+
+.testimonials {
+  margin-bottom: - $global-baseline * 4;
+
+  &__item {
+    display: block;
+    height: 150px;
+    margin: 0 auto $global-baseline * 4 auto;
+
+    background: black;
+
+    @include breakpoint( map-get($breakpoint-expressions, large) ) {
+      height: 250px;
+    }
+  }
+}
+
+.press {
+  margin-bottom:  - $global-baseline * 4;
+
+  &__item {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto $global-baseline * 4 auto;
+  }
+}

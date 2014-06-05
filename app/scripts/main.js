@@ -1,2 +1,4 @@
-$('.acts-as-dropdown').dropdown();
-$('.acts-as-collapse').collapse();
+$(function(){
+  $('.acts-as-dropdown').dropdown();
+  $('.acts-as-collapse').collapse();
+});

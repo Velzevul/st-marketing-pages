@@ -124,7 +124,8 @@ $use-markup-fix:        true!default;
 $grid-breakpoints: (
     'small'  map-get($breakpoint-expressions, small),
     'medium' map-get($breakpoint-expressions, medium),
-    'large'  map-get($breakpoint-expressions, large)
+    'large'  map-get($breakpoint-expressions, large),
+    'xlarge'  map-get($breakpoint-expressions, xlarge)
 )!default;
 
 
@@ -138,9 +139,9 @@ $grid-breakpoints: (
  * Push and pull shall only be used if '$push' and/or '$pull' and '$responsive'
  * have been set to 'true'.
  */
-$breakpoint-has-widths: ('small', 'medium', 'large')!default;
-$breakpoint-has-push:   ('small', 'medium', 'large')!default;
-$breakpoint-has-pull:   ('small', 'medium', 'large')!default;
+$breakpoint-has-widths: ('small', 'medium', 'large', 'xlarge')!default;
+$breakpoint-has-push:   ('small', 'medium', 'large', 'xlarge')!default;
+$breakpoint-has-pull:   ('small', 'medium', 'large', 'xlarge')!default;
 
 
 /**

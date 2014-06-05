@@ -7,31 +7,34 @@
   &__content {
     display: inline-block;
     vertical-align: middle;
-    max-width: 99%;
+    width: 99%;
   }
 }
 
 .bgimg-landing-pitch {
   @extend .bgimg;
 
-  $height: (
-    small: $global-baseline * 30,
-    medium: $global-baseline * 40,
-    large: $global-baseline * 50
+  $heights: (
+    small: $global-baseline * 35,
+    medium: $global-baseline * 45,
   );
 
-  height: map-get($height, small);
-  background-image: url('//placehold.it/840x#{map-get($height, small)}');
+  height: map-get($heights, small);
+  background-image: url('//placehold.it/600x#{map-get($heights, small)}');
 
-  @include breakpoint('(min-width: #{map-get($breakpoints, medium)})') {
-
-    height: map-get($height, medium);
-    background-image: url('//placehold.it/1200x#{map-get($height, medium)}');
+  @include breakpoint( map-get($breakpoint-expressions, medium) ) {
+    background-image: url('//placehold.it/960x#{map-get($heights, small)}');
   }
 
-  @include breakpoint('(min-width: #{map-get($breakpoints, large)})') {
+  @include breakpoint( map-get($breakpoint-expressions, large) ) {
 
-    height: map-get($height, large);
-    background-image: url('//placehold.it/1400x#{map-get($height, large)}');
+    height: map-get($heights, medium);
+    background-image: url('//placehold.it/1200x#{map-get($heights, medium)}');
+  }
+
+  @include breakpoint( map-get($breakpoint-expressions, xlarge) ) {
+
+    height: map-get($heights, medium);
+    background-image: url('//placehold.it/1500x#{map-get($heights, medium)}');
   }
 }

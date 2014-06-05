@@ -8,171 +8,432 @@
     <script src="modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="page-header">
-      <div class="l-tricol">
-        <div class="l-tricol__mid">
-          <h1 class="page-header__title">Studytube</h1>
-        </div>
-
-        <div class="only-gt-medium">
-          <div class="l-tricol__left">
-            <ul class="l-list l-list--inline l-list--collapsed ph-menu">
-              <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Browse courses</a></li>
-              <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Pricing</a></li>
-              <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Become an instructor</a></li>
-            </ul>
+    <div class="page">
+      <div class="page-header">
+        <div class="l-tricol">
+          <div class="l-tricol__mid">
+            <h1 class="page-header__title">Studytube</h1>
           </div>
 
-          <div class="l-tricol__right">
-            <ul class="l-lsit l-list--inline l-list--collapsed ph-menu">
-              <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Manage</a></li>
-
-              <li class="l-list__item">
-                <div class="acts-as-dropdown">
-                  <button href="" class="ph-menu__item" data-dropdown-trigger>(current user)</button>
-
-                  <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
-                    <div class="mock-content">
-                      <h2>current user menu</h2>
-                      <ul>
-                        <li>avatar</li>
-                        <li>name</li>
-                        <li>email</li>
-                        <li>action: profile settings</li>
-                        <li>action: logout</li>
-                        <li>if has own academy
-                          <ul>
-                            <li>link: switch to studytube</li>
-                            <li>link: switch to own academy</li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="l-list__item">
-                <div class="acts-as-dropdown">
-                  <button href="" class="ph-menu__item" data-dropdown-trigger>(notifications)</button>
-
-                  <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
-                    <div class="mock-content">
-                      <h2>notifications list</h2>
-                      <ul>
-                        <li>if have new notifications
-                          <ul>
-                            <li>for each notification
-                              <ul>
-                                <li>notification text</li>
-                                <li>notification timestamp</li>
-                                <li>action: dismiss notification</li>
-                              </ul>
-                            </li>
-                            <li>action: dismiss all</li>
-                          </ul>
-                        </li>
-                        <li>else
-                          <ul>
-                            <li>no new notifications screen</li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="only-lt-medium">
-          <div class="acts-as-collapse">
+          <div class="only-gt-large">
             <div class="l-tricol__left">
               <ul class="l-list l-list--inline l-list--collapsed ph-menu">
-                <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(menu)</button></li>
+                <li class="l-list__item">
+                  <div class="acts-as-dropdown">
+                    <button class="ph-menu__item" data-dropdown-trigger>Browse courses</button>
+
+                    <div class="mock-box dropdown dropdown--wide dropdown--pivot-left" data-dropdown>
+                      vasa
+                    </div>
+                  </div>
+                </li>
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Pricing</a></li>
               </ul>
             </div>
 
-            <div class="mock-box l-tricol__after-left" data-collapse>
-              <div class="ph-menu-responsive">
-                <ul class="l-list">
-                  <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Browse courses</a></li>
-                  <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Pricing</a></li>
-                  <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Become an instructor</a></li>
-                  <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Manage</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="acts-as-collapse">
             <div class="l-tricol__right">
-              <ul class="l-list l-list--inline l-list--collapsed ph-menu">
-                <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(user + notifications count)</button></li>
+              <ul class="l-lsit l-list--inline l-list--collapsed ph-menu">
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Manage</a></li>
+
+                <li class="l-list__item">
+                  <div class="acts-as-dropdown">
+                    <button class="ph-menu__item" data-dropdown-trigger>(current user)</button>
+
+                    <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
+                      <div class="mock-content">
+                        <h2>current user menu</h2>
+                        <ul>
+                          <li>avatar</li>
+                          <li>name</li>
+                          <li>email</li>
+                          <li>action: profile settings</li>
+                          <li>action: logout</li>
+                          <li>if has own academy
+                            <ul>
+                              <li>link: switch to studytube</li>
+                              <li>link: switch to own academy</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="l-list__item">
+                  <div class="acts-as-dropdown">
+                    <button class="ph-menu__item" data-dropdown-trigger>(notifications)</button>
+
+                    <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
+                      <div class="mock-content">
+                        <h2>notifications list</h2>
+                        <ul>
+                          <li>if have new notifications
+                            <ul>
+                              <li>for each notification
+                                <ul>
+                                  <li>notification text</li>
+                                  <li>notification timestamp</li>
+                                  <li>action: dismiss notification</li>
+                                </ul>
+                              </li>
+                              <li>action: dismiss all</li>
+                            </ul>
+                          </li>
+                          <li>else
+                            <ul>
+                              <li>no new notifications screen</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
+          </div>
 
-            <div class="mock-box l-tricol__after-right" data-collapse>
-              <div class="mock-content">
-                <h2>current user menu</h2>
-                <ul>
-                  <li>avatar</li>
-                  <li>name</li>
-                  <li>email</li>
-                  <li>action: profile settings</li>
-                  <li>action: logout</li>
-                  <li>if has own academy
-                    <ul>
-                      <li>link: switch to studytube</li>
-                      <li>link: switch to own academy</li>
-                    </ul>
-                  </li>
+          <div class="only-lt-large">
+            <div class="acts-as-collapse">
+              <div class="l-tricol__left">
+                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(menu)</button></li>
                 </ul>
+              </div>
 
-                <h2>notifications list</h2>
-                <ul>
-                  <li>if have new notifications
-                    <ul>
-                      <li>for each notification
-                        <ul>
-                          <li>notification text</li>
-                          <li>notification timestamp</li>
-                          <li>action: dismiss notification</li>
-                        </ul>
-                      </li>
-                      <li>action: dismiss all</li>
-                    </ul>
-                  </li>
-                  <li>else
-                    <ul>
-                      <li>no new notifications screen</li>
-                    </ul>
-                  </li>
+              <div class="mock-box l-tricol__after-left" data-collapse>
+                <div class="ph-menu-responsive">
+                  <ul class="l-list">
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Browse courses</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Pricing</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Become an instructor</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Manage</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="acts-as-collapse">
+              <div class="l-tricol__right">
+                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(user + notifications count)</button></li>
+                </ul>
+              </div>
+
+              <div class="mock-box l-tricol__after-right" data-collapse>
+                <div class="mock-content">
+                  <h2>current user menu</h2>
+                  <ul>
+                    <li>avatar</li>
+                    <li>name</li>
+                    <li>email</li>
+                    <li>action: profile settings</li>
+                    <li>action: logout</li>
+                    <li>if has own academy
+                      <ul>
+                        <li>link: switch to studytube</li>
+                        <li>link: switch to own academy</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <h2>notifications list</h2>
+                  <ul>
+                    <li>if have new notifications
+                      <ul>
+                        <li>for each notification
+                          <ul>
+                            <li>notification text</li>
+                            <li>notification timestamp</li>
+                            <li>action: dismiss notification</li>
+                          </ul>
+                        </li>
+                        <li>action: dismiss all</li>
+                      </ul>
+                    </li>
+                    <li>else
+                      <ul>
+                        <li>no new notifications screen</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="bgimg-landing-pitch">
+          <div class="bgimg__content">
+            <div class="l-wrap">
+              <div class="grid">
+                <div class="grid__item  ten-twelfths push--one-twelfth
+                                        large--eight-twelfths push--large--two-twelfths">
+                  <div class="mock-content">
+                    <h1>Studytube</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, perferendis tenetur ipsa deleniti animi. Voluptatum, maxime aspernatur tempora odit deleniti ducimus soluta porro. Doloremque, molestias, sint nesciunt repellat natus soluta.</p>
+                    <button>Join studytube</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc-section">
+          <div class="l-wrap">
+            <div class="grid">
+              <div class="grid__item ten-twelfths push--one-twelfth">
+                <div class="l-block">
+                  <h1 class="pc-section__title">Featured courses</h1>
+                </div>
+
+                <div class="course-tiles">
+                  <div class="grid">
+                    <div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                      <div class="course-tiles__item">
+                        <div class="mock-content mock-content--inverse">
+                          <h2>Course tile</h2>
+                          <ul>
+                            <li>course image</li>
+                            <li>logo of training organization</li>
+                            <li>course name</li>
+                            <li>course instructor
+                                <ul>
+                                  <li>avatar</li>
+                                  <li>name</li>
+                                  <li>role</li>
+                                </ul>
+                            </li>
+                            <li>course stats
+                                <ul>
+                                  <li>course price</li>
+                                  <li># of students</li>
+                                  <li>reviews/stars</li>
+                                </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                      <div class="course-tiles__item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc-section">
+          <div class="l-wrap">
+            <div class="grid">
+              <div class="grid__item ten-twelfths push--one-twelfth">
+                <div class="l-block">
+                  <h1 class="pc-section__title">Featured courses</h1>
+                </div>
+
+                <div class="course-tiles">
+                  <div class="grid">
+                    <div class="grid__item medium--one-half large--one-third">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half large--one-third">
+                      <div class="course-tiles__item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc-section">
+          <div class="l-wrap">
+            <div class="grid">
+              <div class="grid__item ten-twelfths push--one-twelfth">
+                <div class="l-block">
+                  <h1 class="pc-section__title">Featured courses</h1>
+                </div>
+
+                <div class="course-tiles">
+                  <div class="grid">
+                    <div class="grid__item medium--one-half">
+                      <div class="course-tiles__item"></div>
+                    </div><!--
+                    --><div class="grid__item medium--one-half">
+                      <div class="course-tiles__item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc-section">
+          <div class="l-wrap">
+            <div class="grid">
+              <div class="grid__item ten-twelfths push--one-twelfth">
+                <div class="l-block">
+                  <h1 class="pc-section__title">Featured courses</h1>
+                </div>
+
+                <div class="course-tiles">
+                  <div class="grid">
+                    <div class="grid__item">
+                      <div class="course-tiles__item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc-section">
+          <div class="l-wrap">
+            <div class="grid">
+              <div class="grid__item ten-twelfths push--one-twelfth">
+                <div class="l-block">
+                  <h1 class="pc-section__title">Don't take our word for it</h1>
+                </div>
+
+                <div class="l-block">
+                  <div class="testimonials">
+                    <div class="grid">
+                      <div class="grid__item large--one-half">
+                        <div class="testimonials__item">
+                          <div class="mock-content mock-content--inverse">
+                            <h2>Client testimonial</h2>
+
+                            <ul>
+                              <li>avatar</li>
+                              <li>name</li>
+                              <li>position</li>
+                              <li>quotation (testimonial itself)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item large--one-half">
+                        <div class="testimonials__item"></div>
+                      </div><!--
+                      --><div class="grid__item large--one-half">
+                        <div class="testimonials__item"></div>
+                      </div><!--
+                      --><div class="grid__item large--one-half">
+                        <div class="testimonials__item"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="press">
+                  <div class="grid">
+                    <div class="grid__item one-half medium--one-quarter">
+                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                    </div><!--
+                    --><div class="grid__item one-half medium--one-quarter">
+                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                    </div><!--
+                    --><div class="grid__item one-half medium--one-quarter">
+                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                    </div><!--
+                    --><div class="grid__item one-half medium--one-quarter">
+                      <img src="//placehold.it/200x200" alt="" class="press__item">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <div class="l-wrap">
+          <div class="grid">
+            <div class="grid__item ten-twelfths push--one-twelfth">
+              <div class="page-footer__block">
+                <div class="grid">
+                  <div class="grid__item large--two-thirds">
+                    <div class="grid">
+                      <div class="grid__item medium--one-third">
+                        <div class="pf-menu">
+                          <h2 class="mock-subheading">Pages</h2>
+                          <ul class="l-list">
+                            <li class="l-list__item"><a class="mock-link" href="">Home</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Pricing</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Browse courses</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Support</a></li>
+                          </ul>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item medium--one-third">
+                        <div class="pf-menu">
+                          <h2 class="mock-subheading">Studytube</h2>
+                          <ul class="l-list">
+                            <li class="l-list__item"><a class="mock-link" href="">About us</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Terms & conditions</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Terms & conditions #2</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Privacy regulations</a></li>
+                          </ul>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item medium--one-third">
+                        <div class="pf-menu">
+                          <h2 class="mock-subheading">Connect</h2>
+                          <ul class="l-list">
+                            <li class="l-list__item"><a class="mock-link" href="">Contact page</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Facebook</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Twitter</a></li>
+                            <li class="l-list__item"><a class="mock-link" href="">Pressdoc</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--
+                  --><div class="grid__item large--one-third">
+                    <div class="grid">
+                      <div class="grid__item one-whole medium--one-half large--one-whole">
+                        <div class="pf-banner pf-banner--first">Become an instructor</div>
+                      </div><!--
+                      --><div class="grid__item one-whole medium--one-half large--one-whole">
+                        <div class="pf-banner pf-banner--first">Studytube for organizations</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-footer__block is-center-aligned">
+                <ul class="l-list l-list--inline">
+                  <li class="l-list__item">© Studytube B.V.</li>
+                  <li class="l-list__item">KVK: 5190901</li>
+                  <li class="l-list__item">BTW: 8232.14.333.B01</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="bgimg-landing-pitch">
-      <div class="bgimg__content">
-        <div class="grid">
-          <div class="grid__item ten-twelfths medium--eight-twelfths push--one-twelfth push--medium--two-twelfths">
-            <div class="mock-content">
-              <h1>Studytube</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minus, porro eaque ex iste tenetur perspiciatis amet corporis debitis fugit incidunt nihil architecto doloremque maiores praesentium! Cum fuga expedita laudantium?</p>
-              <button>Join studytube</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section">
-      <div class="mock-box"></div>
     </div>
 
     <script src="jquery/dist/jquery.js"></script>
