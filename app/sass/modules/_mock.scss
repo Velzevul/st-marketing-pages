@@ -1,0 +1,33 @@
+/**
+ *  MOCK MODULE
+ *
+ *  provides dummy objects styling for prototyping
+ *
+ */
+
+.mock-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.mock-button {
+  // ...
+}
+
+.mock-box {
+  border: 1px solid $color-border;
+  padding: $global-baseline * 2;
+}
+
+.mock-explanation {
+  // ...
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: $global-baseline*2;
+  }
+}

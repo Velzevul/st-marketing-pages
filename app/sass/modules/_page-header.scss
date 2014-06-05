@@ -1,0 +1,34 @@
+/**
+ *  PAGE HEADER MODULE
+ *
+ *  header for the layout with title and menus
+ *
+ *  .page-header
+ *    &__title
+ *    <>--  .ph-menu
+ *            &__item
+ *
+ */
+.page-header {
+  border-bottom: 1px solid $color-border;
+  border-top:    1px solid $color-border;
+
+  &__title {
+    line-height: $page-header-height - 2px;
+  }
+}
+
+.ph-menu {
+  // ...
+
+  &__item {
+    display: block;
+    padding: 0 $global-baseline;
+
+    line-height: $page-header-height - 2px;
+  }
+}
+
+.ph-menu--responsive {
+  margin-top: $page-header-height - 2px;
+}

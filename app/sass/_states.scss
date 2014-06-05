@@ -31,3 +31,17 @@
   font-size: $global-font-size;
   line-height: $global-line-height;
 }
+
+@each $bp-name, $bp-val in $breakpoints {
+  .only-gt-#{$bp-name} {
+    @include breakpoint( '(max-width: #{$bp-val})' ) {
+      display: none !important;
+    }
+  }
+
+  .only-lt-#{$bp-name} {
+    @include breakpoint( '(min-width: #{$bp-val})' ) {
+      display: none !important;
+    }
+  }
+}

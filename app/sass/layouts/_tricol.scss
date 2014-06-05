@@ -14,22 +14,16 @@
   position: relative;
 
   &__left {
-    float: left;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 0; left: 0;
   }
 
   &__right {
-    float: right;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 0; right: 0;
   }
 
   &__mid {
-    position: absolute;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-
     text-align: center;
   }
 }

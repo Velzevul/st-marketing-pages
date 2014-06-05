@@ -114,7 +114,9 @@
         'layouts/media',
         'layouts/block';
 
-// modules
+@import 'modules/page-header',
+        'modules/mock',
+        'modules/dropdown';
 
 @import 'states',
         'dev-grid',

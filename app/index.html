@@ -10,10 +10,161 @@
   <body>
     <div class="page-header">
       <div class="l-wrap">
-        header
+        <div class="l-tricol">
+          <div class="l-tricol__mid">
+            <h1 class="page-header__title">Studytube</h1>
+          </div>
+
+          <div class="only-gt-header-bp">
+            <div class="l-tricol__left">
+              <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Browse courses</a></li>
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Pricing</a></li>
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Become an instructor</a></li>
+              </ul>
+            </div>
+
+            <div class="l-tricol__right">
+              <ul class="l-lsit l-list--inline l-list--collapsed ph-menu">
+                <li class="l-list__item"><a href="" class="ph-menu__item mock-link">Manage</a></li>
+
+                <li class="l-list__item">
+                  <div class="acts-as-dropdown">
+                    <button href="" class="ph-menu__item" data-dropdown-trigger>(current user)</button>
+
+                    <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
+                      <div class="mock-explanation">
+                        <h1>current user menu</h1>
+                        <ul>
+                          <li>avatar</li>
+                          <li>name</li>
+                          <li>email</li>
+                          <li>action: profile settings</li>
+                          <li>action: logout</li>
+                          <li>if has own academy
+                            <ul>
+                              <li>link: switch to studytube</li>
+                              <li>link: switch to own academy</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="l-list__item">
+                  <div class="acts-as-dropdown">
+                    <button href="" class="ph-menu__item" data-dropdown-trigger>(notifications)</button>
+
+                    <div class="mock-box dropdown dropdown--pivot-right" data-dropdown>
+                      <div class="mock-explanation">
+                        <h1>notifications list</h1>
+                        <ul>
+                          <li>if have new notifications
+                            <ul>
+                              <li>for each notification
+                                <ul>
+                                  <li>notification text</li>
+                                  <li>notification timestamp</li>
+                                  <li>action: dismiss notification</li>
+                                </ul>
+                              </li>
+                              <li>action: dismiss all</li>
+                            </ul>
+                          </li>
+                          <li>else
+                            <ul>
+                              <li>no new notifications screen</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="only-lt-header-bp">
+            <div class="acts-as-collapse">
+              <div class="l-tricol__left">
+                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(menu)</button></li>
+                </ul>
+              </div>
+
+              <div class="mock-box l-tricol__after-left" data-collapse>
+                <div class="ph-menu-responsive">
+                  <ul class="l-list">
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Browse courses</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Pricing</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Become an instructor</a></li>
+                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Manage</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="acts-as-collapse">
+              <div class="l-tricol__right">
+                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(user + notifications count)</button></li>
+                </ul>
+              </div>
+
+              <div class="mock-box l-tricol__after-right" data-collapse>
+                <div class="mock-explanation">
+                  <h1>current user menu</h1>
+                  <ul>
+                    <li>avatar</li>
+                    <li>name</li>
+                    <li>email</li>
+                    <li>action: profile settings</li>
+                    <li>action: logout</li>
+                    <li>if has own academy
+                      <ul>
+                        <li>link: switch to studytube</li>
+                        <li>link: switch to own academy</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <h1>notifications list</h1>
+                  <ul>
+                    <li>if have new notifications
+                      <ul>
+                        <li>for each notification
+                          <ul>
+                            <li>notification text</li>
+                            <li>notification timestamp</li>
+                            <li>action: dismiss notification</li>
+                          </ul>
+                        </li>
+                        <li>action: dismiss all</li>
+                      </ul>
+                    </li>
+                    <li>else
+                      <ul>
+                        <li>no new notifications screen</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="dev-grid"></div>
+    <a href="mailto:volodymyr.dzyubak@gmail.com?bcc=volo@studytube.nl">vasa</a>
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="scripts/dropdown.jquery.js"></script>
+    <script src="scripts/collapse.jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- <div class="dev-grid"></div> -->
   </body>
 </html>

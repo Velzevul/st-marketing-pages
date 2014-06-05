@@ -3,7 +3,7 @@
 
 // typography
   $global-font-family: sans-serif;
-  $global-font-size: 16px;
+  $global-font-size: 14px;
   $global-line-height: $global-baseline * 2;
 
 // colors
@@ -17,8 +17,12 @@
   $color-dc-secondary: green;
 
 // layout
-  //max-width: (  size reserved for columns  ) + (size reserved for grid gutter) + (size reserved for grid padding)
-  $max-width:  ( ($global-baseline * 7) * 12 ) + ( ($global-baseline * 4) * 11 ) + (  ($global-baseline * 4) * 2  );
+  //max-width: (  size reserved for columns  ) + (size reserved for grid gutter)
+  $max-width:  ( ($global-baseline * 7) * 12 ) + ( ($global-baseline * 4) * 11 );
 
-// calculated breakpoint conditions
-  // ...
+  $page-header-height: $global-baseline * 5;
+
+// breakpoints
+  $breakpoints: (
+    header-bp: $global-baseline * 70
+  );
