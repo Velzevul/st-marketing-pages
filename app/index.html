@@ -8,7 +8,96 @@
     <script src="modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="page">
+    <div id="offscreen-box" class="l-offscreen">
+      <div class="only-lt-large">
+        <div id="offscreen-left-panel" class="l-offscreen__sidebar l-offscreen__sidebar--left">
+          <nav class="offscreen-panel">
+            <div class="l-block-small">
+              <div class="l-justified">
+                <div class="l-justified__item">
+                  <h1>Navigation</h1>
+                </div>
+
+                <div class="l-justified__item">
+                  <button href="" class="offscreen-close-button mock-button">X</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="op-menu">
+              <ul class="l-list">
+                <li class="l-list__item"><a href="" class="op-menu__item mock-link">Manage</a></li>
+                <li class="l-list__item"><a href="" class="op-menu__item mock-link">Browse courses</a></li>
+                <li class="l-list__item"><a href="" class="op-menu__item mock-link">Pricing</a></li>
+              </ul>
+            </div>
+
+            <div class="op-banners">
+              <ul class="l-list">
+                <li class="l-list__item"><a href="" class="op-menu__item banner banner--offscreen-panel">Become an instructor</a></li>
+                <li class="l-list__item"><a href="" class="op-menu__item banner banner--offscreen-panel">Studytube for organizations</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div id="offscreen-right-panel" class="l-offscreen__sidebar l-offscreen__sidebar--right">
+          <div class="offscreen-panel">
+            <div class="l-block-small">
+              <div class="l-justified">
+                <div class="l-justified__item">
+                  <h1>User menu</h1>
+                </div>
+
+                <div class="l-justified__item">
+                  <button href="" class="offscreen-close-button mock-button">X</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mock-content">
+              <h2>current user menu</h2>
+              <ul>
+                <li>avatar</li>
+                <li>name</li>
+                <li>email</li>
+                <li>action: profile settings</li>
+                <li>action: logout</li>
+                <li>if has own academy
+                  <ul>
+                    <li>link: switch to studytube</li>
+                    <li>link: switch to own academy</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h2>notifications list</h2>
+              <ul>
+                <li>if have new notifications
+                  <ul>
+                    <li>for each notification
+                      <ul>
+                        <li>notification text</li>
+                        <li>notification timestamp</li>
+                        <li>action: dismiss notification</li>
+                      </ul>
+                    </li>
+                    <li>action: dismiss all</li>
+                  </ul>
+                </li>
+                <li>else
+                  <ul>
+                    <li>no new notifications screen</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="offscreen-overlay" class="l-offscreen__overlay"></div>
+      </div>
+
       <div class="page-header">
         <div class="l-tricol">
           <div class="l-tricol__mid">
@@ -131,71 +220,16 @@
           </div>
 
           <div class="only-lt-large">
-            <div class="acts-as-collapse">
-              <div class="l-tricol__left">
-                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
-                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(menu)</button></li>
-                </ul>
-              </div>
-
-              <div class="mock-box l-tricol__after-left" data-collapse>
-                <div class="ph-menu-responsive">
-                  <ul class="l-list">
-                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Browse courses</a></li>
-                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Pricing</a></li>
-                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Become an instructor</a></li>
-                    <li class="l-list__item"><a href="" class="ph-menu-responsive__item mock-link">Manage</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="l-tricol__left">
+              <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                <li class="l-list__item"><button class="ph-menu__item" id="offscreen-left-trigger">(menu)</button></li>
+              </ul>
             </div>
 
-            <div class="acts-as-collapse">
-              <div class="l-tricol__right">
-                <ul class="l-list l-list--inline l-list--collapsed ph-menu">
-                  <li class="l-list__item"><button href="" class="ph-menu__item" data-collapse-trigger>(user + notifications count)</button></li>
-                </ul>
-              </div>
-
-              <div class="mock-box l-tricol__after-right" data-collapse>
-                <div class="mock-content">
-                  <h2>current user menu</h2>
-                  <ul>
-                    <li>avatar</li>
-                    <li>name</li>
-                    <li>email</li>
-                    <li>action: profile settings</li>
-                    <li>action: logout</li>
-                    <li>if has own academy
-                      <ul>
-                        <li>link: switch to studytube</li>
-                        <li>link: switch to own academy</li>
-                      </ul>
-                    </li>
-                  </ul>
-
-                  <h2>notifications list</h2>
-                  <ul>
-                    <li>if have new notifications
-                      <ul>
-                        <li>for each notification
-                          <ul>
-                            <li>notification text</li>
-                            <li>notification timestamp</li>
-                            <li>action: dismiss notification</li>
-                          </ul>
-                        </li>
-                        <li>action: dismiss all</li>
-                      </ul>
-                    </li>
-                    <li>else
-                      <ul>
-                        <li>no new notifications screen</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="l-tricol__right">
+              <ul class="l-list l-list--inline l-list--collapsed ph-menu">
+                <li class="l-list__item"><button class="ph-menu__item" id="offscreen-right-trigger">(user + notifications count)</button></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -227,57 +261,63 @@
                   <h1 class="pc-section__title">Featured courses</h1>
                 </div>
 
-                <div class="l-tiles-list">
-                  <div class="grid">
-                    <div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="l-tiles-list__item">
-                        <div class="course-tile">
-                          <div class="mock-content mock-content--inverse">
-                            <h2>Course tile</h2>
-                            <ul>
-                              <li>course image</li>
-                              <li>logo of training organization</li>
-                              <li>course name</li>
-                              <li>course instructor
-                                  <ul>
-                                    <li>avatar</li>
-                                    <li>name</li>
-                                    <li>role</li>
-                                  </ul>
-                              </li>
-                              <li>course stats
-                                  <ul>
-                                    <li>course price</li>
-                                    <li># of students</li>
-                                    <li>reviews/stars</li>
-                                  </ul>
-                              </li>
-                            </ul>
+                <div class="l-block">
+                  <div class="l-tiles-list">
+                    <div class="grid">
+                      <div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                        <div class="l-tiles-list__item">
+                          <div class="course-tile">
+                            <div class="mock-content mock-content--inverse">
+                              <h2>Course tile</h2>
+                              <ul>
+                                <li>course image</li>
+                                <li>logo of training organization</li>
+                                <li>course name</li>
+                                <li>course instructor
+                                    <ul>
+                                      <li>avatar</li>
+                                      <li>name</li>
+                                      <li>role</li>
+                                    </ul>
+                                </li>
+                                <li>course stats
+                                    <ul>
+                                      <li>course price</li>
+                                      <li># of students</li>
+                                      <li>reviews/stars</li>
+                                    </ul>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div><!--
-                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="l-tiles-list__item">
-                        <div class="course-tile"></div>
-                      </div>
-                    </div><!--
-                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="l-tiles-list__item">
-                        <div class="course-tile"></div>
-                      </div>
-                    </div><!--
-                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="l-tiles-list__item">
-                        <div class="course-tile"></div>
-                      </div>
-                    </div><!--
-                    --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
-                      <div class="l-tiles-list__item">
-                        <div class="course-tile"></div>
+                      </div><!--
+                      --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                        <div class="l-tiles-list__item">
+                          <div class="course-tile"></div>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                        <div class="l-tiles-list__item">
+                          <div class="course-tile"></div>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                        <div class="l-tiles-list__item">
+                          <div class="course-tile"></div>
+                        </div>
+                      </div><!--
+                      --><div class="grid__item medium--one-half large--one-third xlarge--one-quarter">
+                        <div class="l-tiles-list__item">
+                          <div class="course-tile"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div class="is-center-aligned">
+                  <button class="mock-button">Browse all courses</button>
                 </div>
               </div>
             </div>

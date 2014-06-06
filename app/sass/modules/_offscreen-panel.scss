@@ -1,0 +1,19 @@
+.offscreen-panel {
+  background: #ddd;
+  min-height: 100%;
+  padding: $global-baseline * 2;
+}
+
+.op-menu {
+  // ...
+
+  &__item {
+    // ...
+  }
+}
+
+.op-banners {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+}

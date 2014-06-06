@@ -114,7 +114,8 @@
         'layouts/tricol',
         'layouts/media',
         'layouts/block',
-        'layouts/tiles-list';
+        'layouts/tiles-list',
+        'layouts/offscreen';
 
 @import 'modules/page-header',
         'modules/page-content',
@@ -125,7 +126,8 @@
         'modules/banner',
         'modules/course-tile',
         'modules/academy-testimonial',
-        'modules/academy-socialproof-press';
+        'modules/academy-socialproof-press',
+        'modules/offscreen-panel';
 
 @import 'states',
         'dev-grid',

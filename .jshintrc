@@ -1,0 +1,14 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "quotmark": "single",
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "angular": true,
+    "window": true,
+    "moment": true
+  }
+}
