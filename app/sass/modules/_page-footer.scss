@@ -14,7 +14,7 @@
 .pf-menu {
   text-align: center;
 
-  @include breakpoint( map-get($breakpoint-expressions, medium) ) {
+  @include breakpoint( map-get($breakpoint-expressions, p4) ) {
     text-align: left;
   }
 }

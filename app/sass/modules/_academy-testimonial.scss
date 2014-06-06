@@ -5,7 +5,7 @@
 
   background: black;
 
-  @include breakpoint( map-get($breakpoint-expressions, large) ) {
+  @include breakpoint( map-get($breakpoint-expressions, p8) ) {
     height: 250px;
   }
 }

@@ -24,15 +24,23 @@
 
 // breakpoints
   $breakpoints: (
-    small: $global-baseline * 30,
-    medium: $global-baseline * 50,
-    large: $global-baseline * 80,
-    xlarge: $global-baseline * 100
+    p0:     $global-baseline * 30,  // 360px
+    p2:     $global-baseline * 40,  // 480px
+    p4:     $global-baseline * 55,  // 660px
+    p6:     $global-baseline * 70,  // 840px
+    p8:     $global-baseline * 80,  // 960px
+    p10:    $global-baseline * 95,  // 1140px
+    p11:    $global-baseline * 100, // 1200px
+    p12:    $global-baseline * 110  // 1320px
   );
 
   $breakpoint-expressions: (
-    small:  '(min-width: #{map-get($breakpoints, small)} )',
-    medium: '(min-width: #{map-get($breakpoints, medium)} )',
-    large:  '(min-width: #{map-get($breakpoints, large)} )',
-    xlarge: '(min-width: #{map-get($breakpoints, xlarge)} )'
+    p0:  '(min-width: #{map-get($breakpoints, p0)} )',
+    p2:  '(min-width: #{map-get($breakpoints, p2)} )',
+    p4:  '(min-width: #{map-get($breakpoints, p4)} )',
+    p6:  '(min-width: #{map-get($breakpoints, p6)} )',
+    p8:  '(min-width: #{map-get($breakpoints, p8)} )',
+    p10: '(min-width: #{map-get($breakpoints, p10)} )',
+    p11: '(min-width: #{map-get($breakpoints, p11)} )',
+    p12: '(min-width: #{map-get($breakpoints, p12)} )'
   );

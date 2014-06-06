@@ -34,7 +34,7 @@
 
 @each $bp-name, $bp-val in $breakpoints {
   .only-gt-#{$bp-name} {
-    @include breakpoint( '(max-width: #{$bp-val})' ) {
+    @include breakpoint( '(max-width: #{$bp-val - 1px})' ) {
       display: none !important;
     }
   }

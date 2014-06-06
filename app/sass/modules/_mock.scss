@@ -16,10 +16,21 @@
   color: white;
 }
 
+.mock-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: $global-baseline;
+}
+
 .mock-subheading {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: $global-baseline;
+}
+
+.mock-selectbox {
+  display: block;
+  width: 100%;
 }
 
 .mock-box {
@@ -30,9 +41,7 @@
   // ...
 
   h1 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: $global-baseline;
+    @extend .mock-heading;
   }
 
   h2 {
