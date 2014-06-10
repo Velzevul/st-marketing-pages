@@ -1,0 +1,67 @@
+.instructor-profile {
+  // ...
+
+  &__side {
+    text-align: center;
+  }
+
+  &__body {
+    // ...
+  }
+}
+
+.ip-avatar {
+  display: inline-block;
+  max-width: $global-baseline * 15;
+  position: relative;
+
+  @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+    max-width: $global-baseline * 20;
+  }
+
+  &__main {
+    display: block;
+    width: 100%;
+  }
+
+  &__secondary {
+    position: absolute;
+    bottom: $global-baseline; right: $global-baseline;
+    max-width: $global-baseline * 7;
+    border: 1px solid $color-border;
+
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      max-width: $global-baseline * 10;
+    }
+  }
+}
+
+
+.ip-block {
+  // ...
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__content {
+    // ...
+  }
+}
+  .ip-block--lead {
+    text-align: center;
+
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      text-align: left;
+    }
+
+    .ip-block__title {
+      font-size: 28px;
+      line-height: $global-baseline * 4;
+    }
+
+    .ip-block__content {
+      // ...
+    }
+  }

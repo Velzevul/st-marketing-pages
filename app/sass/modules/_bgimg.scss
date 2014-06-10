@@ -39,7 +39,6 @@
   }
 }
 
-
 .bgimg-browse-banner {
   @extend .bgimg;
 
@@ -63,4 +62,13 @@
     height: $height;
     background-image: url('//placehold.it/1500x#{$height}');
   }
+}
+
+.bgimg-organization-profile {
+  @extend .bgimg;
+
+  $height: $global-baseline * 20;
+
+  height: $height;
+  background-image: url('//placehold.it/1200x#{$height}');
 }

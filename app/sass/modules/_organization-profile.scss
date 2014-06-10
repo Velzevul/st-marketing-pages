@@ -1,0 +1,65 @@
+.organization-profile {
+  // ...
+
+  &__side {
+    margin-top: - $global-baseline * 10;
+    text-align: center;
+  }
+
+  &__body {
+    // ...
+  }
+}
+
+.orgp-avatar {
+  display: inline-block;
+  max-width: 100%;
+  border: $global-baseline solid white;
+}
+
+.orgp-cover {
+  @extend %center;
+
+  height: $global-baseline * 25;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  &__video {
+    display: inline-block;
+    vertical-align: middle;
+
+    background: white;
+  }
+}
+
+.orgp-block {
+  // ...
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__content {
+    // ...
+  }
+}
+  .orgp-block--lead {
+    text-align: center;
+
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      text-align: left;
+    }
+
+    .orgp-block__title {
+      font-size: 28px;
+      line-height: $global-baseline * 4;
+    }
+
+    .orgp-block__content {
+      // ...
+    }
+  }

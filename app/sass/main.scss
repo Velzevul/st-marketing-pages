@@ -115,7 +115,8 @@
         'layouts/media',
         'layouts/block',
         'layouts/tiles-list',
-        'layouts/offscreen';
+        'layouts/offscreen',
+        'layouts/flyout';
 
 @import 'modules/page-header',
         'modules/page-content',
@@ -128,7 +129,11 @@
         'modules/user-testimonial',
         'modules/academy-socialproof-press',
         'modules/instructor-reference',
-        'modules/offscreen-panel';
+        'modules/offscreen-panel',
+        'modules/flyout-video',
+        'modules/instructor-profile',
+        'modules/organization-profile',
+        'modules/instructor-tile';
 
 @import 'states',
         'dev-grid',
