@@ -2,10 +2,6 @@
  *  GLOBAL STATE STYLES & UTILITIES
  *
  */
-.is-left-aligned { text-align: left !important; }
-.is-right-aligned { text-align: right !important; }
-.is-center-aligned { text-align: center !important; }
-
 .is-top-aligned { vertical-align: top !important; }
 .is-middle-aligned { vertical-align: middle !important; }
 .is-bottom-aligned { vertical-align: bottom !important; }
@@ -33,6 +29,10 @@
   line-height: $global-line-height;
 }
 
+.is-left-aligned { text-align: left !important; }
+.is-right-aligned { text-align: right !important; }
+.is-center-aligned { text-align: center !important; }
+
 @each $bp-name, $bp-val in $breakpoints {
   .only-gt-#{$bp-name} {
     @include breakpoint( '(max-width: #{$bp-val - 1px})' ) {
@@ -43,6 +43,42 @@
   .only-lt-#{$bp-name} {
     @include breakpoint( '(min-width: #{$bp-val})' ) {
       display: none !important;
+    }
+  }
+
+  .lt-#{$bp-name}-left-aligned {
+    @include breakpoint( '(max-width: #{$bp-val})' ) {
+      text-align: left;
+    }
+  }
+
+  .lt-#{$bp-name}-right-aligned {
+    @include breakpoint( '(max-width: #{$bp-val})' ) {
+      text-align: right;
+    }
+  }
+
+  .lt-#{$bp-name}-center-aligned {
+    @include breakpoint( '(max-width: #{$bp-val})' ) {
+      text-align: center;
+    }
+  }
+
+  .gt-#{$bp-name}-left-aligned {
+    @include breakpoint( '(min-width: #{$bp-val})' ) {
+      text-align: left;
+    }
+  }
+
+  .gt-#{$bp-name}-right-aligned {
+    @include breakpoint( '(min-width: #{$bp-val - 1px})' ) {
+      text-align: right;
+    }
+  }
+
+  .gt-#{$bp-name}-center-aligned {
+    @include breakpoint( '(min-width: #{$bp-val - 1px})' ) {
+      text-align: center;
     }
   }
 }

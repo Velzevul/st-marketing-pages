@@ -1,0 +1,17 @@
+.checklist {
+  margin-left: $global-baseline * 2;
+  list-style-type: none !important;
+
+  &__item {
+    &:before {
+      content: '\2713';
+      float: left;
+      width: $global-baseline * 3/2;
+      margin-left: - $global-baseline * 3/2
+    }
+
+    &--negative:before {
+      content: '\2717';
+    }
+  }
+}

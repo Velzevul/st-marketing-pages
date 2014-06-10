@@ -96,15 +96,16 @@
 
 @import 'compass';
 
+@import 'configs/variables',
+        'configs/resets';
+
 @import 'utilities/clearfix-p',
         'utilities/center-p',
+        'utilities/content-formatting-p',
         'utilities/arrow-m',
         'utilities/breakpoint-m',
         'utilities/em-f',
         'utilities/nounit-f';
-
-@import 'configs/variables',
-        'configs/resets';
 
 @import 'layouts/wrap',
         'layouts/grid',
@@ -133,7 +134,11 @@
         'modules/flyout-video',
         'modules/instructor-profile',
         'modules/organization-profile',
-        'modules/instructor-tile';
+        'modules/instructor-tile',
+        'modules/course-info',
+        'modules/course-about',
+        'modules/checklist',
+        'modules/responsive-embed';
 
 @import 'states',
         'dev-grid',
