@@ -1,0 +1,116 @@
+/**
+ *  BUTTONS MODULE
+ *
+ *  styling for buttons used in the project
+ *
+ *  .button
+ *    &--primary
+ *    &--secondary
+ *    &--secondary-alt
+ *    &--tertiary
+ *    &--tertiary-alt
+ *    &--rounded
+ *    &--full
+ *
+ */
+.button {
+  display: inline-block;
+  height: $global-baseline * 4;
+  padding:  0
+            $global-baseline * 4;
+
+  font-size: 14px;
+  line-height: $global-baseline * 4;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+}
+  .button--primary {
+    color: #E4FBF6;
+
+    background: $color-dc-primary;
+  }
+  .button--secondary {
+    color: white;
+
+    background: $color-dc-secondary;
+  }
+  .button--secondary-alt {
+    font-weight: 600;
+
+    color: $color-tx-muted;
+
+    background: #F4F4F4;
+  }
+  .button--tertiary {
+    padding:  0
+              ($global-baseline * 4 - 4px);
+
+    font-weight: 600;
+    line-height: $global-baseline * 4 - 4px;
+
+    color: $color-dc-secondary;
+
+    border: 2px solid $color-dc-secondary;
+  }
+  .button--tertiary-alt {
+    padding:  0
+              ($global-baseline * 4 - 4px);
+
+    font-weight: 600;
+    line-height: $global-baseline * 4 - 4px;
+
+    color: $color-dc-primary;
+
+    border: 2px solid $color-dc-primary; 
+  }
+  .button--rounded {
+    border-radius: 50px;
+  }
+  .button--full {
+    width: 100%;
+  }
+
+
+/**
+ *  SOCIAL BUTTONS
+ *
+ *  for twitter, facebook etc login and signup
+ *
+ *  .button-social
+ *    &--facebook
+ *    &--twitter
+ *    &--googleplus
+ *    &--linkedin
+ *
+ */
+$button-social-facebook-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-312%20390%2036%2036%22%20enable-background%3D%22new%20-312%20390%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Modals%22%20transform%3D%22translate(-1126.000000%2C%20-1094.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Sign-Up-Modals%22%20transform%3D%22translate(69.000000%2C%20734.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Sign-Up-Full%22%20transform%3D%22translate(804.000000%2C%20159.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(20.000000%2C%20108.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22Facebook-Button%22%20transform%3D%22translate(170.000000%2C%2080.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23D4DCED%22%20d%3D%22M-220.116%2C409h-21.768c-0.616%2C0-1.116%2C0.5-1.116%2C1.116v21.768%20%20%20%20%20%20%20c0%2C0.616%2C0.5%2C1.116%2C1.116%2C1.116h11.719v-9.33h-3.198v-3.594h3.198v-2.754c0%2C0-0.17-4.788%2C4.481-4.686%20%20%20%20%20%20%20c1.287%2C0.027%2C2.27%2C0.053%2C3.019%2C0.076v3.362h-1.864c0%2C0-1.913-0.163-1.913%2C1.586v2.415h3.573l-0.446%2C3.594h-3.127V433h6.326%20%20%20%20%20%20%20c0.616%2C0%2C1.116-0.5%2C1.116-1.116v-21.768C-219%2C409.5-219.5%2C409-220.116%2C409%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+$button-social-twitter-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-312%20388%2036%2036%22%20enable-background%3D%22new%20-312%20388%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Modals%22%20transform%3D%22translate(-956.000000%2C%20-1016.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Sign-Up-Modals%22%20transform%3D%22translate(69.000000%2C%20734.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Sign-Up-Full%22%20transform%3D%22translate(804.000000%2C%20159.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(20.000000%2C%20108.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22Twitter-Button%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23E0F2FF%22%20d%3D%22M-219%2C413.436c-0.883%2C0.398-1.832%2C0.668-2.828%2C0.789%20%20%20%20%20%20%20c1.017-0.619%2C1.797-1.601%2C2.165-2.77c-0.951%2C0.574-2.005%2C0.99-3.127%2C1.215c-0.897-0.973-2.178-1.58-3.594-1.58%20%20%20%20%20%20%20c-2.72%2C0-4.924%2C2.24-4.924%2C5.004c0%2C0.393%2C0.043%2C0.773%2C0.127%2C1.141c-4.092-0.209-7.721-2.201-10.149-5.229%20%20%20%20%20%20%20c-0.424%2C0.738-0.667%2C1.599-0.667%2C2.516c0%2C1.736%2C0.869%2C3.268%2C2.19%2C4.165c-0.807-0.026-1.566-0.251-2.23-0.626%20%20%20%20%20%20%20c0%2C0.021%2C0%2C0.042%2C0%2C0.062c0%2C2.425%2C1.697%2C4.447%2C3.95%2C4.907c-0.413%2C0.114-0.848%2C0.175-1.297%2C0.175%20%20%20%20%20%20%20c-0.317%2C0-0.626-0.031-0.927-0.089c0.627%2C1.987%2C2.445%2C3.435%2C4.6%2C3.475c-1.685%2C1.343-3.808%2C2.142-6.115%2C2.142%20%20%20%20%20%20%20c-0.397%2C0-0.79-0.023-1.175-0.069c2.179%2C1.42%2C4.767%2C2.248%2C7.548%2C2.248c9.057%2C0%2C14.01-7.624%2C14.01-14.237%20%20%20%20%20%20%20c0-0.217-0.005-0.433-0.015-0.647C-220.494%2C415.32-219.66%2C414.439-219%2C413.436%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+$button-social-googleplus-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-311.5%20390.5%2036%2036%22%20enable-background%3D%22new%20-311.5%20390.5%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Modals%22%20transform%3D%22translate(-955.000000%2C%20-1093.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Sign-Up-Modals%22%20transform%3D%22translate(69.000000%2C%20734.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Sign-Up-Full%22%20transform%3D%22translate(804.000000%2C%20159.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(20.000000%2C%20108.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22Google-Button%22%20transform%3D%22translate(0.000000%2C%2080.000000)%22%3E%20%20%20%20%20%20%3Cg%20id%3D%22Imported-Layers%22%20transform%3D%22translate(63.000000%2C%2013.000000)%22%3E%20%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-1%22%20fill%3D%22%23F2D7D4%22%20d%3D%22M-298.747%2C406.359c0.747-0.747%2C0.809-1.786%2C0.809-2.37c0-2.337-1.395-5.974-4.088-5.974%20%20%20%20%20%20%20%20c-0.846%2C0-1.752%2C0.423-2.273%2C1.072c-0.551%2C0.684-0.714%2C1.559-0.714%2C2.402c0%2C2.174%2C1.265%2C5.778%2C4.058%2C5.778%20%20%20%20%20%20%20%20C-300.145%2C407.269-299.269%2C406.879-298.747%2C406.359%22%2F%3E%20%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-2%22%20fill%3D%22%23F2D7D4%22%20d%3D%22M-301.769%2C409.379c0-0.553%2C0.165-0.877%2C0.324-1.267%20%20%20%20%20%20%20%20c-0.355%2C0.032-0.712%2C0.065-1.037%2C0.065c-1.666%2C0-2.979-0.604-3.893-1.512v6.086c1.923-0.93%2C4.265-1.078%2C5.581-1.166%20%20%20%20%20%20%20%20C-301.249%2C411.002-301.769%2C410.383-301.769%2C409.379%22%2F%3E%20%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-3%22%20fill%3D%22%23F2D7D4%22%20d%3D%22M-282.626%2C401.744v-4.693c0-0.787-0.637-1.425-1.425-1.425h-20.898%20%20%20%20%20%20%20%20c-0.787%2C0-1.425%2C0.638-1.425%2C1.425v2.259c0.179-0.2%2C0.369-0.397%2C0.582-0.579c1.852-1.525%2C4.059-1.785%2C5.812-1.785h6.686%20%20%20%20%20%20%20%20l-2.077%2C1.169h-2.012c0.746%2C0.616%2C2.304%2C1.914%2C2.304%2C4.382c0%2C2.402-1.364%2C3.539-2.726%2C4.609%20%20%20%20%20%20%20%20c-0.422%2C0.423-0.908%2C0.877-0.908%2C1.592c0%2C0.713%2C0.485%2C1.104%2C0.841%2C1.395l1.17%2C0.91c1.428%2C1.2%2C2.727%2C2.305%2C2.727%2C4.543%20%20%20%20%20%20%20%20c0%2C1.364-0.594%2C2.731-1.743%2C3.83h11.668c0.788%2C0%2C1.425-0.639%2C1.425-1.426v-14.972h-4.93v4.931h-1.232v-4.931h-4.933v-1.233%20%20%20%20%20%20%20%20h4.933v-4.932h1.232v4.932H-282.626%22%2F%3E%20%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-4%22%20fill%3D%22%23F2D7D4%22%20d%3D%22M-296.152%2C416.812c0-1.655-1.07-2.532-3.537-4.285c-0.261-0.033-0.423-0.033-0.746-0.033%20%20%20%20%20%20%20%20c-0.294%2C0-2.046%2C0.065-3.41%2C0.52c-0.56%2C0.203-1.951%2C0.729-2.53%2C2.054v2.579c0.293%2C0.691%2C0.829%2C1.279%2C1.565%2C1.729h7.361%20%20%20%20%20%20%20%20C-296.596%2C418.747-296.152%2C417.85-296.152%2C416.812%22%2F%3E%20%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+$button-social-linkedin-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-312%20390%2036%2036%22%20enable-background%3D%22new%20-312%20390%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Modals%22%20transform%3D%22translate(-1127.000000%2C%20-1014.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Sign-Up-Modals%22%20transform%3D%22translate(69.000000%2C%20734.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Sign-Up-Full%22%20transform%3D%22translate(804.000000%2C%20159.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(20.000000%2C%20108.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22Linked-Button%22%20transform%3D%22translate(170.000000%2C%200.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23CCE9FA%22%20d%3D%22M-219.773%2C409h-20.453c-0.979%2C0-1.773%2C0.77-1.773%2C1.72v20.562%20%20%20%20%20%20%20c0%2C0.949%2C0.794%2C1.719%2C1.773%2C1.719h20.453c0.979%2C0%2C1.773-0.77%2C1.773-1.719V410.72C-218%2C409.77-218.795%2C409-219.773%2C409%20%20%20%20%20%20%20L-219.773%2C409z%20M-238%2C418.037h3.393v10.731H-238V418.037z%20M-236.338%2C416.697c-1.197%2C0-1.971-0.824-1.971-1.854%20%20%20%20%20%20%20c0-1.053%2C0.798-1.854%2C2.018-1.854c1.221%2C0%2C1.972%2C0.801%2C1.995%2C1.854c0%2C1.029-0.774%2C1.854-2.018%2C1.854H-236.338z%20%20%20%20%20%20%20%20M-221.979%2C428.895h-3.567v-5.741c0-1.442-0.516-2.427-1.807-2.427c-0.985%2C0-1.572%2C0.664-1.83%2C1.305%20%20%20%20%20%20%20c-0.094%2C0.229-0.117%2C0.55-0.117%2C0.87v5.993h-3.567c0%2C0%2C0.046-9.725%2C0-10.731h3.567v1.52c0.475-0.731%2C1.321-1.771%2C3.215-1.771%20%20%20%20%20%20%20c2.347%2C0%2C4.106%2C1.534%2C4.106%2C4.83V428.895L-221.979%2C428.895z%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.button-social {
+  @extend .button;
+  @extend .button--full;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+  .button-social--facebook {
+    background-color: $color-social-facebook;
+    background-image: $button-social-facebook-icon;
+  }
+  .button-social--twitter {
+    background-color: $color-social-twitter;
+    background-image: $button-social-twitter-icon;
+  }
+  .button-social--googleplus {
+    background-color: $color-social-googleplus;
+    background-image: $button-social-googleplus-icon;
+  }
+  .button-social--linkedin {
+    background-color: $color-social-linkedin;
+    background-image: $button-social-linkedin-icon;
+  }

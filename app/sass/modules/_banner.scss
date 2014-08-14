@@ -1,19 +1,40 @@
+/**
+ *  BANNER MODULE
+ *
+ *  styling for "become an instructor" and "studytube for organizaiton" banners
+ *
+ *  .banner 
+ *    &__icon
+ *    &--alt
+ *    &--popover
+ *
+ */
 .banner {
+  position: relative;
   display: block;
-  text-align: center;
-  border: 1px solid $color-border;
+
+  font-size: 14px;
+
+  border-radius: 4px;
+
+  &__icon {
+    position: absolute;
+    top: 50%; left: $global-baseline * 2;
+    margin-top: -$global-baseline; // height of the icon
+  }
 }
-  .banner--instructor {
-    // ...
-  }
-  .banner--corporate {
-    // ...
-  }
-  .banner--offscreen-panel {
-    padding: $global-baseline 0;
-    background: white;
-  }
-  .banner--footer {
-    padding: $global-baseline * 2 0;
-    background: white;
+  .banner--alt {
+    padding:  ($global-baseline * 2 - 2px)
+              $global-baseline * 2
+              ($global-baseline * 2 - 2px)
+              $global-baseline * 4;
+
+    font-family: $global-font-family-soft;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+    border: 2px solid #5A5A5A;
   }

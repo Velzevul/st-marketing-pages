@@ -1,0 +1,54 @@
+/**
+ *  BREADCRUMBS MODULE
+ *
+ *  styling for breadcrumbs
+ *
+ *  .breadcrumbs
+ *    &__item
+ *      &--last
+ *
+ */
+.breadcrumbs {
+  display: inline-block;
+  padding:  $global-baseline/2
+            $global-baseline*6;
+
+  font-size: $global-font-family-soft;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: $global-baseline * 2;
+
+  text-transform: uppercase;
+  
+  color: #C0BFBF;
+  background: #F4F4F4;
+  border-radius: 50px;
+
+  &__item {
+    padding:  0
+              $global-baseline / 2;
+
+    &:hover {
+      color: $color-tx-muted;
+    }
+
+    &:after {
+      content: '\002F';
+      display: inline-block;
+      margin-left: $global-baseline;
+    }
+  }
+    &__item--last:after {
+      content: none;
+    }
+}
+  .breadcrumbs--alt {
+    background: rgba(#F4F4F4, 0.1);
+
+    .breadcrumbs__item {
+      color: rgba(white, 0.5);
+    }
+    .breadcrumbs__item:hover {
+      color: white;
+    }
+  }

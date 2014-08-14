@@ -9,6 +9,8 @@
 .is-floated-right { float: right; }
 .is-floated-left { float: left; }
 
+.is-muted { color: $color-tx-muted; }
+
 .is-unstyled {
   text-decoration: none;
   border: none;

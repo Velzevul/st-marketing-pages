@@ -40,10 +40,11 @@ textarea {
   resize: vertical;
 }
 
-input, textarea {
+input, textarea, select {
+  @include appearance(none);
   font: inherit;
   line-height: inherit;
-  color: inherit;
+  background-color: transparent;
 
   &:focus {
     outline: none;
@@ -51,6 +52,7 @@ input, textarea {
 }
 
 button {
+  display: block;
   margin: 0;
   padding: 0;
 

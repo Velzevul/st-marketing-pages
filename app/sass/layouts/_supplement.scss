@@ -1,0 +1,30 @@
+/**
+ *  SUPPLEMENT LAYOUT
+ *
+ *  positioning of supplementary information on the top right 
+ *  from the main information, e.g. header + link on expert page
+ *
+ *  .l-supplement
+ *    &__main
+ *    &__info
+ *
+ */
+.l-supplement {
+  position: relative;
+  display: inline-block;
+
+  .l-supplement__main {
+    // ...
+  }
+
+  .l-supplement__info {
+    display: block;
+
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      padding-left: $global-baseline;
+    }
+  }
+}

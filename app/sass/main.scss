@@ -1,7 +1,7 @@
 /**
  *
- *      < MOCSS >
- *  Module Oriented CSS
+ *    < RELCSS >
+ *  Relational CSS
  *
  *
  *  FILE STRUCTURE
@@ -9,12 +9,13 @@
  *
  *    utilities/  : functions (-f), mixins (-m), partials (-p)
  *    configs/    : global resets, global variables
- *    layouts/    : define how modules are positioned relative to each other and the page
- *    modules/    : application modules
+ *    layouts/    : positioning patterns (how modules are positioned relative to each other and the page)
+ *    modules/    : module styling
  *    vendor/     : overwrites of 3rd-party styles
  *
- *    states.scss : global state styles
- *    shame.scss  : quick-n-dirty solutions, should be refactored
+ *    states.scss   : global state styles
+ *    shame.scss    : quick-n-dirty solutions, everything that should be refactored
+ *    dev-grid.scss : baseline grid overlay for development
  *
  *
  *  NAMING CONVENTIONS
@@ -110,34 +111,41 @@
 @import 'layouts/wrap',
         'layouts/grid',
         'layouts/list',
+        'layouts/stacked',
         'layouts/split',
         'layouts/justified',
         'layouts/tricol',
         'layouts/media',
         'layouts/block',
-        'layouts/tiles-list',
         'layouts/offscreen',
-        'layouts/flyout';
+        'layouts/supplement';
 
 @import 'modules/page-header',
         'modules/page-content',
         'modules/page-footer',
-        'modules/mock',
-        'modules/dropdown',
-        'modules/bgimg',
+        'modules/breadcrumbs',
         'modules/banner',
         'modules/course-tile',
-        'modules/user-testimonial',
-        'modules/academy-socialproof-press',
-        'modules/instructor-reference',
-        'modules/offscreen-panel',
-        'modules/flyout-video',
-        'modules/instructor-profile',
-        'modules/organization-profile',
+        'modules/testimonial',
+        'modules/profile',
+        'modules/content-area',
+        'modules/publication',
+        'modules/tag',
+        'modules/icons',
+        'modules/buttons',
+        'modules/inputs',
+        'modules/forms',
+        'modules/input-decorator',
+        'modules/nav',
         'modules/instructor-tile',
-        'modules/course-info',
-        'modules/course-about',
-        'modules/checklist',
+        'modules/header-popover',
+        'modules/offscreen-panel',
+        'modules/user-dashboard',
+        'modules/modal',
+        'modules/solo-form',
+        'modules/course',
+        
+        'modules/organization-profile',
         'modules/responsive-embed';
 
 @import 'states',

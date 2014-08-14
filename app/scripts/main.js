@@ -44,19 +44,4 @@ $(function(){
       offscreenOverlay.on('click', closeOffscreenPanels);
     },0);
   }
-
-  var flyoutTrigger = $('#flyout-trigger'),
-      flyoutCloseLink = $('#flyout-close-link'),
-      flyoutBox = $('#flyout-box');
-
-  flyoutTrigger.on('click', openFlyout);
-  flyoutCloseLink.on('click', closeFlyout);
-
-  function openFlyout(){
-    flyoutBox.addClass('l-flyout--open');
-  }
-
-  function closeFlyout(){
-    flyoutBox.removeClass('l-flyout--open');
-  }
 });

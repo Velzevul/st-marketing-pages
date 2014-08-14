@@ -1,0 +1,351 @@
+/**
+ *  ICONS MODULE (SVG)
+ *
+ *  styling for svg-versions of icons on the website
+ *
+ *  .icon
+ *
+ */
+.icon {
+  display: block;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/**
+ *  PLAY ICON
+ *
+ *  icon for play video button on expert/course/organization pages
+ *
+ *  .icon
+ *  <---  .icon-play
+ *
+ */
+.icon-play {
+  @extend .icon;
+  
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-309.5%20394%2024%2024%22%20enable-background%3D%22new%20-309.5%20394%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EPlay%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-342.000000%2C%20-250.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Play-Video%22%20transform%3D%22translate(180.000000%2C%200.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Play%22%20fill%3D%22%2331BB9B%22%20d%3D%22M-271.733%2C429.925l10.327%2C6.075l-10.327%2C6.075V429.925%20M-274%2C426v20l17-10L-274%2C426%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  SOCIAL FACEBOOK ICON
+ *
+ *  icon for expert/organization contacts
+ *  
+ *  .icon
+ *  <---  .icon-social-facebook
+ *
+ */
+.icon-social-facebook {
+  @extend .icon;
+
+  width: $global-baseline * 3;
+  height: $global-baseline * 3;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-305%20397%2036%2036%22%20enable-background%3D%22new%20-305%20397%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EFacebook%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-352.000000%2C%20-503.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Facebook%22%20transform%3D%22translate(222.000000%2C%200.000000)%22%3E%20%20%20%20%20%3Ccircle%20id%3D%22Base%22%20fill%3D%22none%22%20stroke%3D%22%233B5998%22%20stroke-width%3D%222%22%20cx%3D%22-287%22%20cy%3D%22415%22%20r%3D%2217%22%2F%3E%20%20%20%20%20%3Cpath%20id%3D%22facebook%22%20fill%3D%22%233B5998%22%20d%3D%22M-284.155%2C409.815h1.544v-2.804c-0.62-0.018-1.434-0.04-2.501-0.062%20%20%20%20%20%20c-3.854-0.086-3.712%2C3.904-3.712%2C3.904v2.294h-2.649v2.995h2.649v7.776h3.084v-7.776h2.59l0.371-2.995h-2.96v-2.012%20%20%20%20%20%20C-285.74%2C409.679-284.155%2C409.815-284.155%2C409.815%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+.icon-social-facebook-alt {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-299.5%20402.5%2024%2024%22%20enable-background%3D%22new%20-299.5%20402.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EFacebook%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-352.000000%2C%20-503.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Facebook%22%20transform%3D%22translate(222.000000%2C%200.000000)%22%3E%20%20%20%20%20%3Cpath%20id%3D%22facebook%22%20fill%3D%22%233B5998%22%20d%3D%22M-284.155%2C409.815h1.544v-2.805c-0.62-0.018-1.434-0.04-2.501-0.062%20%20%20%20%20%20c-3.854-0.086-3.712%2C3.903-3.712%2C3.903v2.295h-2.649v2.994h2.649v7.776h3.084v-7.776h2.59l0.371-2.994h-2.96v-2.013%20%20%20%20%20%20C-285.74%2C409.679-284.155%2C409.815-284.155%2C409.815%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  SOCIAL LINKEDIN ICON
+ *
+ *  icon for expert/organization contacts
+ *  
+ *  .icon
+ *  <---  .icon-social-linkedin
+ *  <---  .icon-social-linkedin-alt
+ *
+ */
+.icon-social-linkedin {
+  @extend .icon;
+
+  width: $global-baseline * 3;
+  height: $global-baseline * 3;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-305%20397%2036%2036%22%20enable-background%3D%22new%20-305%20397%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ELinkedin%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-204.000000%2C%20-533.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Linkedin%22%20transform%3D%22translate(74.000000%2C%2030.000000)%22%3E%20%20%20%20%20%3Ccircle%20id%3D%22Base%22%20fill%3D%22none%22%20stroke%3D%22%230078A8%22%20stroke-width%3D%222%22%20cx%3D%22-287%22%20cy%3D%22415%22%20r%3D%2217%22%2F%3E%20%20%20%20%20%3Cg%20id%3D%22In%22%20transform%3D%22translate(11.000000%2C%2010.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-1%22%20fill%3D%22%230078A8%22%20d%3D%22M-304.902%2C411.229h3.223v-9.664h-3.223V411.229z%20M-303.29%2C400.246%20%20%20%20%20%20%20c1.124%2C0%2C1.823-0.742%2C1.823-1.67c-0.021-0.949-0.699-1.67-1.802-1.67s-1.824%2C0.721-1.824%2C1.67c0%2C0.928%2C0.699%2C1.67%2C1.781%2C1.67%20%20%20%20%20%20%20H-303.29L-303.29%2C400.246z%22%2F%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-2%22%20fill%3D%22%230078A8%22%20d%3D%22M-299.895%2C411.229h3.223v-5.396c0-0.289%2C0.021-0.578%2C0.106-0.784%20%20%20%20%20%20%20c0.232-0.577%2C0.764-1.174%2C1.654-1.174c1.167%2C0%2C1.633%2C0.886%2C1.633%2C2.184v5.171h3.223v-5.541c0-2.969-1.59-4.35-3.711-4.35%20%20%20%20%20%20%20c-1.739%2C0-2.501%2C0.968-2.926%2C1.628h0.021v-1.401h-3.223C-299.853%2C402.473-299.895%2C411.229-299.895%2C411.229L-299.895%2C411.229%22%20%20%20%20%20%20%20%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+.icon-social-linkedin-alt {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-299.5%20402.5%2024%2024%22%20enable-background%3D%22new%20-299.5%20402.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ELinkedin%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-204.000000%2C%20-533.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Linkedin%22%20transform%3D%22translate(74.000000%2C%2030.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22In%22%20transform%3D%22translate(11.000000%2C%2010.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-1%22%20fill%3D%22%230078A8%22%20d%3D%22M-304.902%2C411.229h3.223v-9.663h-3.223V411.229z%20M-303.29%2C400.246%20%20%20%20%20%20%20c1.124%2C0%2C1.823-0.742%2C1.823-1.67c-0.021-0.949-0.699-1.67-1.802-1.67s-1.824%2C0.721-1.824%2C1.67c0%2C0.928%2C0.699%2C1.67%2C1.781%2C1.67%20%20%20%20%20%20%20H-303.29L-303.29%2C400.246z%22%2F%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Fill-2%22%20fill%3D%22%230078A8%22%20d%3D%22M-299.895%2C411.229h3.223v-5.396c0-0.289%2C0.021-0.578%2C0.106-0.784%20%20%20%20%20%20%20c0.232-0.577%2C0.764-1.174%2C1.654-1.174c1.167%2C0%2C1.633%2C0.886%2C1.633%2C2.184v5.172h3.223v-5.541c0-2.97-1.59-4.351-3.711-4.351%20%20%20%20%20%20%20c-1.739%2C0-2.501%2C0.968-2.926%2C1.628h0.021v-1.4h-3.223C-299.853%2C402.473-299.895%2C411.229-299.895%2C411.229L-299.895%2C411.229%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  SOCIAL TWITTER ICON
+ *
+ *  icon for expert/organization contacts
+ *  
+ *  .icon
+ *  <---  .icon-social-twitter
+ *  <---  .icon-social-twitter-alt
+ *
+ */
+.icon-social-twitter {
+  @extend .icon;
+
+  width: $global-baseline * 3;
+  height: $global-baseline * 3;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-305%20397%2036%2036%22%20enable-background%3D%22new%20-305%20397%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-130.000000%2C%20-503.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Twitter%22%3E%20%20%20%20%20%3Ccircle%20id%3D%22Base%22%20fill%3D%22none%22%20stroke%3D%22%232AA9E0%22%20stroke-width%3D%222%22%20cx%3D%22-287%22%20cy%3D%22415%22%20r%3D%2217%22%2F%3E%20%20%20%20%20%3Cpath%20fill%3D%22%232AA9E0%22%20d%3D%22M-277.158%2C409.626c-0.691%2C0.303-1.435%2C0.508-2.214%2C0.6c0.796-0.471%2C1.407-1.216%2C1.695-2.105%20%20%20%20%20%20c-0.745%2C0.437-1.569%2C0.753-2.448%2C0.924c-0.703-0.739-1.705-1.202-2.814-1.202c-2.128%2C0-3.855%2C1.704-3.855%2C3.807%20%20%20%20%20%20c0%2C0.297%2C0.034%2C0.588%2C0.1%2C0.866c-3.203-0.158-6.043-1.674-7.945-3.977c-0.332%2C0.562-0.522%2C1.216-0.522%2C1.914%20%20%20%20%20%20c0%2C1.32%2C0.681%2C2.485%2C1.715%2C3.167c-0.632-0.019-1.226-0.19-1.746-0.475c0%2C0.016%2C0%2C0.031%2C0%2C0.047%20%20%20%20%20%20c0%2C1.844%2C1.329%2C3.382%2C3.092%2C3.731c-0.323%2C0.087-0.664%2C0.134-1.015%2C0.134c-0.249%2C0-0.49-0.024-0.726-0.068%20%20%20%20%20%20c0.49%2C1.512%2C1.914%2C2.612%2C3.601%2C2.643c-1.319%2C1.021-2.981%2C1.629-4.788%2C1.629c-0.311%2C0-0.618-0.018-0.919-0.053%20%20%20%20%20%20c1.706%2C1.08%2C3.732%2C1.709%2C5.909%2C1.709c7.091%2C0%2C10.968-5.798%2C10.968-10.827c0-0.164-0.004-0.329-0.012-0.492%20%20%20%20%20%20C-278.329%2C411.061-277.675%2C410.39-277.158%2C409.626%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+.icon-social-twitter-alt {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-299.5%20402.5%2024%2024%22%20enable-background%3D%22new%20-299.5%20402.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-130.000000%2C%20-503.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Twitter%22%3E%20%20%20%20%20%3Cpath%20fill%3D%22%232AA9E0%22%20d%3D%22M-277.158%2C409.626c-0.691%2C0.303-1.435%2C0.508-2.214%2C0.6c0.796-0.471%2C1.407-1.216%2C1.695-2.104%20%20%20%20%20%20c-0.745%2C0.437-1.569%2C0.753-2.448%2C0.924c-0.703-0.739-1.705-1.202-2.814-1.202c-2.128%2C0-3.855%2C1.704-3.855%2C3.808%20%20%20%20%20%20c0%2C0.297%2C0.034%2C0.588%2C0.1%2C0.865c-3.203-0.157-6.043-1.674-7.945-3.977c-0.332%2C0.562-0.522%2C1.216-0.522%2C1.914%20%20%20%20%20%20c0%2C1.32%2C0.681%2C2.485%2C1.715%2C3.167c-0.632-0.02-1.226-0.19-1.746-0.476c0%2C0.017%2C0%2C0.031%2C0%2C0.048c0%2C1.844%2C1.329%2C3.382%2C3.092%2C3.73%20%20%20%20%20%20c-0.323%2C0.087-0.664%2C0.134-1.015%2C0.134c-0.249%2C0-0.49-0.023-0.726-0.067c0.49%2C1.512%2C1.914%2C2.611%2C3.601%2C2.643%20%20%20%20%20%20c-1.319%2C1.021-2.981%2C1.629-4.788%2C1.629c-0.311%2C0-0.618-0.018-0.919-0.053c1.706%2C1.08%2C3.732%2C1.709%2C5.909%2C1.709%20%20%20%20%20%20c7.091%2C0%2C10.968-5.798%2C10.968-10.827c0-0.164-0.004-0.329-0.012-0.492C-278.329%2C411.061-277.675%2C410.39-277.158%2C409.626%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  SOCIAL WEBSITE ICON
+ *
+ *  icon for expert/organization contacts
+ *  
+ *  .icon
+ *  <---  .icon-social-website
+ *
+ */
+.icon-social-website {
+  @extend .icon;
+
+  width: $global-baseline * 3;
+  height: $global-baseline * 3;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-305%20397%2036%2036%22%20enable-background%3D%22new%20-305%20397%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ESite%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-278.000000%2C%20-533.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(0.000000%2C%20283.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Site%22%20transform%3D%22translate(148.000000%2C%2030.000000)%22%3E%20%20%20%20%20%3Ccircle%20id%3D%22Base%22%20fill%3D%22none%22%20stroke%3D%22%23BCA97A%22%20stroke-width%3D%222%22%20cx%3D%22-287%22%20cy%3D%22415%22%20r%3D%2217%22%2F%3E%20%20%20%20%20%3Cpath%20id%3D%22Globe%22%20fill%3D%22%23BCA97A%22%20d%3D%22M-286.657%2C406.059c-0.113-0.004-0.228-0.007-0.343-0.007c-0.116%2C0-0.229%2C0.003-0.343%2C0.007%20%20%20%20%20%20c-4.783%2C0.182-8.604%2C4.115-8.604%2C8.941s3.821%2C8.76%2C8.604%2C8.941c0.114%2C0.005%2C0.228%2C0.007%2C0.343%2C0.007%20%20%20%20%20%20c0.115%2C0%2C0.229-0.002%2C0.343-0.007c4.783-0.182%2C8.604-4.115%2C8.604-8.941S-281.874%2C406.24-286.657%2C406.059L-286.657%2C406.059z%20%20%20%20%20%20%20M-279.727%2C414.187h-3.234c-0.186-2.724-1.275-4.899-2.186-6.272C-282.256%2C408.672-280.06%2C411.148-279.727%2C414.187%20%20%20%20%20%20L-279.727%2C414.187z%20M-286.998%2C408.123c0.799%2C1.041%2C2.176%2C3.211%2C2.406%2C6.063h-4.816%20%20%20%20%20%20C-289.178%2C411.348-287.797%2C409.169-286.998%2C408.123L-286.998%2C408.123z%20M-284.592%2C415.813c-0.23%2C2.839-1.609%2C5.018-2.411%2C6.064%20%20%20%20%20%20c-0.799-1.043-2.176-3.213-2.405-6.064H-284.592L-284.592%2C415.813z%20M-288.854%2C407.914c-0.91%2C1.373-1.999%2C3.549-2.184%2C6.272%20%20%20%20%20%20h-3.235C-293.94%2C411.148-291.744%2C408.672-288.854%2C407.914L-288.854%2C407.914z%20M-294.274%2C415.813h3.235%20%20%20%20%20%20c0.185%2C2.723%2C1.273%2C4.896%2C2.182%2C6.27C-291.746%2C421.327-293.94%2C418.852-294.274%2C415.813L-294.274%2C415.813z%20M-285.144%2C422.083%20%20%20%20%20%20c0.908-1.373%2C1.997-3.547%2C2.183-6.27h3.234C-280.06%2C418.852-282.254%2C421.327-285.144%2C422.083L-285.144%2C422.083z%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+/**
+ *  MAIL ICON
+ *
+ *  icon for user dashboard contacts
+ *  
+ *  .icon
+ *  <---  .icon-mail
+ *
+ */
+.icon-mail {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-308%20392.5%2024%2024%22%20enable-background%3D%22new%20-308%20392.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EMail%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22User-Dashboard%22%20transform%3D%22translate(-610.000000%2C%20-293.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Profile%22%20transform%3D%22translate(0.000000%2C%2070.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Avatar-_x2B_-Info%22%20transform%3D%22translate(283.000000%2C%20128.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Text-_x2B_-Social%22%20transform%3D%22translate(325.000000%2C%2010.000000)%22%3E%20%20%20%20%20%3Cg%20id%3D%22Social%22%20transform%3D%22translate(2.000000%2C%2083.000000)%22%3E%20%20%20%20%20%20%3Cg%20id%3D%22Email%22%3E%20%20%20%20%20%20%20%3Cpath%20id%3D%22Mail%22%20fill%3D%22%23969696%22%20d%3D%22M-288.727%2C398h-14.546c-1.506%2C0-2.727%2C1.269-2.727%2C2.834v11.332%20%20%20%20%20%20%20%20c0%2C1.565%2C1.221%2C2.834%2C2.727%2C2.834h14.546c1.506%2C0%2C2.727-1.269%2C2.727-2.834v-11.332C-286%2C399.269-287.221%2C398-288.727%2C398%20%20%20%20%20%20%20%20L-288.727%2C398z%20M-288.727%2C399.889c0.104%2C0%2C0.205%2C0.019%2C0.299%2C0.053l-7.572%2C6.294l-7.572-6.294%20%20%20%20%20%20%20%20c0.094-0.034%2C0.194-0.053%2C0.299-0.053H-288.727L-288.727%2C399.889z%20M-288.727%2C413.111h-14.546%20%20%20%20%20%20%20%20c-0.502%2C0-0.909-0.423-0.909-0.945v-10.312l7.614%2C6.328c0.166%2C0.139%2C0.367%2C0.207%2C0.568%2C0.207s0.402-0.068%2C0.568-0.207%20%20%20%20%20%20%20%20l7.613-6.328v10.312C-287.818%2C412.688-288.225%2C413.111-288.727%2C413.111L-288.727%2C413.111z%22%2F%3E%20%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  STAR ICON
+ *  
+ *  icon for revies in profile
+ *
+ *  .icon
+ *  <---  .icon-star
+ *          &--inactive
+ *
+ */
+.icon-star {
+  @extend .icon;
+
+  width: $global-baseline * 3;
+  height: $global-baseline * 3;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-310%20391.5%2036%2036%22%20enable-background%3D%22new%20-310%20391.5%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-130.000000%2C%20-653.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Reviews%22%20transform%3D%22translate(0.000000%2C%20433.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Rating%22%3E%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23FFCE00%22%20d%3D%22M-292%2C396c-0.52%2C0-0.951%2C0.352-1.085%2C0.834l-2.753%2C8.557h-9.042%20%20%20%20%20%20c-0.625%2C0-1.12%2C0.547-1.12%2C1.181c0%2C0.388%2C0.192%2C0.733%2C0.484%2C0.938c0.181%2C0.123%2C7.303%2C5.359%2C7.303%2C5.359%20%20%20%20%20%20s-2.736%2C8.453-2.789%2C8.587c-0.04%2C0.124-0.069%2C0.259-0.069%2C0.399c0%2C0.634%2C0.507%2C1.145%2C1.132%2C1.145%20%20%20%20%20%20c0.239%2C0%2C0.46-0.076%2C0.647-0.205l7.292-5.342c0%2C0%2C7.129%2C5.225%2C7.291%2C5.342c0.187%2C0.129%2C0.409%2C0.205%2C0.647%2C0.205%20%20%20%20%20%20c0.625%2C0%2C1.132-0.517%2C1.132-1.145c0-0.141-0.029-0.275-0.069-0.399c-0.053-0.134-2.788-8.587-2.788-8.587%20%20%20%20%20%20s7.121-5.236%2C7.303-5.359c0.292-0.205%2C0.484-0.551%2C0.484-0.944c0-0.628-0.484-1.175-1.108-1.175h-9.042l-2.766-8.557%20%20%20%20%20%20C-291.049%2C396.352-291.48%2C396-292%2C396%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+  .icon-star--inactive {
+    opacity: 0.3;
+  }
+
+
+/**
+ *  SMALL STAR ICON
+ *  
+ *  icon for revies in course tiles
+ *
+ *  .icon
+ *  <---  .icon-star-small
+ *          &--inactive
+ *
+ */
+.icon-star-small {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-299.5%20402.5%2024%2024%22%20enable-background%3D%22new%20-299.5%20402.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Instructor-Page%22%20transform%3D%22translate(-130.000000%2C%20-653.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(130.000000%2C%20220.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Reviews%22%20transform%3D%22translate(0.000000%2C%20433.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Rating%22%3E%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23FFCE00%22%20d%3D%22M-287.5%2C406.785c-0.297%2C0-0.543%2C0.202-0.62%2C0.477l-1.574%2C4.891h-5.167%20%20%20%20%20%20c-0.357%2C0-0.64%2C0.312-0.64%2C0.675c0%2C0.222%2C0.11%2C0.419%2C0.276%2C0.536c0.104%2C0.07%2C4.173%2C3.062%2C4.173%2C3.062s-1.563%2C4.829-1.594%2C4.906%20%20%20%20%20%20c-0.022%2C0.07-0.039%2C0.148-0.039%2C0.228c0%2C0.363%2C0.29%2C0.655%2C0.646%2C0.655c0.137%2C0%2C0.263-0.044%2C0.371-0.117l4.167-3.054%20%20%20%20%20%20c0%2C0%2C4.074%2C2.986%2C4.166%2C3.054c0.107%2C0.073%2C0.234%2C0.117%2C0.37%2C0.117c0.356%2C0%2C0.646-0.297%2C0.646-0.655%20%20%20%20%20%20c0-0.079-0.017-0.157-0.04-0.228c-0.03-0.077-1.593-4.906-1.593-4.906s4.069-2.992%2C4.173-3.062%20%20%20%20%20%20c0.167-0.117%2C0.276-0.315%2C0.276-0.539c0-0.359-0.276-0.672-0.633-0.672h-5.167l-1.581-4.891%20%20%20%20%20%20C-286.957%2C406.987-287.203%2C406.785-287.5%2C406.785%22%2F%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+  .icon-star-small--inactive {
+    opacity: 0.3;
+  }
+
+
+/**
+ *  WHEEL ALT ICON
+ *
+ *  icon for "become an expert" banner in the footer
+ *
+ *  .icon
+ *  <---  .icon-wheel-alt
+ *
+ */
+.icon-wheel-alt {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-307%20395%2024%2024%22%20enable-background%3D%22new%20-307%20395%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Courses%22%20transform%3D%22translate(-825.000000%2C%20-2522.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Footer%22%20transform%3D%22translate(0.000000%2C%202410.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Instructor%22%20transform%3D%22translate(801.000000%2C%2089.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-263.394%2C422.31c-4.201-4.248-11.011-4.248-15.211%2C0%20%20%20%20%20c-4.201%2C4.248-4.201%2C11.135%2C0%2C15.381c4.2%2C4.248%2C11.01%2C4.248%2C15.211%2C0C-259.194%2C433.444-259.194%2C426.558-263.394%2C422.31%20%20%20%20%20L-263.394%2C422.31z%20M-265.507%2C423.048l-2.796%2C2.828c-1.63-1.092-3.764-1.092-5.393%2C0l-2.796-2.828%20%20%20%20%20C-273.29%2C420.453-268.709%2C420.453-265.507%2C423.048L-265.507%2C423.048z%20M-268.066%2C430.001c0%2C1.638-1.314%2C2.966-2.934%2C2.966%20%20%20%20%20c-1.62%2C0-2.934-1.328-2.934-2.966c0-1.639%2C1.313-2.967%2C2.934-2.967C-269.38%2C427.034-268.066%2C428.362-268.066%2C430.001%20%20%20%20%20L-268.066%2C430.001z%20M-277.875%2C424.446l2.796%2C2.828c-1.08%2C1.646-1.08%2C3.805%2C0%2C5.453l-2.796%2C2.828%20%20%20%20%20C-280.441%2C432.316-280.441%2C427.685-277.875%2C424.446L-277.875%2C424.446z%20M-276.493%2C436.954l2.796-2.828%20%20%20%20%20c1.629%2C1.091%2C3.763%2C1.091%2C5.393%2C0l2.796%2C2.828C-268.709%2C439.548-273.29%2C439.548-276.493%2C436.954L-276.493%2C436.954z%20%20%20%20%20%20M-264.124%2C435.556l-2.797-2.828c1.079-1.648%2C1.079-3.807%2C0-5.453l2.797-2.828%20%20%20%20%20C-261.558%2C427.685-261.558%2C432.316-264.124%2C435.556L-264.124%2C435.556z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  CASE ALT ICON
+ *
+ *  icon for "studytube for organizations" banner in the footer
+ *
+ *  .icon
+ *  <---  .icon-case-alt
+ *
+ */
+.icon-case-alt {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-307%20394%2024%2024%22%20enable-background%3D%22new%20-307%20394%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Courses%22%20transform%3D%22translate(-826.000000%2C%20-2619.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Footer%22%20transform%3D%22translate(0.000000%2C%202410.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22For-Organizations%22%20transform%3D%22translate(801.000000%2C%20185.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-262%2C424h-3v-1c0-1.657-1.342-3-3-3h-4c-1.658%2C0-3%2C1.343-3%2C3v1h-3%20%20%20%20%20c-1.657%2C0-3%2C1.344-3%2C3v10c0%2C1.656%2C1.343%2C3%2C3%2C3h16c1.656%2C0%2C3-1.344%2C3-3v-10C-259%2C425.344-260.344%2C424-262%2C424L-262%2C424z%20%20%20%20%20%20M-275%2C426h10v12h-10V426z%20M-273%2C423c0-0.553%2C0.447-1%2C1-1h4c0.553%2C0%2C1%2C0.447%2C1%2C1v1h-6V423L-273%2C423z%20M-279%2C437v-10%20%20%20%20%20c0-0.553%2C0.447-1%2C1-1h1v12h-1C-278.553%2C438-279%2C437.553-279%2C437L-279%2C437z%20M-261%2C437c0%2C0.553-0.447%2C1-1%2C1h-1v-12h1%20%20%20%20%20c0.553%2C0%2C1%2C0.447%2C1%2C1V437L-261%2C437z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  CROSS ICON
+ *
+ *  close icon for offscreen panels
+ *
+ *  .icon
+ *  <---  .icon-cross
+ *
+ */
+.icon-cross {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-307%20395%2024%2024%22%20enable-background%3D%22new%20-307%20395%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EClose%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22UI-Elements%22%20transform%3D%22translate(-1101.000000%2C%20-1163.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Offscreen%22%20transform%3D%22translate(790.000000%2C%201105.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Close%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23969696%22%20fill-opacity%3D%220.3%22%20d%3D%22M16%2C454c-6.075%2C0-11%2C4.925-11%2C11%20%20%20%20s4.925%2C11%2C11%2C11s11-4.925%2C11-11S22.075%2C454%2C16%2C454L16%2C454z%20M16%2C474c-4.971%2C0-9-4.029-9-9s4.029-9%2C9-9s9%2C4.029%2C9%2C9%20%20%20%20S20.971%2C474%2C16%2C474L16%2C474z%20M19.535%2C461.465c-0.39-0.391-1.023-0.391-1.414%2C0L16%2C463.586l-2.121-2.121%20%20%20%20c-0.391-0.391-1.024-0.391-1.415%2C0c-0.39%2C0.391-0.39%2C1.023%2C0%2C1.414L14.586%2C465l-2.122%2C2.121c-0.39%2C0.391-0.39%2C1.023%2C0%2C1.414%20%20%20%20c0.391%2C0.391%2C1.024%2C0.391%2C1.415%2C0L16%2C466.414l2.121%2C2.121c0.391%2C0.391%2C1.023%2C0.391%2C1.414%2C0s0.391-1.024%2C0-1.414L17.414%2C465%20%20%20%20l2.121-2.121C19.926%2C462.488%2C19.926%2C461.855%2C19.535%2C461.465L19.535%2C461.465z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  LIST ICON
+ *
+ *  list icon for "browse courses"
+ *
+ *  .icon
+ *  <---  .icon-list
+ *
+ */
+.icon-list {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $page-header-height;
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-299.5%20402.5%2024%2024%22%20enable-background%3D%22new%20-299.5%20402.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22icomoon-ignore%22%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23449FDB%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%220%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M-280.214%2C413.285h-14.572c-0.67%2C0-1.214%2C0.544-1.214%2C1.215s0.544%2C1.215%2C1.214%2C1.215h14.572%20c0.671%2C0%2C1.214-0.544%2C1.214-1.215S-279.543%2C413.285-280.214%2C413.285z%20M-294.786%2C410.857h14.572c0.671%2C0%2C1.214-0.545%2C1.214-1.215%20s-0.543-1.215-1.214-1.215h-14.572c-0.67%2C0-1.214%2C0.545-1.214%2C1.215S-295.456%2C410.857-294.786%2C410.857z%20M-280.214%2C418.143h-14.572%20c-0.67%2C0-1.214%2C0.544-1.214%2C1.215s0.544%2C1.215%2C1.214%2C1.215h14.572c0.671%2C0%2C1.214-0.544%2C1.214-1.215%20S-279.543%2C418.143-280.214%2C418.143z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  COURSE CHAT ICON
+ *
+ *  icon for coursepage, indicates number of reviews
+ *
+ *  .icon
+ *  <---  .icon-course-chat
+ *
+ */
+.icon-course-chat {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;  
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-309%20393%2024%2024%22%20enable-background%3D%22new%20-309%20393%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Course%22%20transform%3D%22translate(-920.000000%2C%20-526.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Informations%22%20transform%3D%22translate(0.000000%2C%2068.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Buy-Button-_x2B_-Stats%22%20transform%3D%22translate(920.000000%2C%20317.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Stats%22%3E%20%20%20%20%20%3Cg%20id%3D%22Reviews%22%20transform%3D%22translate(0.000000%2C%20141.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-290.455%2C397.637c0.451%2C0%2C0.818%2C0.367%2C0.818%2C0.818v9%20%20%20%20%20%20%20c0%2C0.451-0.367%2C0.817-0.818%2C0.817h-7.069l-3.566%2C2.548v-2.548h-2.455c-0.452%2C0-0.818-0.366-0.818-0.817v-9%20%20%20%20%20%20%20c0-0.451%2C0.367-0.818%2C0.818-0.818H-290.455%20M-290.455%2C396h-13.09c-1.355%2C0-2.455%2C1.1-2.455%2C2.455v9%20%20%20%20%20%20%20c0%2C1.355%2C1.099%2C2.454%2C2.455%2C2.454h0.818V414l5.727-4.091h6.545c1.355%2C0%2C2.455-1.099%2C2.455-2.454v-9%20%20%20%20%20%20%20C-288%2C397.1-289.1%2C396-290.455%2C396%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  COURSE CLOCK ICON
+ *
+ *  icon for coursepage, indicates duration of a course
+ *
+ *  .icon
+ *  <---  .icon-course-clock
+ *
+ */
+.icon-course-clock {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;  
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-309%20393%2024%2024%22%20enable-background%3D%22new%20-309%20393%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Course%22%20transform%3D%22translate(-920.000000%2C%20-432.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Informations%22%20transform%3D%22translate(0.000000%2C%2068.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Buy-Button-_x2B_-Stats%22%20transform%3D%22translate(920.000000%2C%20317.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Stats%22%3E%20%20%20%20%20%3Cg%20id%3D%22Time%22%20transform%3D%22translate(0.000000%2C%2047.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-297%2C396c-4.971%2C0-9%2C4.029-9%2C9s4.029%2C9%2C9%2C9s9-4.029%2C9-9S-292.029%2C396-297%2C396%20%20%20%20%20%20%20L-297%2C396z%20M-297%2C412.363c-4.067%2C0-7.364-3.297-7.364-7.363s3.297-7.363%2C7.364-7.363c4.066%2C0%2C7.363%2C3.297%2C7.363%2C7.363%20%20%20%20%20%20%20S-292.934%2C412.363-297%2C412.363L-297%2C412.363z%20M-293.967%2C406.876c0.319%2C0.319%2C0.319%2C0.838%2C0%2C1.157%20%20%20%20%20%20%20c-0.16%2C0.16-0.369%2C0.239-0.578%2C0.239c-0.21%2C0.001-0.42-0.079-0.579-0.239l-2.455-2.455c-0.153-0.152-0.24-0.361-0.24-0.578%20%20%20%20%20%20%20v-4.909c0-0.452%2C0.367-0.818%2C0.818-0.818c0.451%2C0%2C0.818%2C0.366%2C0.818%2C0.818v4.57L-293.967%2C406.876L-293.967%2C406.876z%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  COURSE LOCK ICON
+ *
+ *  icon for coursepage, indicates lifetime access
+ *
+ *  .icon
+ *  <---  .icon-course-lock
+ *
+ */
+.icon-course-lock {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;  
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-309%20393%2024%2024%22%20enable-background%3D%22new%20-309%20393%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Course%22%20transform%3D%22translate(-920.000000%2C%20-385.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Informations%22%20transform%3D%22translate(0.000000%2C%2068.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Buy-Button-_x2B_-Stats%22%20transform%3D%22translate(920.000000%2C%20317.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Stats%22%3E%20%20%20%20%20%3Cg%20id%3D%22Access%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-290.455%2C404.182h-1.636v-3.272c0-2.712-2.198-4.909-4.909-4.909%20%20%20%20%20%20%20c-2.711%2C0-4.909%2C2.197-4.909%2C4.909v3.272h-1.636c-1.356%2C0-2.455%2C1.099-2.455%2C2.455v4.908c0%2C1.356%2C1.099%2C2.455%2C2.455%2C2.455%20%20%20%20%20%20%20h13.09c1.356%2C0%2C2.455-1.099%2C2.455-2.455v-4.908C-288%2C405.28-289.099%2C404.182-290.455%2C404.182L-290.455%2C404.182z%20%20%20%20%20%20%20%20M-300.273%2C400.909c0-1.808%2C1.466-3.272%2C3.273-3.272c1.807%2C0%2C3.273%2C1.465%2C3.273%2C3.272v3.272h-6.546V400.909L-300.273%2C400.909z%20%20%20%20%20%20%20%20M-289.637%2C411.545c0%2C0.453-0.365%2C0.818-0.818%2C0.818h-13.09c-0.452%2C0-0.818-0.365-0.818-0.818v-4.908%20%20%20%20%20%20%20c0-0.452%2C0.366-0.818%2C0.818-0.818h13.09c0.453%2C0%2C0.818%2C0.366%2C0.818%2C0.818V411.545L-289.637%2C411.545z%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+
+/**
+ *  COURSE USER ICON
+ *
+ *  icon for coursepage, indicates number of users
+ *
+ *  .icon
+ *  <---  .icon-course-user
+ *
+ */
+.icon-course-user {
+  @extend .icon;
+
+  width: $global-baseline * 2;
+  height: $global-baseline * 2;  
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-308.5%20393%2024%2024%22%20enable-background%3D%22new%20-308.5%20393%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EImported%20Layers%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Course%22%20transform%3D%22translate(-920.000000%2C%20-479.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Informations%22%20transform%3D%22translate(0.000000%2C%2068.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Buy-Button-_x2B_-Stats%22%20transform%3D%22translate(920.000000%2C%20317.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cg%20id%3D%22Stats%22%3E%20%20%20%20%20%3Cg%20id%3D%22Users%22%20transform%3D%22translate(0.000000%2C%2094.000000)%22%3E%20%20%20%20%20%20%3Cpath%20id%3D%22Imported-Layers%22%20fill%3D%22%23969696%22%20d%3D%22M-293.201%2C406.42c0.895-0.854%2C1.451-2.051%2C1.451-3.377v-2.348%20%20%20%20%20%20%20c0-2.593-2.127-4.695-4.75-4.695c-2.624%2C0-4.75%2C2.103-4.75%2C4.695v2.348c0%2C1.326%2C0.557%2C2.522%2C1.45%2C3.376%20%20%20%20%20%20%20c-3.62%2C0.558-6.2%2C2.003-6.2%2C3.687v1.547c0%2C1.297%2C1.063%2C2.348%2C2.375%2C2.348h14.25c1.312%2C0%2C2.375-1.051%2C2.375-2.348v-1.541%20%20%20%20%20%20%20C-287%2C408.428-289.58%2C406.979-293.201%2C406.42L-293.201%2C406.42z%20M-299.667%2C403.043v-2.348c0-1.729%2C1.417-3.13%2C3.167-3.13%20%20%20%20%20%20%20s3.166%2C1.401%2C3.166%2C3.13v2.348c0%2C1.729-1.417%2C3.131-3.166%2C3.131S-299.667%2C404.772-299.667%2C403.043L-299.667%2C403.043z%20%20%20%20%20%20%20%20M-288.584%2C411.652c0%2C0.432-0.354%2C0.782-0.791%2C0.782h-14.25c-0.437%2C0-0.792-0.351-0.792-0.782v-1.547%20%20%20%20%20%20%20c0-0.183%2C0.456-0.771%2C1.811-1.333c1.584-0.657%2C3.81-1.033%2C6.105-1.033c2.295%2C0%2C4.52%2C0.378%2C6.104%2C1.036%20%20%20%20%20%20%20c1.356%2C0.562%2C1.812%2C1.152%2C1.812%2C1.336V411.652L-288.584%2C411.652z%22%2F%3E%20%20%20%20%20%3C%2Fg%3E%20%20%20%20%3C%2Fg%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}

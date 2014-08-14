@@ -1,0 +1,49 @@
+/**
+ *  CURRENT USER MODULE
+ *
+ *  styling for the current user in header and 
+ *
+ *  .current-user
+ *    &__avatar
+ *    &__name
+ *    &__email
+ *    &--expanded
+ *
+ */
+$current-user-size: $global-baseline * 7/2;
+
+.current-user {
+  position: relative;
+  z-index: 2;
+  display: block;
+
+  text-align: right;
+
+  &__avatar {
+    display: block;
+    border-radius: 50%;
+    height: $current-user-size; width: $current-user-size;
+    margin: ($page-header-height - $current-user-size) / 2;
+  }
+
+  &__name {
+    display: none;
+  }
+
+  &__email {
+    display: none;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    color: mix(white, $color-bg-quaternary, 60%);
+  }
+}
+  .current-user--expanded {
+    // ...
+
+    .current-user__name,
+    .current-user__email {
+      display: block;
+    }
+  }

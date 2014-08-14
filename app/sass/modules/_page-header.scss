@@ -1,24 +1,82 @@
-.page-header {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
+/**
+ *  PAGE HEADER MODULE
+ *
+ *  styling for the main header of the website
+ *
+ *  .page-header
+ *    &__page-header__title
+ *    &--filled
+ *    <>--  .ph-menu 
+ *            &__item
+ *              &--button
+ *    <>--  .ph-user
+ *            &__avatar
+ */
+$header-studytube-logo: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2270px%22%20height%3D%2270px%22%20%20viewBox%3D%22-310.5%20391.5%2070%2070%22%20enable-background%3D%22new%20-310.5%20391.5%2070%2070%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3ELogo%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Become%22%20transform%3D%22translate(-624.000000%2C%20-10.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Header%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Logo%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M368.084%2C430.785l4.189-2.144L348.532%2C416.5l-27.931%2C14.285%20%20%20%20l13.965%2C7.153v11.42l13.965%2C7.142l13.967-7.142v-15.715l-13.967%2C7.143l-9.775-4.999l13.966-7.144l-4.191-2.141l-13.965%2C7.141%20%20%20%20l-5.585-2.858l19.551-9.999L368.084%2C430.785L368.084%2C430.785z%20M338.756%2C440.083l9.74%2C4.987h0.035l9.778-5v7.143l-9.778%2C4.999%20%20%20%20l-9.774-4.999V440.083L338.756%2C440.083z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 
-  border-bottom: 1px solid $color-border;
-  border-top:    1px solid $color-border;
-  background: white;
+.page-header {
+  position: relative;
+  z-index: 1;
+  // position: fixed;
+  // z-index: 100;
+  // width: 100%;
+
+  color: white;
+  @include transition-property(background);
+  @include transition-duration(0.2s);
 
   &__title {
-    line-height: $page-header-height - 2px;
+    height: $page-header-height;
+    width: $page-header-height;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: $header-studytube-logo;
+
+    text-indent: -100000px;
   }
 }
+  .page-header--filled {
+    background: $color-dc-primary;
+    @include background(linear-gradient(90deg, $color-dc-primary 0%, #3995C9 100%));
+  }
 
 .ph-menu {
-  // ...
+  padding: 0 $global-baseline;
 
   &__item {
     display: block;
-    padding: 0 $global-baseline;
+    padding: 0 $global-baseline * 3/2;
 
-    line-height: $page-header-height - 2px;
+    font-family: $global-font-family-soft;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: $page-header-height;
   }
+    &__item--button {
+      $ph-button-height: $global-baseline * 4;
+
+      margin:   ($page-header-height - $ph-button-height) / 2
+                0;
+      padding:  0
+                $global-baseline * 2;
+
+      line-height: $ph-button-height - 4px;
+
+      border: 2px solid rgba(white, 0.4);
+      border-radius: 100px;
+    }
+}
+
+.ph-user {
+  $ph-user-size: 42px;
+
+  position: relative;
+  z-index: 2;
+  display: block;
+  
+  border-radius: 50%;
+  height: $ph-user-size; width: $ph-user-size;
+  margin: ($page-header-height - $ph-user-size) / 2
+          $global-baseline * 3/2;
 }

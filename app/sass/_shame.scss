@@ -4,8 +4,56 @@
  *  sandbox for various experiments and other stuff that should be refactored in the future
  *
  */
-
- .input {
+.reference-image {
   display: block;
-  width: 100%;
- }
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.browse-tiles {
+  @include breakpoint( map-get($breakpoint-expressions, p8) ) {
+    font-size: 12px;
+  }
+}
+
+.landing-pitch {
+  // ...
+
+  &__text {
+    color: $color-tx-muted
+  }
+
+  &__item {
+    font-weight: 700;
+
+    color: $color-dc-secondary;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.legal-tabs {
+  // ...
+
+  &__item {
+    display: block;
+
+    @include breakpoint(map-get($breakpoint-expressions, p6)) {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0
+              $global-baseline * 3;
+    }
+
+    font-weight: 600;
+
+    color: $color-tx-muted;
+  }
+    &__item--active {
+      text-decoration: underline;
+      
+      color: $color-dc-secondary;
+    }
+}

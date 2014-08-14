@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+	 viewBox="-309.5 394 24 24" enable-background="new -309.5 394 24 24" xml:space="preserve">
+<title>Play</title>
+<desc>Created with Sketch Beta.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Course" transform="translate(-947.000000, -215.000000)" sketch:type="MSArtboardGroup">
+		<g id="Informations" transform="translate(0.000000, 68.000000)" sketch:type="MSLayerGroup">
+			<g id="Play-Button-_x2B_-Rating-_x2B_-Headline" transform="translate(130.000000, 129.000000)" sketch:type="MSShapeGroup">
+				<g id="Play-Button" transform="translate(790.000000, 3.000000)">
+					<path id="Play" fill="#969696" d="M-276.733,414.925l10.327,6.075l-10.327,6.075V414.925 M-279,411v20l17-10L-279,411"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

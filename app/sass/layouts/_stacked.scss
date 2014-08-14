@@ -1,0 +1,42 @@
+/**
+ *  STACKED LAYOUT
+ *
+ *  maintains vertical spacing between blocks that 
+ *  become stacked on mobile/tablet devices
+ *
+ *  .l-stacked
+ *    &__item
+ *    &--large
+ *    &--normal
+ *    &--small
+ *
+ */
+.l-stacked {
+  margin-bottom: - $global-baseline * 2;
+
+  &__item {
+    display: block;
+    padding-bottom: $global-baseline * 2;
+  }
+}
+  .l-stacked--large {
+    margin-bottom: - $global-baseline * 4;
+
+    .l-stacked__item {
+      padding-bottom: $global-baseline * 4;
+    }
+  }
+  .l-stacked--normal {
+    margin-bottom: - $global-baseline * 2;
+
+    .l-stacked__item {
+      padding-bottom: $global-baseline * 2;
+    }
+  }
+  .l-stacked--small {
+    margin-bottom: - $global-baseline;
+
+    .l-stacked__item {
+      padding-bottom: $global-baseline;
+    }
+  }

@@ -1,0 +1,21 @@
+/**
+ *  TAG MODULE
+ *
+ *  styling for tags
+ *
+ *  .tag
+ *
+ */
+.tag {
+  display: block;
+  padding:  ( ($global-baseline / 2) - 2px ) 
+            ( $global-baseline * 2 );
+
+  font-weight: 600;
+  line-height: $global-baseline * 2;
+
+  color: $color-tx-muted;
+
+  border: 2px solid #E8E8E8;
+  border-radius: 100px;
+}

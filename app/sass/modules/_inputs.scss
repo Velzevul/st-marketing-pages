@@ -1,0 +1,187 @@
+/**
+ *  INPUTS MODULE
+ *
+ *  styling of inputs and textareas for the app
+ *
+ *  .input
+ *    &--full
+ *    &--error
+ *    &--alt
+ *
+ */
+.input {
+  @include appearance(none);
+  display: inline-block;
+  padding: ($global-baseline - 2px) $global-baseline;
+
+  border-radius: 4px;
+  border: 2px solid $color-border;
+
+  @include transition(border-color, 0.2s);
+
+  &:focus {
+    border-color: $color-dc-primary;
+  }
+
+  &:disabled {
+    // ...
+  }
+}
+  .input--alt {
+    color: white;
+    border-color: #484848;
+
+    &:focus {
+      border-color: white;
+    }
+
+    &:disabled {
+      // ...
+    }
+  }
+  .input--error {
+    color: $color-dc-tertiary;
+    border-color: $color-dc-tertiary !important;
+  }
+  .input--full {
+    width: 100%;
+  }
+  .input--facebook {
+    color: white;
+    border-color: mix($color-social-facebook, $color-bg-quaternary, 60%);
+
+    &:focus {
+      border-color: $color-social-facebook;
+    }
+  }
+  .input--twitter {
+    color: white;
+    border-color: mix($color-social-twitter, $color-bg-quaternary, 60%);
+
+    &:focus {
+      border-color: $color-social-twitter;
+    }
+  }
+  .input--googleplus {
+    color: white;
+    border-color: mix($color-social-googleplus, $color-bg-quaternary, 60%);
+
+    &:focus {
+      border-color: $color-social-googleplus;
+    }
+  }
+  .input--linkedin {
+    color: white;
+    border-color: mix($color-social-linkedin, $color-bg-quaternary, 60%);
+
+    &:focus {
+      border-color: $color-social-linkedin;
+    }
+  }
+
+
+
+/**
+ *  INPUT RADIO
+ *
+ *  styling for radiobuttons
+ *
+ *  .input-radio
+ *    &__control
+ *    &__label
+ *
+ */
+.input-radio {
+  display: inline-block;
+  vertical-align: top;
+
+  &__control {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: $global-baseline * 2;
+    height: $global-baseline * 2;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px; left: 1px;
+      display: block;
+      width: 20px; height: 20px;
+
+      border: 2px solid $color-border;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px; left: 8px;
+      display: none;
+      width: 6px; height: 6px;
+
+      background: $color-dc-primary;
+      border-radius: 50%;
+    }
+
+    .input-radio__control:checked ~ &:before {
+      border-color: $color-dc-primary;
+    }
+
+    .input-radio__control:checked ~ &:after {
+      display: block;
+    }
+  }
+}
+
+
+/**
+ *  INPUT SEARCH
+ *
+ *  styling for searchbox
+ *
+ *  .input
+ *  <---  .input-search
+ *  
+ */
+ $input-search-magnifier: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2216px%22%20height%3D%2216px%22%20%20viewBox%3D%220%200%2016%2016%22%20enable-background%3D%22new%200%200%2016%2016%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3Etopic-discussions%201%3C%2Ftitle%3E%3Cdescription%3ECreated%20with%20Sketch%20(http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch)%3C%2Fdescription%3E%3Cg%20id%3D%22topic-discussions%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Search-box%22%20transform%3D%22translate(-211.000000%2C%20-286.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20transform%3D%22translate(200.000000%2C%20279.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Oval-9%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23949494%22%20d%3D%22M22.011%2C19.14c-1.158%2C0.915-2.621%2C1.46-4.211%2C1.46%20%20%20%20c-3.755%2C0-6.8-3.044-6.8-6.8c0-3.755%2C3.044-6.8%2C6.8-6.8c3.756%2C0%2C6.8%2C3.044%2C6.8%2C6.8c0%2C1.59-0.545%2C3.053-1.46%2C4.211%20%20%20%20c0.015%2C0.013%2C0.027%2C0.024%2C0.041%2C0.038l3.171%2C3.171c0.391%2C0.391%2C0.387%2C1.023-0.005%2C1.416l0.289-0.289%20%20%20%20c-0.39%2C0.39-1.026%2C0.394-1.416%2C0.005l-3.171-3.171C22.035%2C19.167%2C22.023%2C19.154%2C22.011%2C19.14z%20M17.8%2C19%20%20%20%20c2.872%2C0%2C5.2-2.328%2C5.2-5.2c0-2.872-2.328-5.2-5.2-5.2c-2.872%2C0-5.2%2C2.328-5.2%2C5.2C12.6%2C16.672%2C14.928%2C19%2C17.8%2C19z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.input-search {
+  @extend .input;
+
+  padding: ($global-baseline/2 - 2px) $global-baseline;
+  padding-left: $global-baseline * 3;
+
+  border-radius: 100px;
+  background-image: $input-search-magnifier;
+  background-repeat: no-repeat;
+  background-position: $global-baseline 50%;
+}
+
+
+/**
+ *  INPUT SELECT
+ *
+ *  styling for searchbox
+ *
+ *  .input
+ *  <---  .input-select
+ *  
+ */
+$input-select-arrow: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-317%20382%2036%2036%22%20enable-background%3D%22new%20-317%20382%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EArrow%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22UI-Elements%22%20transform%3D%22translate(-705.000000%2C%20-1153.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%20opacity%3D%220.4%22%3E%20%20%3Cg%20id%3D%22Dropdown-Normal%22%20transform%3D%22translate(56.000000%2C%201105.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Arrow%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23969696%22%20d%3D%22M344.493%2C444.261l5.506%2C5.593l5.506-5.593%20%20%20%20c0.342-0.348%2C0.896-0.348%2C1.238%2C0c0.342%2C0.347%2C0.342%2C0.909%2C0%2C1.257l-6.125%2C6.223c-0.342%2C0.347-0.896%2C0.347-1.238%2C0l-6.125-6.223%20%20%20%20c-0.171-0.174-0.256-0.401-0.256-0.629c0-0.227%2C0.085-0.455%2C0.256-0.628C343.597%2C443.913%2C344.152%2C443.913%2C344.493%2C444.261z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.input-select {
+  @extend .input;
+
+  @include appearance(none);
+
+  padding: ($global-baseline/2 - 2px) $global-baseline;
+  padding-right: $global-baseline * 3;
+
+  background-image: $input-select-arrow;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}

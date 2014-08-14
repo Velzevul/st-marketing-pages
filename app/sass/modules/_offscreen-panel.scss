@@ -1,19 +1,47 @@
+/**
+ *  OFFSCREEN PANEL MODULE
+ *
+ *  styling for offscreen navigation panels for small screens
+ *
+ *  .offscreen-panel
+ *    &__title-primary
+ *    &__title-secondary
+ *    <>--  .op-banners
+ *
+ *
+ */
 .offscreen-panel {
-  background: #ddd;
+  background: $color-bg-quaternary;
   min-height: 100%;
   padding: $global-baseline * 2;
-}
 
-.op-menu {
-  // ...
+  color: white;
 
-  &__item {
-    // ...
+  &__title-primary {
+    font-family: $global-font-family-soft;
+    font-size: $global-baseline * 2;
+    line-height: $global-baseline * 3;
+
+    color: $color-dc-primary;
+
+    // css color for text, only webkit
+    background: -webkit-linear-gradient(0deg, $color-dc-primary 0%, #3995C9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title-secondary {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    opacity: 0.3;
   }
 }
 
 .op-banners {
   position: absolute;
-  bottom: 0; left: 0;
-  width: 100%;
+  bottom: $global-baseline * 2; 
+  left: $global-baseline * 2;
+  right: $global-baseline * 2;
 }

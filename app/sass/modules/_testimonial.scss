@@ -1,0 +1,46 @@
+/**
+ *  TESTIMONIAL MODULE
+ *
+ *  styling for testimonials from users
+ *
+ *  .testimonial 
+ *    &__quote
+ *    <>--  .tm-user
+ *            &__avatar
+ *            &__name
+ *
+ */
+
+.testimonial {
+  text-align: center;
+
+  @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+    text-align: left;
+  }
+
+  &__quote {
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #535353;
+  }
+}
+
+.tm-user {
+  font-family: $global-font-family-soft;
+  font-weight: 700;
+
+  color: $color-tx-muted;
+
+  &__avatar {
+    display: block;
+    width: $global-baseline * 3;
+    height: $global-baseline * 3;
+
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $color-dc-secondary;
+  }
+}

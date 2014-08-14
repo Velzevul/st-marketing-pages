@@ -1,20 +1,67 @@
+/**
+ *  PAGE FOOTER MODULE
+ *
+ *  styling for page footer
+ *
+ *  .page-footer
+ *    &__block
+ *      &--small
+ *      <>--  .pf-menu
+ *              &__title
+ *              &__item
+ *                &--facebook
+ *                &--twitter
+ *      <>--  .pf-legal
+ *
+ */
+
 .page-footer {
-  background: #ddd;
+  background: $color-bg-tertiary;
 
   &__block {
-    padding: $global-baseline * 4 0;
-    border-bottom: 1px solid $color-border;
+    padding: $global-baseline * 6 0;
+    border-bottom: 1px solid #404040;
 
     &--small {
-      padding: $global-baseline * 2 0;
+      padding: $global-baseline * 3 0;
     }
   }
 }
 
 .pf-menu {
+  font-size: 14px;
+
   text-align: center;
 
   @include breakpoint( map-get($breakpoint-expressions, p4) ) {
     text-align: left;
   }
+
+  &__title {
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: $color-tx-muted;
+  }
+
+  &__item {
+    font-family: $global-font-family-soft;
+    font-weight: 600;
+
+    color: white;
+  }
+    &__item--facebook {
+      color: $color-social-facebook;
+    }
+    &__item--twitter {
+      color: $color-social-twitter;
+    }
+}
+
+.pf-legal {
+  font-size: 12px;
+  font-weight: 600;
+
+  color: $color-tx-muted;
 }

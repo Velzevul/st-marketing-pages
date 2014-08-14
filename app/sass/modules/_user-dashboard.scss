@@ -1,0 +1,76 @@
+/**
+ *  USER DASHBOARD MODULE
+ *
+ *  styling for user profile info on user dashboard page
+ *  ideally should have been the same as profile but since
+ *  our "designer" designed some completely different stuff
+ *  I had to create another module... =(
+ *
+ *  .user-dashboard
+ *    &__aside
+ *    &__body
+ *    <>--  .ud-avatar
+ *    <>--  .ud-info
+ *            &__name
+ *            <>--  .udi-contacts
+ *                    &__item
+ *                      &--facebook
+ *                      &--linkedin
+ *                      &--twitter
+ *
+ */
+.user-dashboard {
+  text-align: center;
+  
+  @include breakpoint(map-get($breakpoint-expressions, p6)) {
+    padding: $global-baseline * 4 0;
+  }
+
+  &__aside {
+    display: block;
+    
+    @include breakpoint(map-get($breakpoint-expressions, p6)) {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 105px;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    display: block;
+
+    @include breakpoint(map-get($breakpoint-expressions, p6)) {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+    }
+  }
+}
+
+.ud-avatar {
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  
+  border-radius: 50%;
+}
+
+.ud-contacts {
+  display: inline-block;
+  text-align: left;
+
+  &__item {
+    color: $color-tx-muted;
+  }
+    &__item--facebook {
+      color: $color-social-facebook;
+    }
+    &__item--twitter {
+      color: $color-social-twitter;
+    }
+    &__item--linkedin {
+      color: $color-social-linkedin;
+    }
+}

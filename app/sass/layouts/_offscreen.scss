@@ -1,3 +1,17 @@
+/**
+ *  OFFSCREEN LAYOUT
+ *
+ *  offscreen navigation for small screen sizes
+ *
+ *  .l-offscreen
+ *    &__sidebar
+ *      &--left
+ *      &--right
+ *    &__overlay
+ *    &--open-left
+ *    &--open-right
+ *
+ */
 $offscreen-sidebar-size: $global-baseline * 30;
 
 .l-offscreen {
@@ -15,18 +29,15 @@ $offscreen-sidebar-size: $global-baseline * 30;
 
     @include transition-property(transform);
     @include transition-duration(0.3s);
-    background: white;
 
     &--left {
       left: 0;
       @include translateX( - $offscreen-sidebar-size );
-      border-right: 1px solid $color-border;
     }
 
     &--right {
       right: 0;
       @include translateX( $offscreen-sidebar-size );
-      border-left: 1px solid $color-border;
     }
   }
 
@@ -39,7 +50,8 @@ $offscreen-sidebar-size: $global-baseline * 30;
     display: none;
     height: 100%;width: 100%;
 
-    background: rgba(black, 0.5);
+    background: white;
+    background: rgba(white, 0.9);
   }
 }
   .l-offscreen--open-left {

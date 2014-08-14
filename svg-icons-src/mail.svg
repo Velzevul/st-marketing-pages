@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+	 viewBox="-308 392.5 24 24" enable-background="new -308 392.5 24 24" xml:space="preserve">
+<title>Mail</title>
+<desc>Created with Sketch Beta.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="User-Dashboard" transform="translate(-610.000000, -293.000000)" sketch:type="MSArtboardGroup">
+		<g id="Profile" transform="translate(0.000000, 70.000000)" sketch:type="MSLayerGroup">
+			<g id="Avatar-_x2B_-Info" transform="translate(283.000000, 128.000000)" sketch:type="MSShapeGroup">
+				<g id="Text-_x2B_-Social" transform="translate(325.000000, 10.000000)">
+					<g id="Social" transform="translate(2.000000, 83.000000)">
+						<g id="Email">
+							<path id="Mail" fill="#969696" d="M-288.727,398h-14.546c-1.506,0-2.727,1.269-2.727,2.834v11.332
+								c0,1.565,1.221,2.834,2.727,2.834h14.546c1.506,0,2.727-1.269,2.727-2.834v-11.332C-286,399.269-287.221,398-288.727,398
+								L-288.727,398z M-288.727,399.889c0.104,0,0.205,0.019,0.299,0.053l-7.572,6.294l-7.572-6.294
+								c0.094-0.034,0.194-0.053,0.299-0.053H-288.727L-288.727,399.889z M-288.727,413.111h-14.546
+								c-0.502,0-0.909-0.423-0.909-0.945v-10.312l7.614,6.328c0.166,0.139,0.367,0.207,0.568,0.207s0.402-0.068,0.568-0.207
+								l7.613-6.328v10.312C-287.818,412.688-288.225,413.111-288.727,413.111L-288.727,413.111z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

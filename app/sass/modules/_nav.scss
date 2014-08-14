@@ -1,0 +1,91 @@
+/**
+ *  NAV MODULE
+ *
+ *  styling for navigations in sidebar, popups, offscreen panels, and tabs
+ *
+ *  .nav
+ *    &__item
+ *      &--active
+ *
+ *  .nav-alt
+ *    &__item
+ *      &--active
+ *
+ *  .nav-tabs
+ *    &__item
+ *      &--active
+ *
+ */
+$arrow-icon-bg: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20%20viewBox%3D%22-309.5%20390.5%2024%2024%22%20enable-background%3D%22new%20-309.5%20390.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EArrow%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Courses%22%20transform%3D%22translate(-338.000000%2C%20-429.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Sidebar%22%20transform%3D%22translate(130.000000%2C%20358.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Category%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Arrow%22%20fill%3D%22%2331BB9B%22%20d%3D%22M-96.963%2C474.312h12.925l-4.389%2C4.301c-0.324%2C0.316-0.324%2C0.832%2C0%2C1.148%20%20%20%20%20c0.324%2C0.318%2C0.849%2C0.318%2C1.172%2C0l5.806-5.688c0.323-0.316%2C0.323-0.832%2C0-1.148l-5.806-5.688%20%20%20%20%20c-0.161-0.158-0.373-0.238-0.586-0.238c-0.212%2C0-0.424%2C0.08-0.586%2C0.238c-0.324%2C0.316-0.324%2C0.832%2C0%2C1.148l4.389%2C4.301h-12.925%20%20%20%20%20c-0.458%2C0-0.829%2C0.363-0.829%2C0.812S-97.421%2C474.312-96.963%2C474.312%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.nav {
+  // ...
+
+  &__item {
+    width: 100%;
+    
+    font-family: $global-font-family-soft;
+    font-weight: 700;
+
+    color: #444444;
+  }
+    &__item--active {
+      position: relative;
+      color: $color-dc-primary;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        display: block;
+        width: $global-baseline * 2;
+        height: $global-baseline * 2;
+        background-image: $arrow-icon-bg;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+}
+
+.nav-alt {
+  // ...
+
+  &__item {
+    display: block;
+
+    text-decoration: none;
+
+    color: mix(white, $color-bg-quaternary, 65%);
+
+    &:hover,
+    &--active {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}
+
+.nav-tabs {
+  // ...
+
+  &__item {
+    display: block;
+    padding: $global-baseline 0;
+    min-width: $global-baseline * 18;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    color: $color-tx-muted;
+  }
+    &__item--active {
+      padding-top: $global-baseline - 2px;
+      padding-bottom: $global-baseline - 2px;
+      min-width: $global-baseline * 18 - 4px;
+
+      color: $color-dc-primary;
+      border: 2px solid $color-dc-primary;
+      border-radius: 4px;
+    }
+}

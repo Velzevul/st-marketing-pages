@@ -1,0 +1,234 @@
+/**
+ *  FORMS MODULE
+ *
+ *  styling for forms: edit profile, signup, signin, etc
+ *
+ *  .form
+ *    &__action-primary
+ *    &__action-secondary
+ *    &--alt
+ *
+ */
+.form {
+  width: 320px;
+
+  color: $color-tx-muted;
+
+  &__action-primary {
+    display: inline;
+
+    text-decoration: underline;
+
+    color: $color-dc-secondary;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__action-secondary {
+    display: inline;
+
+    text-decoration: underline;
+
+    color: $color-tx-muted;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+  .form--alt {
+    color: white;
+  }
+
+
+/**
+ *  FORM PROFILE
+ *
+ *  styling for the edit profile form
+ *
+ *  .form
+ *  <---  .form-profile
+ *          &__avatar
+ *          &__avatar-description
+ *          &__action-cancel
+ *
+ */
+.form-profile {
+  @extend .form;
+  @extend .form--alt;
+
+  width: 400px - $global-baseline * 6;
+
+  @include breakpoint(map-get($breakpoint-expressions, p6)) {
+    width: 600px - $global-baseline * 6;
+  }
+
+  &__avatar {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+  }
+
+  &__avatar-description {
+    margin-top: $global-baseline * 2;
+  }
+
+  &__action-cancel {
+    padding:  0
+              $global-baseline * 3/2;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    color: $color-tx-muted;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/**
+ *  FORM BECOME EXPERT
+ *
+ *  styling for "become an expert" form
+ *
+ *  form
+ *  <---  .form-become-expert
+ *
+ */
+$form-become-expert-pdf-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22120px%22%20height%3D%22120px%22%20%20viewBox%3D%22-318%20396%20120%20120%22%20enable-background%3D%22new%20-318%20396%20120%20120%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EPDF%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Become%22%20transform%3D%22translate(-602.000000%2C%20-416.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Form%22%20transform%3D%22translate(470.000000%2C%20416.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22PDF%22%20transform%3D%22translate(132.000000%2C%200.000000)%22%3E%20%20%20%20%3Cpath%20id%3D%22Base%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23F54828%22%20d%3D%22M-302%2C396h88c2.209%2C0%2C4%2C1.791%2C4%2C4v112c0%2C2.209-1.791%2C4-4%2C4h-88%20%20%20%20%20c-2.209%2C0-4-1.791-4-4V400C-306%2C397.791-304.209%2C396-302%2C396z%22%2F%3E%20%20%20%20%3Cpath%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M-243.812%2C455.697c-0.619%2C0.055-1.229%2C0.119-1.834%2C0.188%20%20%20%20%20c-7.438-4.482-11.211-10.065-13.652-16.998c0.722-3.236%2C1.006-6.676%2C1.099-11.406c0%2C0-0.557%2C3.049-2.197%2C7.906%20%20%20%20%20c-2.4-8.591-1.396-14.384-1.396-14.384c1.273-4.062%2C3.781%2C1.973%2C3.706%2C5.132c0.114%2C0.471%2C0.179%2C0.764%2C0.179%2C0.764%20%20%20%20%20c2.117-8.228-2.562-7.896-3.565-7.896s-3.9%2C0.275-3.566%2C6.461c0.198%2C3.656%2C0.873%2C9.152%2C2.855%2C14.755%20%20%20%20%20c-0.819%2C2.04-1.789%2C4.255-2.935%2C6.595c-5.411%2C11.037-15.037%2C30.181-21.328%2C31.428c0%2C0-2.202-1.186%2C10.506-12.971%20%20%20%20%20c0%2C0-5.478%2C2.107-8.241%2C4.678c-3.603%2C3.35-5.852%2C6.921-4.341%2C8.355c1.51%2C1.434%2C3.46%2C1.559%2C4.341%2C1.372%20%20%20%20%20c0.82-0.175%2C5.727-1.658%2C13.463-15.568c3.421-1.312%2C10.288-3.495%2C22.059-5.511c0.472-0.08%2C0.93-0.154%2C1.382-0.226%20%20%20%20%20c6.438%2C3.723%2C13.464%2C5.601%2C16.571%2C5.601c4.658%2C0%2C4.051-3.513%2C4.051-3.513c-0.982%2C1.947-7.947%2C1.083-15.62-2.726%20%20%20%20%20c12.944-1.229%2C15.929%2C2.107%2C15.929%2C2.107C-225.846%2C456.443-227.852%2C454.289-243.812%2C455.697L-243.812%2C455.697z%20%20%20%20%20%20M-269.968%2C462.732c0.329-0.611%2C0.663-1.243%2C1.001-1.899c4.063-7.882%2C6.618-12.771%2C8.215-17.081%20%20%20%20%20c1.237%2C2.682%2C2.816%2C5.304%2C4.833%2C7.674c1.639%2C1.926%2C3.62%2C3.629%2C5.752%2C5.113C-259.685%2C458.207-266.965%2C461.308-269.968%2C462.732%20%20%20%20%20L-269.968%2C462.732z%22%2F%3E%20%20%20%20%3Ctext%20transform%3D%22matrix(1%200%200%201%20-254%20501)%22%20fill%3D%22%23FFFFFF%22%20font-family%3D%22%5CiProximaNovaSoft-Bold%5Ci%22%20font-size%3D%2216%22%3EPDF%3C%2Ftext%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.form-become-expert {
+  @extend .form;
+  @extend .form--alt;
+
+  position: relative;
+  width: 320px + $global-baseline * 6;
+  margin-top: $global-baseline * 3;
+  padding:  $global-baseline * 10
+            $global-baseline * 3
+            $global-baseline * 3
+            $global-baseline * 3;
+
+  background: $color-bg-quaternary;
+  border-radius: 4px;
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    top: 0; left: 50%;
+
+    display: block;
+    width: $global-baseline * 10;
+    height: $global-baseline * 10;
+    margin-left: - $global-baseline * 5;
+    margin-top: - $global-baseline * 3;
+
+    background-image: $form-become-expert-pdf-icon;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/**
+ *  FORM BUY COURSE
+ *
+ *  styling for the "buy course" form in modal window
+ *
+ *  .form
+ *  <---  .form-buy-course
+ *          <>--  .fbc-section
+ *                  &__entry
+ *                  &__price
+ *                  &__highlight
+ *                  &__coupon-success
+ *                  &__coupon-failure
+ *                  &--first
+ *          <>--  .fbc-legal
+ *                  &__link
+ *
+ */
+.form-buy-course {
+  @extend .form;
+  @extend .form--alt;
+
+  width: 440px;
+
+  .form__action-primary {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.fbc-section {
+  display: block;
+  padding:  $global-baseline * 2
+            0;
+
+  color: $color-tx-muted;
+  border-bottom: 2px solid #484848;
+
+  &__entry {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__price {
+    font-family: $global-font-family-soft;
+    font-size: 24px;
+    line-height: $global-baseline * 3;
+  }
+
+  &__highlight {
+    color: white;
+  }
+
+  &__coupon-success {
+    font-weight: 600;
+
+    color: $color-dc-primary;
+  }
+
+  &__coupon-failure {
+    font-weight: 600;
+
+    color: $color-dc-tertiary;
+  }
+}
+  .fbc-section--first {
+    padding-top: 0;
+  }
+
+.fbc-legal {
+  padding:  $global-baseline * 4
+            0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-align: center;
+
+  color: $color-tx-muted;
+
+  &__link {
+    text-decoration: underline;
+
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

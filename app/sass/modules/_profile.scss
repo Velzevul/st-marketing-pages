@@ -1,0 +1,114 @@
+/**
+ *  PROFILE MODULE
+ *
+ *  styling and responsive handling for instructor profile
+ *
+ *  .profile
+ *    &__description
+ *      &--centered
+ *    &__aside
+ *      <>--  .p-contacts
+ *              &__item
+ *                &--pushed
+ *      <>--  .p-reviews
+ *              &__detailslink
+ *      <>--  .p-image
+ *              &__avatar
+ *              &__videolink
+ *
+ */
+.profile {
+  @extend %cf;
+
+  &__description {
+    overflow: hidden;
+  }
+    &__description--centered {
+      text-align: center;
+      
+      @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+        text-align: left;
+      }
+    }
+
+  &__aside {
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      margin-right: $global-baseline * 6;
+      float: left;
+      clear: left;
+    }
+  }
+}
+
+.p-image {
+  position: relative;
+  display: block;
+  width: $global-baseline * 16;
+  margin: 0 auto;
+
+  @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+    width: $global-baseline * 22;
+  }
+  
+  &__avatar {
+    display: block;
+    max-width: 100%;
+
+    border-radius: 50%;
+
+    box-shadow: 0 1px 2px rgba($color-tx-muted, 0.5);
+  }
+
+  &__videolink {
+    position: absolute;
+    top: 0; right: 0;
+    display: block;
+    padding: $global-baseline * 5/2;
+
+    background: $color-bg-quaternary;
+    background: rgba($color-bg-quaternary, 0.95);
+    border-radius: 50%;
+  }  
+}
+
+.p-contacts {
+  width: $global-baseline * 22;
+  margin: 0 auto;
+
+  &__item {
+    display: block;
+  }
+    &__item--pushed {
+      @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+        margin-top: $global-baseline * 3;
+      }
+    }
+}
+
+.p-reviews {
+  width: $global-baseline * 22;
+  margin: -2px auto 0 auto; // move up to compensate mismatch between border-top and border-bottom on other element
+  padding-top: $global-baseline * 2;
+
+  text-align: center;
+  
+  border-top: 2px solid $color-border;
+
+  &__detailslink {
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: $global-font-family-soft;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: $global-baseline * 2;
+
+    text-decoration: underline;
+    
+    color: $color-tx-muted;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

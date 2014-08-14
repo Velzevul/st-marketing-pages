@@ -128,8 +128,6 @@ $grid-breakpoints: (
     'p6'   map-get($breakpoint-expressions, p6),
     'p8'   map-get($breakpoint-expressions, p8),
     'p10'  map-get($breakpoint-expressions, p10),
-    'p11'  map-get($breakpoint-expressions, p11),
-    'p12'  map-get($breakpoint-expressions, p12)
 )!default;
 
 
@@ -143,9 +141,9 @@ $grid-breakpoints: (
  * Push and pull shall only be used if '$push' and/or '$pull' and '$responsive'
  * have been set to 'true'.
  */
-$breakpoint-has-widths: ('p0', 'p2', 'p4', 'p6', 'p8', 'p10', 'p11', 'p12')!default;
-$breakpoint-has-push:   ('p0', 'p2', 'p4', 'p6', 'p8', 'p10', 'p11', 'p12')!default;
-$breakpoint-has-pull:   ('p0', 'p2', 'p4', 'p6', 'p8', 'p10', 'p11', 'p12')!default;
+$breakpoint-has-widths: ('p0', 'p2', 'p4', 'p6', 'p8', 'p10')!default;
+$breakpoint-has-push:   ('p0', 'p2', 'p4', 'p6', 'p8', 'p10')!default;
+$breakpoint-has-pull:   ('p0', 'p2', 'p4', 'p6', 'p8', 'p10')!default;
 
 
 /**

@@ -1,0 +1,115 @@
+/**
+ *  INPUT DECORATOR MODULE
+ *
+ *  styling for various decorations for inputs such as
+ *  labels and error messages
+ *
+ *  .input-decorator
+ *    &__label
+ *    &__label-inline
+ *    &__errormsg
+ *    &--alt
+ *    &--facebook
+ *    &--twitter
+ *    &--googleplus
+ *    &--linkedin
+ *
+ */
+.input-decorator {
+  position: relative;
+  display: block;
+  padding-top: $global-baseline * 2;
+
+  &__label {
+    position: absolute;
+    top: 0; left: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: $color-tx-muted;
+
+    .input:focus ~ & {
+      color: $color-dc-primary;
+    }
+
+    .input:disabled ~ & {
+      // ...
+    }
+  }
+
+  &__label-inline {
+    display: inline-block;
+    vertical-align: top;
+    padding: $global-baseline 0;
+
+    font-weight: 600;
+
+    color: $color-tx-muted;
+  }
+
+  &__errormsg {
+    position: absolute;
+    top: 0; right: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: $color-dc-tertiary
+  }
+}
+  .input-decorator--alt {
+    // ...
+
+    .input:focus ~ .input-decorator__label {
+      color: white;
+    }
+  }
+  .input-decorator--facebook {
+    // ...
+
+    .input-decorator__label {
+      color: mix($color-social-facebook, $color-bg-quaternary, 60%);
+  
+    }
+    .input:focus ~ .input-decorator__label {
+      color: $color-social-facebook;
+    }
+  }
+  .input-decorator--twitter {
+    // ...
+
+    .input-decorator__label {
+      color: mix($color-social-twitter, $color-bg-quaternary, 60%);
+  
+    }
+    .input:focus ~ .input-decorator__label {
+      color: $color-social-twitter;
+    }
+  }
+  .input-decorator--googleplus {
+    // ...
+
+    .input-decorator__label {
+      color: mix($color-social-googleplus, $color-bg-quaternary, 60%);
+  
+    }
+    .input:focus ~ .input-decorator__label {
+      color: $color-social-googleplus;
+    }
+  }
+  .input-decorator--linkedin {
+    // ...
+
+    .input-decorator__label {
+      color: mix($color-social-linkedin, $color-bg-quaternary, 60%);
+  
+    }
+    .input:focus ~ .input-decorator__label {
+      color: $color-social-linkedin;
+    }
+  }

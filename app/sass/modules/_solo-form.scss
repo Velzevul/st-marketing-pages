@@ -1,0 +1,44 @@
+/**
+ *  SOLO FORM MODULE
+ *
+ *  styling for a page with only form in it: signin,
+ *  signup, buy course confirmation
+ *  
+ *  .solo-form
+ *    &__form
+ *    <>--  .pf-header
+ *            &__title
+ *            &__description
+ *
+ */
+.solo-form {
+  margin: $global-baseline * 10
+          0;
+
+  text-align: center;
+
+  &__form {
+    display: inline-block;
+  }
+}
+
+.sf-header {
+  padding-bottom: $global-baseline * 5;
+  border-bottom: 2px solid $color-border;
+
+  &__title {
+    font-family: $global-font-family-soft;
+    font-size: 46px;
+    line-height: $global-baseline * 5;
+    
+    text-align: center;
+
+    color: $color-tx-darkened;
+  }
+
+  &__description {
+    text-align: center;
+
+    color: $color-tx-muted;
+  }
+}
