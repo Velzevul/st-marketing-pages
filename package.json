@@ -20,7 +20,6 @@
     "grunt-open": "~0.2.2"
   },
   "scripts": {
-    "start": "./node_modules/.bin/grunt start",
     "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt"
   }
 }
