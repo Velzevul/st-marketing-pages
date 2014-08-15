@@ -1,0 +1,80 @@
+/**
+ *  PRICING MODULE
+ *
+ *  styling for unique elements on the pricing page
+ *
+ *  .pricing-plan
+ *    &__extra
+ *    <>--  .pp-price
+ *            &__main
+ *            &__supplement
+ *
+ *  .pricing-feature
+ *
+ *  .pricing-faq
+ *    &__title
+ *    &__body
+ *
+ */
+.pricing-plan {
+  font-size: 20px;
+  line-height: $global-baseline * 3;
+
+  text-align: center;
+
+  color: white;
+
+  &__extra {
+    opacity: 0.25;
+  }
+}
+
+.pp-price {
+  padding:  $global-baseline * 6
+            0;
+
+  text-align: center;
+
+  @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+    padding:  $global-baseline * 11
+              0;
+  }
+
+  &__main {
+    font-family: $global-font-family-soft;
+    font-size: 100px;
+    line-height: $global-baseline * 9;
+
+    color: $color-dc-primary;
+  }
+
+  &__supplement {
+    white-space: nowrap;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: $global-baseline * 2;
+
+    color: $color-tx-muted;
+  }
+}
+
+.pricing-feature {
+  font-family: $global-font-family-soft;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.pricing-faq {
+  font-family: $global-font-family-soft;
+  line-height: 22px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__body {
+    // ...
+  }
+}

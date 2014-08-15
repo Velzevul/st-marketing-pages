@@ -1,0 +1,87 @@
+/**
+ *  CONTENT HEADER MODULE
+ *
+ *  styling for content header in all of the pages. Header
+ *  as opposed to section has fixed (percentage-based) height
+ *  and its content is centered inside. Header has background
+ *  image.
+ *
+ *  .content-header
+ *    &--browse-page
+ *    &--faculty-page
+ *    &--landing-page
+ *    &--pricing-page
+ *    &__body
+ *      <>--  .ch-content
+ *              &__title-primary
+ *              &__title-secondary
+ *
+ */
+%content-header-large {
+  &:before {
+    min-height: 350px !important;
+    padding-top: 30% !important;
+  }
+}
+
+.content-header {
+  position: relative;
+
+  background-color: $color-bg-quaternary;
+
+  &__body {
+    @extend %center;
+
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+
+    padding:  0
+              $global-baseline * 2;
+
+    text-align: center;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    min-height: $global-baseline * 19;
+    padding-top: 20%;
+  }
+}
+  .content-header--browse-page {
+    background-image: url('/images/browse-bg.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  .content-header--faculty-page {
+    background-image: url('/images/faculty-bg.jpg');
+    background-position: center center;
+  }
+  .content-header--pricing-page {
+    @extend %content-header-large;
+
+    background-image: url('/images/pricing-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+.ch-body {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 95%;
+
+  color: white;
+
+  &__title-primary {
+    font-family: $global-font-family-soft;
+    font-size: 42px;
+    line-height: $global-baseline * 5;
+  }
+
+  &__title-secondary {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+  }
+}

@@ -23,6 +23,10 @@ $content-area-line-height: $global-baseline * 5/2;
     line-height: $global-baseline * 3;
 
     color: $color-tx-darkened;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
   a {

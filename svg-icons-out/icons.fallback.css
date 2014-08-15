@@ -1,5 +1,7 @@
 .icon-arrow { background-image: url('png/arrow.png'); background-repeat: no-repeat; }
 
+.icon-book { background-image: url('png/book.png'); background-repeat: no-repeat; }
+
 .icon-button-facebook { background-image: url('png/button-facebook.png'); background-repeat: no-repeat; }
 
 .icon-button-googleplus { background-image: url('png/button-googleplus.png'); background-repeat: no-repeat; }
@@ -7,6 +9,8 @@
 .icon-button-linkedin { background-image: url('png/button-linkedin.png'); background-repeat: no-repeat; }
 
 .icon-button-twitter { background-image: url('png/button-twitter.png'); background-repeat: no-repeat; }
+
+.icon-calendar { background-image: url('png/calendar.png'); background-repeat: no-repeat; }
 
 .icon-case-alt { background-image: url('png/case-alt.png'); background-repeat: no-repeat; }
 
