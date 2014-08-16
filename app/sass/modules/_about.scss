@@ -1,0 +1,81 @@
+/**
+ *  ABOUT MODULE
+ *
+ *  styling for unique elements on about pages
+ *
+ *  .about-block
+ *    &__title
+ *    &__text
+ *
+ *  .about-course-value
+ *    &__title
+ *    &__body
+ *
+ *  .about-map
+ *    &__googlemap
+ *    &__popover
+ *
+ */
+.about-block {
+  // ...
+
+  &__title {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: $global-baseline * 4;
+
+    color: $color-dc-secondary;
+  }
+
+  &__text {
+    // ...
+  }
+}
+
+.about-course-value {
+  // ...
+
+  &__title {
+    font-family: $global-font-family-soft;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: $global-baseline * 3;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $color-dc-primary;
+  }
+
+  &__body {
+    // ...
+  }
+}
+
+.about-map {
+  position: relative;
+
+  &__googlemap {
+    height: 600px;
+  }
+
+  &__popover {
+    position: absolute;
+    top: 200px; left: 50%;
+
+    display: block;
+    width: $global-baseline * 30;
+    padding: $global-baseline * 2;
+    margin-left: - $global-baseline * 15;
+
+    font-family: $global-font-family-soft;
+    font-size: 20px;
+    line-height: 28px;
+
+    text-align: center;
+
+    color: $color-tx-muted;
+    background: white;
+    border-radius: 4px;
+  }
+}

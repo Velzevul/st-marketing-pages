@@ -54,8 +54,9 @@
   }
 
   &__highlight {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
 
     color: $color-tx-muted;
   }
@@ -74,11 +75,16 @@
                       0 2px 0 0 $color-dc-primary;
   }
   .content-section--contrast {
+    color: white;
     background-color: $color-bg-quaternary;
 
     .content-section__title-primary,
     .content-section__title-secondary {
       color: white;
+    }
+
+    .content-section__highlight {
+      font-weight: 300;
     }
   }
   .content-section--pricing-page {

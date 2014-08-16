@@ -1,5 +1,7 @@
 .icon-arrow { background-image: url('png/arrow.png'); background-repeat: no-repeat; }
 
+.icon-badge { background-image: url('png/badge.png'); background-repeat: no-repeat; }
+
 .icon-book { background-image: url('png/book.png'); background-repeat: no-repeat; }
 
 .icon-button-facebook { background-image: url('png/button-facebook.png'); background-repeat: no-repeat; }
@@ -28,7 +30,13 @@
 
 .icon-dropdown-arrow { background-image: url('png/dropdown-arrow.png'); background-repeat: no-repeat; }
 
+.icon-heart { background-image: url('png/heart.png'); background-repeat: no-repeat; }
+
+.icon-lamp { background-image: url('png/lamp.png'); background-repeat: no-repeat; }
+
 .icon-list { background-image: url('png/list.png'); background-repeat: no-repeat; }
+
+.icon-mail-alt { background-image: url('png/mail-alt.png'); background-repeat: no-repeat; }
 
 .icon-mail { background-image: url('png/mail.png'); background-repeat: no-repeat; }
 

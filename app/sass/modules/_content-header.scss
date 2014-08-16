@@ -11,6 +11,7 @@
  *    &--faculty-page
  *    &--landing-page
  *    &--pricing-page
+ *    &--about-company
  *    &__body
  *      <>--  .ch-content
  *              &__title-primary
@@ -64,6 +65,34 @@
     background-image: url('/images/pricing-bg.jpg');
     background-size: cover;
     background-position: center center;
+  }
+  .content-header--about-company {
+    @extend %content-header-large;
+
+    background-image: url('/images/about-company-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+  .content-header--about-values {
+    @extend %content-header-large;
+
+    background-image: url('/images/about-values-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+  }
+  .content-header--about-careers {
+    @extend %content-header-large;
+
+    background-image: url('/images/about-careers-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+  }
+  .content-header--about-contact {
+    @extend %content-header-large;
+
+    background-image: url('/images/about-contact-bg.jpg');
+    background-size: cover;
+    background-position: center top;
   }
 
 .ch-body {

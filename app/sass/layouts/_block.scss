@@ -12,14 +12,15 @@
  *  .l-{ block-type }
  *  .l-{ block-type }-lt-{ breakpoint-type }
  *  .l-{ block-type }-gt-{ breakpoint-type }
- * 
+ *
  */
 $blocks: (
   'block-small'  : $global-baseline,
   'block'        : $global-baseline * 2,
   'block-med'    : $global-baseline * 3,
   'block-large'  : $global-baseline * 4,
-  'block-x-large': $global-baseline * 5
+  'block-x-large': $global-baseline * 5,
+  'block-huge'   : $global-baseline * 10
 );
 
 [class^="l-block"] {
@@ -30,7 +31,7 @@ $blocks: (
   .l-#{$block-name} {
     margin-bottom: $block-margin;
   }
-  
+
   @each $bp-name, $bp-val in $breakpoints {
     .l-#{$block-name}-lt-#{$bp-name} {
       @include breakpoint( '(max-width: #{$bp-val - 1px})' ) {
