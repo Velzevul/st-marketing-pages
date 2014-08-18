@@ -1,7 +1,7 @@
 /**
  *  PROFILE MODULE
  *
- *  styling and responsive handling for instructor profile
+ *  styling and responsive handling for instructor and company profile
  *
  *  .profile
  *    &__description
@@ -15,6 +15,10 @@
  *      <>--  .p-image
  *              &__avatar
  *              &__videolink
+ *              &--pulled
+ *    &__cover
+ *      <>--  .p-cover
+ *              &__body
  *
  */
 .profile {
@@ -25,7 +29,7 @@
   }
     &__description--centered {
       text-align: center;
-      
+
       @include breakpoint( map-get($breakpoint-expressions, p6) ) {
         text-align: left;
       }
@@ -36,6 +40,24 @@
       margin-right: $global-baseline * 6;
       float: left;
       clear: left;
+    }
+  }
+
+  &__cover {
+    display: none;
+    position: relative;
+
+    background-color: $color-bg-quaternary;
+
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      display: block;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      min-height: 180px;
+      padding-top: 18%;
     }
   }
 }
@@ -49,7 +71,7 @@
   @include breakpoint( map-get($breakpoint-expressions, p6) ) {
     width: $global-baseline * 22;
   }
-  
+
   &__avatar {
     display: block;
     max-width: 100%;
@@ -68,8 +90,13 @@
     background: $color-bg-quaternary;
     background: rgba($color-bg-quaternary, 0.95);
     border-radius: 50%;
-  }  
+  }
 }
+  .p-image--pulled {
+    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+      margin-top: - $global-baseline * 8.5;
+    }
+  }
 
 .p-contacts {
   width: $global-baseline * 22;
@@ -91,7 +118,7 @@
   padding-top: $global-baseline * 2;
 
   text-align: center;
-  
+
   border-top: 2px solid $color-border;
 
   &__detailslink {
@@ -104,11 +131,45 @@
     line-height: $global-baseline * 2;
 
     text-decoration: underline;
-    
+
     color: $color-tx-muted;
 
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+.p-cover {
+  @extend %center;
+
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+
+  text-align: center;
+
+  &__image {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%; height: 100%;
+    opacity: 0.3;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__videolink {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 95%;
+    padding: $global-baseline * 5/2;
+
+    background: $color-bg-quaternary;
+    background: rgba($color-bg-quaternary, 0.95);
+    border-radius: 50%;
   }
 }
