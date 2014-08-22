@@ -8,9 +8,10 @@
  */
 .tag {
   display: block;
-  padding:  ( ($global-baseline / 2) - 2px ) 
+  padding:  ( ($global-baseline / 2) - 2px )
             ( $global-baseline * 2 );
 
+  font-size: 14px;
   font-weight: 600;
   line-height: $global-baseline * 2;
 

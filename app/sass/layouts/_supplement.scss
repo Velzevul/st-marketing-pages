@@ -1,7 +1,7 @@
 /**
  *  SUPPLEMENT LAYOUT
  *
- *  positioning of supplementary information on the top right 
+ *  positioning of supplementary information on the top right
  *  from the main information, e.g. header + link on expert page
  *
  *  .l-supplement
@@ -20,7 +20,7 @@
   .l-supplement__info {
     display: block;
 
-    @include breakpoint( map-get($breakpoint-expressions, p6) ) {
+    @include breakpoint( map-get($breakpoint-expressions, p10) ) {
       position: absolute;
       top: 0;
       left: 100%;

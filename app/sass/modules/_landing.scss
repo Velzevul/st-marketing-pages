@@ -1,0 +1,25 @@
+/**
+ *  LANDING MODULE
+ *
+ *  styling for elements specific to the landing page
+ *
+ *  .landing-pitch
+ *    &__text
+ *    &__item
+ *
+ */
+.landing-pitch {
+  line-height: $content-area-line-height;
+
+  &__text {
+    color: $color-tx-muted
+  }
+
+  &__item {
+    @extend .link-inv;
+
+    font-weight: 700;
+
+    color: $color-dc-secondary;
+  }
+}

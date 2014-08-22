@@ -1,0 +1,34 @@
+/**
+ *  LEGAL MODULE
+ *
+ *  modules specific to the legal page
+ *
+ *  .legal-tabs
+ *
+ */
+.legal-tabs {
+  // ...
+
+  &__item {
+    @extend .link-inv;
+
+    display: block;
+
+    @include breakpoint(map-get($breakpoint-expressions, p6)) {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0
+              $global-baseline * 3;
+    }
+
+    font-weight: 600;
+    line-height: $global-baseline * 3;
+
+    color: $color-tx-muted;
+  }
+    &__item--active {
+      text-decoration: underline;
+
+      color: $color-dc-secondary;
+    }
+}

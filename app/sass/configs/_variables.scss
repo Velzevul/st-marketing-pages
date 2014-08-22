@@ -4,8 +4,10 @@
 // typography
   $global-font-family: "proxima-nova", sans-serif;
   $global-font-family-soft: "proxima-nova-soft", sans-serif;
-  $global-font-size: 15px;
+  $global-font-size: 16px;
   $global-line-height: $global-baseline * 2;
+
+  $content-area-line-height: 32px;
 
 // colors
   $color-tx:          #444444;
@@ -31,6 +33,7 @@
 // layout
   //max-width: (  size reserved for columns  ) + (size reserved for grid gutter)
   $max-width:  ( ($global-baseline * 6) * 12 ) + ( ($global-baseline * 3) * 11 );
+  $min-width: 500px;
 
   $page-header-height: 70px;
 

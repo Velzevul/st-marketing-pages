@@ -22,6 +22,7 @@
   }
 
   &__source {
+    font-size: 14px;
     font-weight: 600;
     line-height: $global-baseline * 3;
 
@@ -39,7 +40,7 @@
   position: relative;
   width: $global-baseline * 5;
   height: $global-baseline * 7;
-  
+
   overflow: hidden;
 
   border-radius: 0 4px 4px 0;
@@ -51,7 +52,7 @@
     max-width: 100%;
 
     opacity: 0.9;
-  
+
     border-radius: 0 6px 6px 0;
   }
 

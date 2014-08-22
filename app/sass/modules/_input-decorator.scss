@@ -18,7 +18,7 @@
 .input-decorator {
   position: relative;
   display: block;
-  padding-top: $global-baseline * 2;
+  padding-top: $global-baseline * 3;
 
   &__label {
     position: absolute;
@@ -26,6 +26,7 @@
 
     font-size: 12px;
     font-weight: 700;
+    line-height: $global-baseline * 3;
 
     text-transform: uppercase;
 
@@ -45,8 +46,6 @@
     vertical-align: top;
     padding: $global-baseline 0;
 
-    font-weight: 600;
-
     color: $color-tx-muted;
   }
 
@@ -56,6 +55,7 @@
 
     font-size: 12px;
     font-weight: 700;
+    line-height: $global-baseline * 3;
 
     text-transform: uppercase;
 
@@ -74,7 +74,7 @@
 
     .input-decorator__label {
       color: mix($color-social-facebook, $color-bg-quaternary, 60%);
-  
+
     }
     .input:focus ~ .input-decorator__label {
       color: $color-social-facebook;
@@ -85,7 +85,7 @@
 
     .input-decorator__label {
       color: mix($color-social-twitter, $color-bg-quaternary, 60%);
-  
+
     }
     .input:focus ~ .input-decorator__label {
       color: $color-social-twitter;
@@ -96,7 +96,7 @@
 
     .input-decorator__label {
       color: mix($color-social-googleplus, $color-bg-quaternary, 60%);
-  
+
     }
     .input:focus ~ .input-decorator__label {
       color: $color-social-googleplus;
@@ -107,7 +107,7 @@
 
     .input-decorator__label {
       color: mix($color-social-linkedin, $color-bg-quaternary, 60%);
-  
+
     }
     .input:focus ~ .input-decorator__label {
       color: $color-social-linkedin;

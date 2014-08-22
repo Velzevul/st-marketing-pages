@@ -34,10 +34,10 @@ $course-sidebar-width: 250px;
   &__pitch-content {
     color: white;
 
-    h2 {
+    h1 {
       font-family: $global-font-family-soft;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 19px;
 
       color: $color-dc-secondary;
@@ -53,7 +53,6 @@ $course-sidebar-width: 250px;
               ($global-baseline * 5 - 4px);
 
     font-family: $global-font-family-soft;
-    font-size: 16px;
     font-weight: 700;
     line-height: $global-baseline * 4 - 6px;
 
@@ -93,13 +92,6 @@ $course-sidebar-width: 250px;
   &__item {
     color: $color-tx-muted;
   }
-    &__item--link {
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
 }
 
 .course-sidebar {
@@ -143,7 +135,6 @@ $course-sidebar-width: 250px;
   border-radius: 4px;
 
   &__name {
-    font-size: 16px;
     line-height: $global-baseline * 3;
 
     color: $color-dc-primary;
@@ -155,16 +146,11 @@ $course-sidebar-width: 250px;
 
   &__name {
     font-weight: 600;
-  }
-    &__name--link {
+
+    &.link {
       color: $color-dc-secondary;
-
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
     }
+  }
 
   &__duration {
     min-width: $global-baseline * 6;

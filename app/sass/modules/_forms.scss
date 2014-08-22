@@ -12,30 +12,24 @@
 .form {
   width: 320px;
 
+  font-size: 14px;
+
   color: $color-tx-muted;
 
   &__action-primary {
+    @extend .link;
+
     display: inline;
 
-    text-decoration: underline;
-
     color: $color-dc-secondary;
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 
   &__action-secondary {
+    @extend .link;
+
     display: inline;
 
-    text-decoration: underline;
-
     color: $color-tx-muted;
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
   .form--alt {
@@ -50,9 +44,11 @@
  *
  *  .form
  *  <---  .form-profile
- *          &__avatar
- *          &__avatar-description
  *          &__action-cancel
+ *          <>--  .fp-avatar
+ *                  &__image
+ *                  &__description
+ *                  &__button
  *
  */
 .form-profile {
@@ -66,16 +62,9 @@
   }
 
   &__avatar {
-    display: block;
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-
-    border-radius: 50%;
   }
 
   &__avatar-description {
-    margin-top: $global-baseline * 2;
   }
 
   &__action-cancel {
@@ -96,6 +85,37 @@
   }
 }
 
+.fp-avatar {
+  // ...
+
+  &__image {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+  }
+
+  &__description {
+    margin-top: $global-baseline * 2;
+  }
+
+  &__button {
+    @extend .button;
+    @extend .button--rounded;
+
+    padding:  0
+              ($global-baseline * 4 - 4px);
+
+    font-weight: 600;
+    line-height: $global-baseline * 4 - 4px;
+
+    color: $color-dc-primary;
+
+    border: 2px solid $color-dc-primary;
+  }
+}
 
 /**
  *  FORM BECOME EXPERT
@@ -166,8 +186,10 @@ $form-become-expert-pdf-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml
 
   width: 440px;
 
+  font-size: $global-font-size;
+
   .form__action-primary {
-    font-size: 18px;
+    // font-size: 18px;
     font-weight: 600;
   }
 }
@@ -181,13 +203,13 @@ $form-become-expert-pdf-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml
   border-bottom: 2px solid #484848;
 
   &__entry {
-    font-size: 18px;
+    // font-size: 18px;
     font-weight: 600;
   }
 
   &__price {
     font-family: $global-font-family-soft;
-    font-size: 24px;
+    font-size: 20px;
     line-height: $global-baseline * 3;
   }
 

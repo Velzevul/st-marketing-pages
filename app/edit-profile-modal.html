@@ -275,7 +275,7 @@
                               </div>
 
                               <div class="l-supplement__info">
-                                <a href="" class="content-section__title-supplement">Edit profile</a>
+                                <a href="" class="content-section__supplement link">Edit profile</a>
                               </div>
                             </div>
                           </div>
@@ -291,20 +291,20 @@
                             <div class="l-block">
                               <a href="" class="l-list-inline">
                                 <div class="l-list-inline__item"><i class="icon-social-linkedin-alt"></i></div>
-                                <div class="l-list-inline__item"><div class="ud-contacts__item--linkedin">reginajohnson</div></div>
+                                <div class="l-list-inline__item"><div class="ud-contacts__item ud-contacts__item--linkedin">reginajohnson</div></div>
                               </a>
                             </div>
 
                             <div class="l-block">
                               <a href="" class="l-list-inline">
                                 <div class="l-list-inline__item"><i class="icon-social-facebook-alt"></i></div>
-                                <div class="l-list-inline__item"><div class="ud-contacts__item--facebook">ReginaJohnson</div></div>
+                                <div class="l-list-inline__item"><div class="ud-contacts__item ud-contacts__item--facebook">ReginaJohnson</div></div>
                               </a>
                             </div>
 
                             <a href="" class="l-list-inline">
                               <div class="l-list-inline__item"><i class="icon-social-twitter-alt"></i></div>
-                              <div class="l-list-inline__item"><div class="ud-contacts__item--twitter">ReginaJ</div></div>
+                              <div class="l-list-inline__item"><div class="ud-contacts__item ud-contacts__item--twitter">ReginaJ</div></div>
                             </a>
                           </div>
                         </div>
@@ -315,8 +315,8 @@
 
                 <section>
                   <div class="l-block-x-large">
-                    <div class="cs-title-tertiary">
-                      <h1 class="cs-title-tertiary__text">Current courses</h1>
+                    <div class="cs-title-stroked">
+                      <h1 class="cs-title-stroked__text">Current courses</h1>
                     </div>
                   </div>
 
@@ -486,8 +486,8 @@
               <div class="grid__item ten-twelfths">
                 <aside>
                   <div class="l-block-x-large">
-                    <div class="cs-title-tertiary cs-title-tertiary--alt">
-                      <h1 class="cs-title-tertiary__text">Recommended courses</h1>
+                    <div class="cs-title-stroked cs-title-stroked--alt">
+                      <h1 class="cs-title-stroked__text">Recommended courses</h1>
                     </div>
                   </div>
 
@@ -650,7 +650,7 @@
 
                   <div class="l-list-inline is-center-aligned">
                     <div class="l-list-inline__item is-middle-aligned">
-                      <div class="content-section__highlight">
+                      <div class="content-section__title-tertiary">
                         Master hundreds of courses only for <strong>$49</strong> per month.
                       </div>
                     </div>
@@ -670,8 +670,8 @@
             <div class="grid grid--center">
               <div class="grid__item ten-twelfths">
                 <div class="l-block-x-large">
-                  <div class="cs-title-tertiary">
-                    <h1 class="cs-title-tertiary__text">Finished courses</h1>
+                  <div class="cs-title-stroked">
+                    <h1 class="cs-title-stroked__text">Finished courses</h1>
                   </div>
                 </div>
 
@@ -957,72 +957,86 @@
 
         <form action="" class="form-profile">
           <div class="modal-window__block">
-            <div class="grid">
-              <div class="grid__item p6--five-twelfths">
-                <img src="http://api.randomuser.me/portraits/women/41.jpg" alt="" class="form-profile__avatar">
-              </div><!--
-              --><div class="grid__item p6--seven-twelfths">
-                <div class="form-profile__avatar-description">
-                  <div class="l-block">
-                    Avatar should be a square image at minimum 300 x 300 px.
-                  </div>
+            <div class="fp-avatar">
+              <div class="grid">
+                <div class="grid__item p6--five-twelfths">
+                  <img src="http://api.randomuser.me/portraits/women/41.jpg" alt="" class="fp-avatar__image">
+                </div><!--
+                --><div class="grid__item p6--seven-twelfths">
+                  <div class="fp-avatar__description">
+                    <div class="l-block">
+                      Avatar should be a square image at minimum 300 x 300 px.
+                    </div>
 
-                  <button type="button" class="button button--tertiary-alt button--rounded button--full">Choose image</button>
+                    <button type="button" class="fp-avatar__button">Upload new image</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="modal-window__block">
-            <div class="l-block">
+            <div class="l-block-small">
               <label class="input-decorator input-decorator--alt">
                 <input type="text" class="input input--alt input--full">
                 <div class="input-decorator__label">Name</div>
               </label>
             </div>
 
-            <div class="l-block">
+            <div class="l-block-small">
               <label class="input-decorator input-decorator--alt">
                 <input type="text" class="input input--alt input--full">
                 <div class="input-decorator__label">Email address</div>
               </label>
             </div>
 
-            <div class="l-block">
-              <div class="grid grid--narrow">
-                <div class="grid__item one-half">
-                  <label class="input-decorator input-decorator--facebook">
-                    <input type="text" class="input input--full input--facebook">
-                    <div class="input-decorator__label">Facebook</div>
-                  </label>
-                </div><!--
-                --><div class="grid__item one-half">
-                  <label class="input-decorator input-decorator--twitter">
-                    <input type="text" class="input input--full input--twitter">
-                    <div class="input-decorator__label">Twitter</div>
-                  </label>
+            <div class="l-block-small">
+              <div class="l-stacked l-stacked--small">
+                <div class="grid grid--narrow">
+                  <div class="grid__item p6--one-half">
+                    <div class="l-stacked__item">
+                      <label class="input-decorator input-decorator--facebook">
+                        <input type="text" class="input input--full input--facebook">
+                        <div class="input-decorator__label">Facebook</div>
+                      </label>
+                    </div>
+                  </div><!--
+                  --><div class="grid__item p6--one-half">
+                    <div class="l-stacked__item">
+                      <label class="input-decorator input-decorator--twitter">
+                        <input type="text" class="input input--full input--twitter">
+                        <div class="input-decorator__label">Twitter</div>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="l-block">
-              <div class="grid grid--narrow">
-                <div class="grid__item one-half">
-                  <label class="input-decorator input-decorator--googleplus">
-                    <input type="text" class="input input--full input--googleplus">
-                    <div class="input-decorator__label">Google Plus</div>
-                  </label>
-                </div><!--
-                --><div class="grid__item one-half">
-                  <label class="input-decorator input-decorator--linkedin">
-                    <input type="text" class="input input--full input--linkedin">
-                    <div class="input-decorator__label">Linkedin</div>
-                  </label>
+            <div class="l-block-small">
+              <div class="l-stacked l-stacked--small">
+                <div class="grid grid--narrow">
+                  <div class="grid__item p6--one-half">
+                    <div class="l-stacked__item">
+                      <label class="input-decorator input-decorator--googleplus">
+                        <input type="text" class="input input--full input--googleplus">
+                        <div class="input-decorator__label">Google Plus</div>
+                      </label>
+                    </div>
+                  </div><!--
+                  --><div class="grid__item p6--one-half">
+                    <div class="l-stacked__item">
+                      <label class="input-decorator input-decorator--linkedin">
+                        <input type="text" class="input input--full input--linkedin">
+                        <div class="input-decorator__label">Linkedin</div>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="l-block is-center-aligned">
+            <div class="l-block-med is-center-aligned">
               <button type="button" class="form__action-secondary">Change password</button>
             </div>
 

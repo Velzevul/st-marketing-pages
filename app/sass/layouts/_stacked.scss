@@ -1,16 +1,40 @@
 /**
  *  STACKED LAYOUT
  *
- *  maintains vertical spacing between blocks that 
+ *  maintains vertical spacing between blocks that
  *  become stacked on mobile/tablet devices
+ *  possible modifiers:
+ *    - small
+ *    - normal (reset modifier for nested layouts, see @warning)
+ *    - med
+ *    - large
+ *    - x-large
  *
  *  .l-stacked
  *    &__item
- *    &--large
- *    &--normal
- *    &--small
+ *    &--{ modifier }
+ *
+ *  @warning
+ *    this module does not use direct child, because
+ *    .l-stacked and .l-stacked__item are separated
+ *    by .grid and .grid__item classes. Because of this
+ *    there could be problems with nested .l-stacked
+ *    elements. If you use .l-stacked inside .l-stacked--large,
+ *    you will need to reset its behaviour to default one, like
+ *
+ *      .l-stacked.l-stacked--large
+ *        /.../
+ *        .l-stacked.l-stacked--normal
  *
  */
+$stacked-modifiers: (
+  'x-large' : $global-baseline * 5,
+  'large'   : $global-baseline * 4,
+  'med'     : $global-baseline * 3,
+  'normal'  : $global-baseline * 2,
+  'small'   : $global-baseline
+);
+
 .l-stacked {
   margin-bottom: - $global-baseline * 2;
 
@@ -19,24 +43,12 @@
     padding-bottom: $global-baseline * 2;
   }
 }
-  .l-stacked--large {
-    margin-bottom: - $global-baseline * 4;
+  @each $modifier-name, $modifier-margin in $stacked-modifiers {
+    .l-stacked--#{$modifier-name} {
+      margin-bottom: - $modifier-margin;
 
-    .l-stacked__item {
-      padding-bottom: $global-baseline * 4;
-    }
-  }
-  .l-stacked--normal {
-    margin-bottom: - $global-baseline * 2;
-
-    .l-stacked__item {
-      padding-bottom: $global-baseline * 2;
-    }
-  }
-  .l-stacked--small {
-    margin-bottom: - $global-baseline;
-
-    .l-stacked__item {
-      padding-bottom: $global-baseline;
+      .l-stacked__item {
+        padding-bottom: $modifier-margin;
+      }
     }
   }

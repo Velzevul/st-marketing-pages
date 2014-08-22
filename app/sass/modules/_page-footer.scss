@@ -16,6 +16,8 @@
  */
 
 .page-footer {
+  min-width: $min-width;
+
   background: $color-bg-tertiary;
 
   &__block {
@@ -46,6 +48,8 @@
   }
 
   &__item {
+    @extend .link-inv;
+
     font-family: $global-font-family-soft;
     font-weight: 600;
 

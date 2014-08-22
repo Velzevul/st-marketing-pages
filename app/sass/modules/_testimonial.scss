@@ -3,7 +3,7 @@
  *
  *  styling for testimonials from users
  *
- *  .testimonial 
+ *  .testimonial
  *    &__quote
  *    <>--  .tm-user
  *            &__avatar
@@ -28,7 +28,7 @@
 
 .tm-user {
   font-family: $global-font-family-soft;
-  font-weight: 700;
+  font-weight: 600;
 
   color: $color-tx-muted;
 
@@ -41,6 +41,8 @@
   }
 
   &__name {
+    @extend .link-inv;
+
     color: $color-dc-secondary;
   }
 }

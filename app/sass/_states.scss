@@ -1,5 +1,5 @@
 /**
- *  GLOBAL STATE STYLES & UTILITIES
+ *  GLOBAL STATE STYLES
  *
  */
 .is-top-aligned { vertical-align: top !important; }
@@ -9,26 +9,11 @@
 .is-floated-right { float: right; }
 .is-floated-left { float: left; }
 
-.is-muted { color: $color-tx-muted; }
-
-.is-unstyled {
-  text-decoration: none;
-  border: none;
-  background: none;
-  color: inherit;
-}
-
 .is-hidden { display: none; }
 .is-frozen { overflow: hidden; }
-.is-round  { border-radius: 50%; }
 
 .new-positioning-grid {
   position: relative;
-}
-
-.fonts-reset {
-  font-size: $global-font-size;
-  line-height: $global-line-height;
 }
 
 .is-left-aligned { text-align: left !important; }

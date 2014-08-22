@@ -21,9 +21,9 @@
 
   display: block;
   width: $global-baseline * 20;
-  padding:  0 
+  padding:  0
             $global-baseline * 3/2;
-  
+
   background: $color-bg-quaternary;
   box-shadow: 0 0 0 4px rgba(#F4F4F4, 0.2);
 }
@@ -46,7 +46,6 @@
     display: block;
 
     font-family: $global-font-family-soft;
-    font-size: 16px;
     font-weight: 600;
     line-height: $page-header-height;
   }
@@ -54,7 +53,7 @@
 
 .hp-block {
   display: block;
-  padding:  $global-baseline * 2
+  padding:  $global-baseline * 3/2
             $global-baseline;
 
   &__title {

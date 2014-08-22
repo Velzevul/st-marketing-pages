@@ -1,0 +1,27 @@
+/**
+ *  LINK MODULE
+ *
+ *  links behaviour across application. Classes are applied
+ *  when element with unique style is also a link. In case
+ *  with normal links (like in navigations), they extend
+ *  one of these
+ *
+ *  .link
+ *  .link-inv
+ *
+ */
+.link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link-inv {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -79,6 +79,7 @@
   }
 
   &__company {
+    font-size: em(14px, $global-font-size);
     font-weight: 700;
 
     opacity: 0;
@@ -121,7 +122,7 @@
   }
 
   &__name {
-    font-size: $global-font-size;
+    font-size: 1em;
     font-weight: 600;
     line-height: em(24px, $global-font-size);
   }

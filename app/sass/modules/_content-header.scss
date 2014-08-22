@@ -104,12 +104,19 @@
 
   &__title-primary {
     font-family: $global-font-family-soft;
-    font-size: 42px;
+    font-size: 46px;
+    font-weight: 400;
     line-height: $global-baseline * 5;
   }
 
   &__title-secondary {
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+  }
+
+  &__title-tertiary {
+    font-size: 22px;
     font-weight: 300;
     line-height: $global-baseline * 3;
   }

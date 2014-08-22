@@ -13,14 +13,15 @@
 .offscreen-panel {
   background: $color-bg-quaternary;
   min-height: 100%;
-  padding: $global-baseline * 2;
+  padding:  $global-baseline
+            $global-baseline * 2;
 
   color: white;
 
   &__title-primary {
     font-family: $global-font-family-soft;
-    font-size: $global-baseline * 2;
-    line-height: $global-baseline * 3;
+    font-size: 24px;
+    line-height: 46px;
 
     color: $color-dc-primary;
 
@@ -41,7 +42,7 @@
 
 .op-banners {
   position: absolute;
-  bottom: $global-baseline * 2; 
+  bottom: $global-baseline * 2;
   left: $global-baseline * 2;
   right: $global-baseline * 2;
 }

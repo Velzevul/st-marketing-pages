@@ -12,48 +12,6 @@
 
 .browse-tiles {
   @include breakpoint( map-get($breakpoint-expressions, p8) ) {
-    font-size: 12px;
+    font-size: 14px;
   }
-}
-
-.landing-pitch {
-  // ...
-
-  &__text {
-    color: $color-tx-muted
-  }
-
-  &__item {
-    font-weight: 700;
-
-    color: $color-dc-secondary;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.legal-tabs {
-  // ...
-
-  &__item {
-    display: block;
-
-    @include breakpoint(map-get($breakpoint-expressions, p6)) {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0
-              $global-baseline * 3;
-    }
-
-    font-weight: 600;
-
-    color: $color-tx-muted;
-  }
-    &__item--active {
-      text-decoration: underline;
-      
-      color: $color-dc-secondary;
-    }
 }

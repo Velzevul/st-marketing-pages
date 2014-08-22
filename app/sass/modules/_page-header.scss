@@ -6,7 +6,7 @@
  *  .page-header
  *    &__page-header__title
  *    &--filled
- *    <>--  .ph-menu 
+ *    <>--  .ph-menu
  *            &__item
  *              &--button
  *    <>--  .ph-user
@@ -17,9 +17,7 @@ $header-studytube-logo: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20ver
 .page-header {
   position: relative;
   z-index: 1;
-  // position: fixed;
-  // z-index: 100;
-  // width: 100%;
+  min-width: $min-width;
 
   color: white;
   @include transition-property(background);
@@ -49,7 +47,6 @@ $header-studytube-logo: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20ver
     padding: 0 $global-baseline * 3/2;
 
     font-family: $global-font-family-soft;
-    font-size: 16px;
     font-weight: 600;
     line-height: $page-header-height;
   }
@@ -74,7 +71,7 @@ $header-studytube-logo: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20ver
   position: relative;
   z-index: 2;
   display: block;
-  
+
   border-radius: 50%;
   height: $ph-user-size; width: $ph-user-size;
   margin: ($page-header-height - $ph-user-size) / 2

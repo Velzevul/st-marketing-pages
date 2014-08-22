@@ -14,9 +14,9 @@
  *    &--landing-page
  *    &__title-primary
  *    &__title-secondary
+ *    &__title-tertiary
  *    &__title-supplement
- *    &__highlight
- *    <>--  .cs-title-tertiary
+ *    <>--  .cs-title-stroked
  *            &--alt
  *            &__text
  *  <---  .content-section-course-page
@@ -30,35 +30,34 @@
 
   &__title-primary {
     font-family: $global-font-family-soft;
-    font-size: 42px;
+    font-size: 46px;
+    font-weight: 400;
     line-height: $global-baseline * 5;
 
     color: $color-tx-darkened;
   }
 
   &__title-secondary {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 300;
     line-height: $global-baseline * 3;
 
     color: $color-tx-darkened;
   }
 
-  &__title-supplement {
+  &__title-tertiary {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+
+    color: $color-tx-muted;
+  }
+
+  &__supplement {
     font-weight: 600;
     white-space: nowrap;
 
-    text-decoration: none;
-
     color: $color-dc-secondary;
-  }
-
-  &__highlight {
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 30px;
-
-    color: $color-tx-muted;
   }
 }
   .content-section--small {
@@ -81,10 +80,6 @@
     .content-section__title-primary,
     .content-section__title-secondary {
       color: white;
-    }
-
-    .content-section__highlight {
-      font-weight: 300;
     }
   }
   .content-section--pricing-page {
@@ -112,7 +107,7 @@
     background-size: cover;
   }
 
-.cs-title-tertiary {
+.cs-title-stroked {
   overflow: hidden;
 
   line-height: 0;
@@ -153,10 +148,10 @@
     }
   }
 }
-  .cs-title-tertiary--alt {
+  .cs-title-stroked--alt {
     // ...
 
-    .cs-title-tertiary__text {
+    .cs-title-stroked__text {
       // ...
 
       &:before,

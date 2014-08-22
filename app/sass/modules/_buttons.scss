@@ -6,68 +6,100 @@
  *  .button
  *    &--primary
  *    &--secondary
- *    &--secondary-alt
  *    &--tertiary
- *    &--tertiary-alt
  *    &--rounded
  *    &--full
  *
  */
+$button-height: $global-baseline * 4;
+
 .button {
   display: inline-block;
-  height: $global-baseline * 4;
+  height: $button-height;
   padding:  0
             $global-baseline * 4;
 
+  font-family: $global-font-family-soft;
   font-size: 14px;
-  line-height: $global-baseline * 4;
+  line-height: $button-height;
 
   text-align: center;
   text-transform: uppercase;
 
   border-radius: 4px;
+
+  @include transition-property(background);
+  @include transition-duration(0.2s);
 }
   .button--primary {
     color: #E4FBF6;
 
     background: $color-dc-primary;
+
+    &:hover {
+      background: darken($color-dc-primary, 10%);
+    }
+
+    &:active {
+      background: lighten($color-dc-primary, 5%);
+    }
   }
   .button--secondary {
     color: white;
 
     background: $color-dc-secondary;
+
+    &:hover {
+      background: darken($color-dc-secondary, 10%);
+    }
+
+    &:active {
+      background: lighten($color-dc-secondary, 5%);
+    }
   }
-  .button--secondary-alt {
+  .button--tertiary {
     font-weight: 600;
 
     color: $color-tx-muted;
 
     background: #F4F4F4;
+
+    &:hover {
+      background: darken(#F4F4F4, 10%);
+    }
+
+    &:active {
+      background: lighten(#F4F4F4, 5%);
+    }
   }
-  .button--tertiary {
-    padding:  0
-              ($global-baseline * 4 - 4px);
+  // .button--tertiary {
+  //   padding:  0
+  //             ($global-baseline * 4 - 4px);
 
-    font-weight: 600;
-    line-height: $global-baseline * 4 - 4px;
+  //   font-weight: 600;
+  //   line-height: $button-height - 4px;
 
-    color: $color-dc-secondary;
+  //   color: $color-dc-secondary;
 
-    border: 2px solid $color-dc-secondary;
-  }
-  .button--tertiary-alt {
-    padding:  0
-              ($global-baseline * 4 - 4px);
+  //   border: 2px solid $color-dc-secondary;
+  // }
+  // .button--tertiary-alt {
+  //   padding:  0
+  //             ($global-baseline * 4 - 4px);
 
-    font-weight: 600;
-    line-height: $global-baseline * 4 - 4px;
+  //   font-weight: 600;
+  //   line-height: $button-height - 4px;
 
-    color: $color-dc-primary;
+  //   color: $color-dc-primary;
 
-    border: 2px solid $color-dc-primary; 
-  }
+  //   border: 2px solid $color-dc-primary;
+  // }
   .button--rounded {
     border-radius: 50px;
+  }
+  .button--large {
+    padding:  0
+              $global-baseline * 7;
   }
   .button--full {
     width: 100%;
@@ -101,16 +133,48 @@ $button-social-linkedin-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml
   .button-social--facebook {
     background-color: $color-social-facebook;
     background-image: $button-social-facebook-icon;
+
+    &:hover {
+      background-color: darken($color-social-facebook, 10%);
+    }
+
+    &:active {
+      background-color: lighten($color-social-facebook, 5%);
+    }
   }
   .button-social--twitter {
     background-color: $color-social-twitter;
     background-image: $button-social-twitter-icon;
+
+    &:hover {
+      background-color: darken($color-social-twitter, 10%);
+    }
+
+    &:active {
+      background-color: lighten($color-social-twitter, 5%);
+    }
   }
   .button-social--googleplus {
     background-color: $color-social-googleplus;
     background-image: $button-social-googleplus-icon;
+
+    &:hover {
+      background-color: darken($color-social-googleplus, 10%);
+    }
+
+    &:active {
+      background-color: lighten($color-social-googleplus, 5%);
+    }
   }
   .button-social--linkedin {
     background-color: $color-social-linkedin;
     background-image: $button-social-linkedin-icon;
+
+    &:hover {
+      background-color: darken($color-social-linkedin, 10%);
+    }
+
+    &:active {
+      background-color: lighten($color-social-linkedin, 5%);
+    }
   }

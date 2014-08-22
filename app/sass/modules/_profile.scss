@@ -117,27 +117,12 @@
   margin: -2px auto 0 auto; // move up to compensate mismatch between border-top and border-bottom on other element
   padding-top: $global-baseline * 2;
 
+  font-family: $global-font-family-soft;
+
   text-align: center;
 
+  color: $color-tx-muted;
   border-top: 2px solid $color-border;
-
-  &__detailslink {
-    display: inline-block;
-    vertical-align: top;
-
-    font-family: $global-font-family-soft;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: $global-baseline * 2;
-
-    text-decoration: underline;
-
-    color: $color-tx-muted;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
 
 .p-cover {

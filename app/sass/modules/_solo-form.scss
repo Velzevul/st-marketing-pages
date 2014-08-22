@@ -3,7 +3,7 @@
  *
  *  styling for a page with only form in it: signin,
  *  signup, buy course confirmation
- *  
+ *
  *  .solo-form
  *    &__form
  *    <>--  .pf-header
@@ -29,8 +29,9 @@
   &__title {
     font-family: $global-font-family-soft;
     font-size: 46px;
+    font-weight: 400;
     line-height: $global-baseline * 5;
-    
+
     text-align: center;
 
     color: $color-tx-darkened;
