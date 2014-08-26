@@ -141,6 +141,7 @@
         'modules/input-decorator',
         'modules/tag',
         'modules/nav',
+        'modules/responsive-embed',
         'modules/modal',
         'modules/landing',
         'modules/profile',
@@ -150,9 +151,6 @@
         'modules/pricing',
         'modules/about',
         'modules/legal';
-
-// old clutter - should be deleted
-// 'modules/responsive-embed';
 
 @import 'states',
         'dev-grid',
